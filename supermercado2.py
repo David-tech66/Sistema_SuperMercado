@@ -491,7 +491,7 @@ print(
 # ==========================================
 
 df.to_csv(
-    "supermercado_final20.csv",
+    "supermercado_limpio.csv",
     index=False,
     encoding="utf-8-sig"
 )
@@ -501,5 +501,5 @@ print(
 )
 
 print(
-    "Archivo creado: supermercado_final20.csv"
+    "Archivo creado: supermercado_limpio.csv"
 )
