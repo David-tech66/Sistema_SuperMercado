@@ -1,0 +1,892 @@
+﻿id_venta,fecha,producto,categoria,cantidad,precio_unitario,descuento_pct,metodo_pago,cliente_frecuente,satisfaccion,total,opinion_usuario,año,mes,nombre_mes,año_mes
+1,2022-01-01,Arroz,abarrotes,13.0,30.73,0.85,plin,no,3.0,396.09,buenos precios y productos frescos,2022,1,January,2022-01
+2,2022-01-02,Pan,panadería,1.0,43.29,0.0,tarjeta,no,1.0,35.9,buenos precios y productos frescos,2022,1,January,2022-01
+3,2022-01-04,Atún,abarrotes,6.0,17.63,23.76,plin,si,4.0,80.65,la compra fue rápida y ordenada,2022,1,January,2022-01
+4,2022-01-06,Azúcar,abarrotes,7.0,23.009999999999998,20.73,yape,si,3.0,110.92,desconocido,2022,1,January,2022-01
+6,2022-01-09,Gaseosa,bebidas,2.0,23.5,1.33,efectivo,no,4.0,46.37,había productos vencidos en el estante,2022,1,January,2022-01
+7,2022-01-11,Arroz,abarrotes,7.0,33.54,23.51,yape,si,4.0,179.58,ofertas interesantes y personal amable,2022,1,January,2022-01
+8,2022-01-12,Desconocido,desconocido,3.0,21.5,23.43,yape,si,3.0,49.39,buenos precios y productos frescos,2022,1,January,2022-01
+9,2022-01-14,Desconocido,desconocido,12.0,10.87,13.31,plin,si,3.0,113.08,muy buena variedad de productos,2022,1,January,2022-01
+10,2022-01-16,Arroz,abarrotes,7.0,33.92,16.06,yape,no,1.0,256.25,ofertas interesantes y personal amable,2022,1,January,2022-01
+11,2022-01-18,Fideos,abarrotes,7.0,7.21,11.57,efectivo,no,3.0,44.63,sin comentario,2022,1,January,2022-01
+12,2022-01-19,Detergente,limpieza,6.0,10.14,10.49,desconocido,si,2.0,54.46,faltaban varios productos básicos,2022,1,January,2022-01
+14,2022-01-23,Pan,panadería,13.0,34.01,2.42,tarjeta,si,3.0,431.43,buenos precios y productos frescos,2022,1,January,2022-01
+15,2022-01-24,Pan,panadería,10.0,40.42,5.82,tarjeta,no,5.0,380.67556,la compra fue rápida y ordenada,2022,1,January,2022-01
+17,2022-01-28,Fideos,abarrotes,7.0,6.32,3.65,yape,si,2.0,36.54,ofertas interesantes y personal amable,2022,1,January,2022-01
+18,2022-01-29,Desconocido,desconocido,11.0,43.09,5.67,yape,si,4.0,447.11,los precios no coincidían con la etiqueta,2022,1,January,2022-01
+19,2022-01-31,Desconocido,desconocido,11.0,8.22,13.72,tarjeta,si,1.0,78.014376,faltaban varios productos básicos,2022,1,January,2022-01
+20,2022-02-02,Azúcar,abarrotes,7.0,10.1,5.38,tarjeta,no,2.0,66.9,muy buena variedad de productos,2022,2,February,2022-02
+21,2022-02-04,Fideos,abarrotes,5.0,14.17,4.08,yape,si,4.0,67.96,excelente atención y encontré todo lo que necesitaba,2022,2,February,2022-02
+22,2022-02-05,Aceite,abarrotes,10.0,24.53,14.08,plin,si,3.0,210.76,faltaban varios productos básicos,2022,2,February,2022-02
+23,2022-02-07,Leche,lácteos,10.0,39.9,9.2,yape,no,4.0,362.29,la compra fue rápida y ordenada,2022,2,February,2022-02
+24,2022-02-09,Detergente,limpieza,9.0,34.58,15.65,desconocido,si,3.0,262.51407,desconocido,2022,2,February,2022-02
+25,2022-02-10,Pan,desconocido,2.0,32.3,22.81,efectivo,si,5.0,49.86,había productos vencidos en el estante,2022,2,February,2022-02
+26,2022-02-12,Atún,abarrotes,7.0,23.009999999999998,3.77,plin,no,5.0,61.43,excelente atención y encontré todo lo que necesitaba,2022,2,February,2022-02
+27,2022-02-14,Azúcar,abarrotes,9.0,17.06,0.0,efectivo,no,5.0,118.47,muy buena variedad de productos,2022,2,February,2022-02
+28,2022-02-16,Gaseosa,bebidas,14.0,22.31,22.56,plin,si,1.0,241.88,los precios no coincidían con la etiqueta,2022,2,February,2022-02
+29,2022-02-17,Fideos,abarrotes,7.0,7.91,20.73,tarjeta,si,3.0,50.16,buenos precios y productos frescos,2022,2,February,2022-02
+32,2022-02-22,Huevos,abarrotes,3.0,7.04,15.98,plin,no,2.0,17.75,la compra fue rápida y ordenada,2022,2,February,2022-02
+35,2022-02-27,Gaseosa,bebidas,14.0,4.54,23.95,plin,desconocido,5.0,48.34,ofertas interesantes y personal amable,2022,2,February,2022-02
+36,2022-03-01,Arroz,abarrotes,12.0,22.43,0.0,efectivo,si,2.0,269.15999999999997,excelente atención y encontré todo lo que necesitaba,2022,3,March,2022-03
+37,2022-03-03,Gaseosa,bebidas,9.0,35.53,19.54,efectivo,no,4.0,257.29,la compra fue rápida y ordenada,2022,3,March,2022-03
+38,2022-03-05,Gaseosa,bebidas,1.0,34.04,9.43,yape,si,4.0,30.830028,buenos precios y productos frescos,2022,3,March,2022-03
+39,2022-03-06,Huevos,abarrotes,14.0,36.96,0.31,plin,si,5.0,515.84,excelente atención y encontré todo lo que necesitaba,2022,3,March,2022-03
+40,2022-03-08,Atún,abarrotes,7.0,21.0,12.74,plin,no,2.0,128.27,excelente atención y encontré todo lo que necesitaba,2022,3,March,2022-03
+41,2022-03-10,Leche,lácteos,5.0,23.009999999999998,12.68,yape,no,4.0,162.37,los precios no coincidían con la etiqueta,2022,3,March,2022-03
+43,2022-03-13,Pan,panadería,11.0,17.2,8.49,yape,no,3.0,173.14,buenos precios y productos frescos,2022,3,March,2022-03
+44,2022-03-15,Aceite,abarrotes,11.0,9.17,6.25,desconocido,si,3.0,94.57,excelente atención y encontré todo lo que necesitaba,2022,3,March,2022-03
+45,2022-03-17,Arroz,abarrotes,4.0,21.84,13.19,plin,si,5.0,75.84,faltaban varios productos básicos,2022,3,March,2022-03
+46,2022-03-18,Detergente,limpieza,14.0,18.55,9.38,efectivo,si,4.0,235.34,ofertas interesantes y personal amable,2022,3,March,2022-03
+47,2022-03-20,Azúcar,abarrotes,7.0,11.98,24.25,yape,si,5.0,63.52,faltaban varios productos básicos,2022,3,March,2022-03
+48,2022-03-22,Gaseosa,bebidas,8.0,34.2,4.32,tarjeta,no,5.0,261.78,había productos vencidos en el estante,2022,3,March,2022-03
+49,2022-03-23,Atún,abarrotes,11.0,15.15,7.99,plin,no,3.0,153.33,la compra fue rápida y ordenada,2022,3,March,2022-03
+50,2022-03-25,Pan,panadería,10.0,23.009999999999998,7.35,yape,no,3.0,123.87,buenos precios y productos frescos,2022,3,March,2022-03
+51,2022-03-27,Pan,panadería,3.0,23.009999999999998,13.58,plin,si,1.0,18.64,mucha cola para pagar,2022,3,March,2022-03
+52,2022-03-28,Leche,lácteos,5.0,23.009999999999998,12.48,tarjeta,no,3.0,90.1,mucha cola para pagar,2022,3,March,2022-03
+53,2022-03-30,Aceite,abarrotes,6.0,14.68,16.09,yape,si,1.0,73.91,excelente atención y encontré todo lo que necesitaba,2022,3,March,2022-03
+54,2022-04-01,Azúcar,abarrotes,14.0,17.56,0.0,efectivo,no,4.0,187.45,la compra fue rápida y ordenada,2022,4,April,2022-04
+57,2022-04-06,Fideos,abarrotes,11.0,23.009999999999998,0.63,tarjeta,desconocido,5.0,458.65,la compra fue rápida y ordenada,2022,4,April,2022-04
+58,2022-04-08,Leche,lácteos,11.0,23.16,6.56,plin,si,2.0,238.05,faltaban varios productos básicos,2022,4,April,2022-04
+59,2022-04-09,Pan,panadería,7.0,29.47,11.59,plin,no,5.0,156.33,mucha cola para pagar,2022,4,April,2022-04
+61,2022-04-13,Detergente,limpieza,13.0,44.95,15.44,tarjeta,si,4.0,494.13,excelente atención y encontré todo lo que necesitaba,2022,4,April,2022-04
+62,2022-04-14,Desconocido,desconocido,8.0,28.19,0.0,efectivo,no,4.0,187.27,buenos precios y productos frescos,2022,4,April,2022-04
+63,2022-04-16,Aceite,abarrotes,3.0,40.21,18.67,plin,si,4.0,98.108379,había productos vencidos en el estante,2022,4,April,2022-04
+64,2022-04-18,Detergente,limpieza,11.0,41.02,12.91,efectivo,si,2.0,392.96749800000003,mala atención del personal,2022,4,April,2022-04
+65,2022-04-20,Azúcar,abarrotes,9.0,35.93,15.1,efectivo,no,4.0,274.54,excelente atención y encontré todo lo que necesitaba,2022,4,April,2022-04
+66,2022-04-21,Aceite,abarrotes,8.0,21.55,9.9,tarjeta,desconocido,4.0,155.33,la compra fue rápida y ordenada,2022,4,April,2022-04
+67,2022-04-23,Detergente,limpieza,11.0,5.03,1.03,efectivo,si,5.0,54.76,los precios no coincidían con la etiqueta,2022,4,April,2022-04
+68,2022-04-25,Aceite,abarrotes,13.0,2.19,2.5,efectivo,no,3.0,27.76,mucha cola para pagar,2022,4,April,2022-04
+69,2022-04-26,Arroz,abarrotes,5.0,23.009999999999998,16.37,yape,desconocido,3.0,96.216315,excelente atención y encontré todo lo que necesitaba,2022,4,April,2022-04
+70,2022-04-28,Azúcar,abarrotes,6.0,23.0,24.89,yape,si,3.0,103.65,mala atención del personal,2022,4,April,2022-04
+71,2022-04-30,Pan,panadería,3.0,19.22,0.4,tarjeta,si,1.0,57.429359999999996,buenos precios y productos frescos,2022,4,April,2022-04
+74,2022-05-05,Leche,lácteos,5.0,37.89,20.67,desconocido,si,4.0,150.29,excelente atención y encontré todo lo que necesitaba,2022,5,May,2022-05
+75,2022-05-07,Atún,abarrotes,10.0,6.23,13.63,yape,desconocido,3.0,53.81,muy buena variedad de productos,2022,5,May,2022-05
+76,2022-05-08,Azúcar,abarrotes,6.0,11.3,15.5,yape,no,3.0,57.29,mala atención del personal,2022,5,May,2022-05
+77,2022-05-10,Aceite,abarrotes,7.0,36.0,17.42,plin,no,4.0,208.1,la compra fue rápida y ordenada,2022,5,May,2022-05
+78,2022-05-12,Huevos,abarrotes,7.0,38.38,21.47,efectivo,si,1.0,210.98,la compra fue rápida y ordenada,2022,5,May,2022-05
+79,2022-05-13,Fideos,abarrotes,7.0,44.77,3.06,efectivo,si,1.0,173.6,mala atención del personal,2022,5,May,2022-05
+80,2022-05-15,Atún,abarrotes,2.0,39.47,23.15,tarjeta,no,2.0,60.67,ofertas interesantes y personal amable,2022,5,May,2022-05
+81,2022-05-17,Detergente,limpieza,12.0,40.21,0.65,tarjeta,no,5.0,479.38,excelente atención y encontré todo lo que necesitaba,2022,5,May,2022-05
+83,2022-05-20,Leche,lácteos,5.0,18.97,1.92,yape,no,1.0,93.03,la compra fue rápida y ordenada,2022,5,May,2022-05
+85,2022-05-24,Atún,abarrotes,7.0,27.87,0.1,yape,no,3.0,55.68,mala atención del personal,2022,5,May,2022-05
+86,2022-05-25,Pan,panadería,10.0,42.34,11.13,plin,si,5.0,376.28,buenos precios y productos frescos,2022,5,May,2022-05
+87,2022-05-27,Arroz,abarrotes,11.0,16.49,8.36,tarjeta,no,3.0,166.23,excelente atención y encontré todo lo que necesitaba,2022,5,May,2022-05
+88,2022-05-29,Aceite,abarrotes,7.0,25.73,4.15,efectivo,no,3.0,246.62,muy buena variedad de productos,2022,5,May,2022-05
+89,2022-05-31,Pan,panadería,5.0,14.39,11.28,efectivo,no,1.0,63.83,desconocido,2022,5,May,2022-05
+90,2022-06-01,Gaseosa,bebidas,1.0,8.89,10.06,tarjeta,si,2.0,8.0,buenos precios y productos frescos,2022,6,June,2022-06
+91,2022-06-03,Azúcar,abarrotes,13.0,9.99,19.19,yape,no,3.0,104.95,ofertas interesantes y personal amable,2022,6,June,2022-06
+92,2022-06-05,Gaseosa,bebidas,5.0,4.02,22.33,tarjeta,si,2.0,15.61,ofertas interesantes y personal amable,2022,6,June,2022-06
+93,2022-06-06,Gaseosa,bebidas,12.0,42.79,16.31,tarjeta,no,4.0,429.73,mucha cola para pagar,2022,6,June,2022-06
+94,2022-06-08,Aceite,abarrotes,3.0,19.03,3.11,tarjeta,si,5.0,55.314501,ofertas interesantes y personal amable,2022,6,June,2022-06
+95,2022-06-10,Gaseosa,bebidas,3.0,37.78,0.0,plin,si,3.0,104.98,ofertas interesantes y personal amable,2022,6,June,2022-06
+96,2022-06-11,Huevos,abarrotes,11.0,31.14,22.83,plin,si,2.0,264.34,muy buena variedad de productos,2022,6,June,2022-06
+97,2022-06-13,Huevos,abarrotes,14.0,23.009999999999998,0.0,efectivo,desconocido,1.0,134.84,muy buena variedad de productos,2022,6,June,2022-06
+98,2022-06-15,Atún,abarrotes,13.0,9.13,10.17,efectivo,si,4.0,106.62,muy buena variedad de productos,2022,6,June,2022-06
+99,2022-06-17,Atún,abarrotes,11.0,36.82,23.56,efectivo,si,3.0,309.6,faltaban varios productos básicos,2022,6,June,2022-06
+100,2022-06-18,Desconocido,desconocido,4.0,13.01,23.77,plin,no,2.0,39.67,excelente atención y encontré todo lo que necesitaba,2022,6,June,2022-06
+101,2022-06-20,Gaseosa,bebidas,13.0,41.23,10.28,tarjeta,desconocido,2.0,480.89,buenos precios y productos frescos,2022,6,June,2022-06
+102,2022-06-22,Leche,lácteos,10.0,7.59,16.68,plin,no,1.0,63.24,muy buena variedad de productos,2022,6,June,2022-06
+104,2022-06-25,Arroz,abarrotes,2.0,36.93,18.84,yape,no,4.0,59.944776,desconocido,2022,6,June,2022-06
+105,2022-06-27,Pan,panadería,13.0,11.73,0.79,tarjeta,si,2.0,151.29,la compra fue rápida y ordenada,2022,6,June,2022-06
+106,2022-06-28,Desconocido,desconocido,4.0,13.52,3.6,tarjeta,no,1.0,52.13,excelente atención y encontré todo lo que necesitaba,2022,6,June,2022-06
+107,2022-06-30,Pan,panadería,11.0,43.46,15.35,efectivo,si,3.0,404.68,había productos vencidos en el estante,2022,6,June,2022-06
+108,2022-07-02,Atún,abarrotes,2.0,23.009999999999998,5.81,yape,si,4.0,24.51,ofertas interesantes y personal amable,2022,7,July,2022-07
+109,2022-07-04,Azúcar,abarrotes,4.0,20.2,16.65,tarjeta,no,2.0,67.35,había productos vencidos en el estante,2022,7,July,2022-07
+110,2022-07-05,Pan,panadería,4.0,20.31,8.78,desconocido,no,2.0,74.107128,los precios no coincidían con la etiqueta,2022,7,July,2022-07
+111,2022-07-07,Huevos,abarrotes,4.0,12.51,22.17,efectivo,si,1.0,38.95,buenos precios y productos frescos,2022,7,July,2022-07
+112,2022-07-09,Pan,panadería,10.0,35.25,20.48,plin,no,4.0,280.31,los precios no coincidían con la etiqueta,2022,7,July,2022-07
+113,2022-07-10,Fideos,abarrotes,13.0,35.08,12.32,plin,desconocido,5.0,399.86,ofertas interesantes y personal amable,2022,7,July,2022-07
+114,2022-07-12,Azúcar,abarrotes,13.0,17.96,19.32,tarjeta,si,4.0,188.37,muy buena variedad de productos,2022,7,July,2022-07
+115,2022-07-14,Fideos,abarrotes,7.0,23.009999999999998,6.78,yape,si,3.0,150.149454,faltaban varios productos básicos,2022,7,July,2022-07
+116,2022-07-16,Fideos,abarrotes,3.0,10.77,12.36,plin,no,4.0,28.32,había productos vencidos en el estante,2022,7,July,2022-07
+117,2022-07-17,Arroz,abarrotes,14.0,1.69,4.94,yape,si,2.0,22.49,ofertas interesantes y personal amable,2022,7,July,2022-07
+118,2022-07-19,Leche,lácteos,8.0,26.35,21.52,yape,si,3.0,165.44,buenos precios y productos frescos,2022,7,July,2022-07
+122,2022-07-26,Desconocido,desconocido,14.0,24.07,23.99,yape,no,5.0,256.14,había productos vencidos en el estante,2022,7,July,2022-07
+123,2022-07-27,Atún,abarrotes,9.0,36.73,5.71,yape,no,5.0,311.69,había productos vencidos en el estante,2022,7,July,2022-07
+124,2022-07-29,Azúcar,abarrotes,9.0,5.37,23.3,yape,no,3.0,37.07,los precios no coincidían con la etiqueta,2022,7,July,2022-07
+125,2022-07-31,Gaseosa,bebidas,11.0,18.69,14.28,efectivo,no,1.0,176.23,faltaban varios productos básicos,2022,7,July,2022-07
+127,2022-08-03,Arroz,abarrotes,5.0,23.009999999999998,14.01,plin,si,5.0,75.93,mucha cola para pagar,2022,8,August,2022-08
+129,2022-08-07,Fideos,desconocido,1.0,10.0,7.21,tarjeta,si,1.0,9.28,mala atención del personal,2022,8,August,2022-08
+130,2022-08-08,Atún,abarrotes,5.0,19.34,6.03,plin,si,1.0,90.87,ofertas interesantes y personal amable,2022,8,August,2022-08
+131,2022-08-10,Fideos,abarrotes,11.0,22.35,2.06,tarjeta,si,3.0,240.79,había productos vencidos en el estante,2022,8,August,2022-08
+132,2022-08-12,Fideos,abarrotes,14.0,38.99,0.0,plin,no,4.0,545.86,buenos precios y productos frescos,2022,8,August,2022-08
+133,2022-08-14,Arroz,abarrotes,8.0,29.44,22.19,plin,no,5.0,183.26,buenos precios y productos frescos,2022,8,August,2022-08
+134,2022-08-15,Fideos,abarrotes,6.0,31.53,15.75,plin,si,4.0,159.38,la compra fue rápida y ordenada,2022,8,August,2022-08
+135,2022-08-17,Pan,panadería,7.0,44.26,13.02,efectivo,no,2.0,269.48,buenos precios y productos frescos,2022,8,August,2022-08
+136,2022-08-19,Aceite,abarrotes,10.0,19.42,10.71,tarjeta,no,1.0,173.4,muy buena variedad de productos,2022,8,August,2022-08
+139,2022-08-24,Aceite,abarrotes,8.0,12.2,20.57,efectivo,no,5.0,77.52,mucha cola para pagar,2022,8,August,2022-08
+140,2022-08-25,Azúcar,abarrotes,6.0,23.009999999999998,4.96,tarjeta,si,3.0,189.6,excelente atención y encontré todo lo que necesitaba,2022,8,August,2022-08
+141,2022-08-27,Detergente,limpieza,10.0,23.009999999999998,17.92,efectivo,no,3.0,281.7,faltaban varios productos básicos,2022,8,August,2022-08
+142,2022-08-29,Huevos,abarrotes,13.0,5.75,19.0,plin,desconocido,2.0,60.54750000000001,la compra fue rápida y ordenada,2022,8,August,2022-08
+143,2022-08-31,Huevos,abarrotes,14.0,21.87,14.37,plin,si,1.0,262.181934,ofertas interesantes y personal amable,2022,8,August,2022-08
+144,2022-09-01,Azúcar,abarrotes,9.0,10.22,0.0,efectivo,no,5.0,72.14,la compra fue rápida y ordenada,2022,9,September,2022-09
+145,2022-09-03,Detergente,limpieza,7.0,9.56,7.28,efectivo,no,5.0,53.18,muy buena variedad de productos,2022,9,September,2022-09
+146,2022-09-05,Gaseosa,bebidas,7.0,21.68,22.04,desconocido,desconocido,1.0,118.31,excelente!!!,2022,9,September,2022-09
+147,2022-09-06,Arroz,abarrotes,3.0,23.009999999999998,18.24,plin,no,4.0,34.56,mala atención del personal,2022,9,September,2022-09
+148,2022-09-08,Huevos,abarrotes,14.0,23.009999999999998,0.0,tarjeta,si,2.0,404.81,ofertas interesantes y personal amable,2022,9,September,2022-09
+149,2022-09-10,Gaseosa,bebidas,12.0,40.98,16.61,tarjeta,si,3.0,410.08,desconocido,2022,9,September,2022-09
+150,2022-09-12,Arroz,abarrotes,12.0,36.42,21.16,tarjeta,si,5.0,344.56,la compra fue rápida y ordenada,2022,9,September,2022-09
+151,2022-09-13,Gaseosa,bebidas,5.0,13.07,24.83,desconocido,no,5.0,49.123594999999995,había productos vencidos en el estante,2022,9,September,2022-09
+152,2022-09-15,Huevos,abarrotes,5.0,13.42,10.5,tarjeta,si,1.0,60.05,faltaban varios productos básicos,2022,9,September,2022-09
+153,2022-09-17,Detergente,limpieza,12.0,23.009999999999998,20.35,efectivo,si,2.0,120.24,buenos precios y productos frescos,2022,9,September,2022-09
+154,2022-09-18,Huevos,abarrotes,8.0,7.37,18.61,plin,no,3.0,47.99,muy buena variedad de productos,2022,9,September,2022-09
+155,2022-09-20,Azúcar,abarrotes,10.0,42.56,11.32,tarjeta,si,5.0,377.42,la compra fue rápida y ordenada,2022,9,September,2022-09
+157,2022-09-23,Leche,lácteos,7.0,11.27,9.86,yape,si,5.0,71.11,los precios no coincidían con la etiqueta,2022,9,September,2022-09
+160,2022-09-29,Pan,panadería,5.0,3.03,5.64,efectivo,desconocido,1.0,14.3,los precios no coincidían con la etiqueta,2022,9,September,2022-09
+161,2022-09-30,Detergente,limpieza,12.0,8.54,21.02,desconocido,desconocido,4.0,80.94,la compra fue rápida y ordenada,2022,9,September,2022-09
+162,2022-10-02,Atún,abarrotes,4.0,29.31,9.91,plin,si,4.0,105.62,había productos vencidos en el estante,2022,10,October,2022-10
+163,2022-10-04,Azúcar,abarrotes,6.0,35.56,9.85,yape,si,4.0,192.34,faltaban varios productos básicos,2022,10,October,2022-10
+164,2022-10-05,Azúcar,abarrotes,13.0,10.68,6.15,plin,si,4.0,130.3,la compra fue rápida y ordenada,2022,10,October,2022-10
+165,2022-10-07,Azúcar,abarrotes,14.0,41.41,12.29,yape,si,5.0,508.49,los precios no coincidían con la etiqueta,2022,10,October,2022-10
+166,2022-10-09,Gaseosa,bebidas,13.0,38.52,0.0,tarjeta,no,5.0,399.86,faltaban varios productos básicos,2022,10,October,2022-10
+167,2022-10-10,Aceite,abarrotes,5.0,38.4,0.0,yape,si,4.0,149.03,mala atención del personal,2022,10,October,2022-10
+168,2022-10-12,Leche,lácteos,12.0,11.4,1.75,yape,si,5.0,134.41,la compra fue rápida y ordenada,2022,10,October,2022-10
+169,2022-10-14,Aceite,abarrotes,14.0,3.7,14.37,tarjeta,si,4.0,44.36,la compra fue rápida y ordenada,2022,10,October,2022-10
+170,2022-10-16,Desconocido,desconocido,14.0,39.23,11.68,plin,no,4.0,485.07,la compra fue rápida y ordenada,2022,10,October,2022-10
+171,2022-10-17,Leche,lácteos,1.0,14.8,15.36,plin,no,3.0,12.53,desconocido,2022,10,October,2022-10
+172,2022-10-19,Arroz,abarrotes,11.0,28.42,11.18,plin,no,4.0,277.67,mala atención del personal,2022,10,October,2022-10
+173,2022-10-21,Pan,panadería,7.0,34.56,9.97,plin,si,1.0,435.6,había productos vencidos en el estante,2022,10,October,2022-10
+175,2022-10-24,Atún,abarrotes,4.0,35.47,14.55,efectivo,si,3.0,121.23646000000001,excelente atención y encontré todo lo que necesitaba,2022,10,October,2022-10
+177,2022-10-28,Pan,panadería,2.0,33.18,11.8,yape,si,1.0,58.53,la compra fue rápida y ordenada,2022,10,October,2022-10
+179,2022-10-31,Detergente,limpieza,9.0,39.64,18.64,tarjeta,no,1.0,290.26,la compra fue rápida y ordenada,2022,10,October,2022-10
+180,2022-11-02,Fideos,abarrotes,7.0,24.44,8.53,tarjeta,si,5.0,156.49,la compra fue rápida y ordenada,2022,11,November,2022-11
+182,2022-11-05,Leche,lácteos,4.0,37.19,0.0,plin,si,2.0,117.01,excelente atención y encontré todo lo que necesitaba,2022,11,November,2022-11
+184,2022-11-08,Atún,abarrotes,10.0,23.009999999999998,14.57,tarjeta,no,3.0,119.77,muy buena variedad de productos,2022,11,November,2022-11
+186,2022-11-12,Azúcar,abarrotes,5.0,11.87,18.48,plin,no,4.0,48.38,los precios no coincidían con la etiqueta,2022,11,November,2022-11
+188,2022-11-15,Aceite,abarrotes,4.0,23.48,16.79,efectivo,si,2.0,78.15,mala atención del personal,2022,11,November,2022-11
+189,2022-11-17,Huevos,abarrotes,7.0,26.85,6.38,tarjeta,si,3.0,175.96,ofertas interesantes y personal amable,2022,11,November,2022-11
+190,2022-11-19,Aceite,abarrotes,9.0,18.69,12.78,efectivo,si,2.0,146.71,mucha cola para pagar,2022,11,November,2022-11
+191,2022-11-20,Atún,abarrotes,6.0,35.73,23.72,tarjeta,si,3.0,163.53,muy buena variedad de productos,2022,11,November,2022-11
+192,2022-11-22,Atún,abarrotes,6.0,41.22,9.53,plin,si,5.0,223.75,la compra fue rápida y ordenada,2022,11,November,2022-11
+193,2022-11-24,Atún,abarrotes,5.0,12.23,21.89,yape,si,5.0,47.76,ofertas interesantes y personal amable,2022,11,November,2022-11
+194,2022-11-26,Aceite,abarrotes,4.0,33.54,24.67,plin,no,3.0,101.06,buenos precios y productos frescos,2022,11,November,2022-11
+196,2022-11-29,Arroz,abarrotes,12.0,24.25,4.15,plin,no,1.0,278.92,mucha cola para pagar,2022,11,November,2022-11
+197,2022-12-01,Aceite,abarrotes,5.0,9.7,0.0,tarjeta,si,5.0,38.56,mala atención del personal,2022,12,December,2022-12
+198,2022-12-02,Leche,lácteos,13.0,36.09,0.8,plin,no,2.0,465.42,buenos precios y productos frescos,2022,12,December,2022-12
+199,2022-12-04,Aceite,abarrotes,8.0,43.29,9.83,efectivo,desconocido,1.0,312.28,la compra fue rápida y ordenada,2022,12,December,2022-12
+200,2022-12-06,Detergente,limpieza,3.0,32.9,21.77,tarjeta,no,2.0,77.21,ofertas interesantes y personal amable,2022,12,December,2022-12
+201,2022-12-07,Aceite,abarrotes,6.0,41.43,17.22,yape,si,3.0,205.77,ofertas interesantes y personal amable,2022,12,December,2022-12
+202,2022-12-09,Detergente,limpieza,1.0,44.31,13.32,tarjeta,desconocido,4.0,38.41,excelente atención y encontré todo lo que necesitaba,2022,12,December,2022-12
+203,2022-12-11,Desconocido,desconocido,1.0,16.81,9.7,tarjeta,no,2.0,15.18,la compra fue rápida y ordenada,2022,12,December,2022-12
+204,2022-12-13,Atún,abarrotes,5.0,29.26,20.31,efectivo,no,5.0,116.59,muy buena variedad de productos,2022,12,December,2022-12
+205,2022-12-14,Azúcar,abarrotes,7.0,22.12,0.0,efectivo,si,4.0,127.37,muy buena variedad de productos,2022,12,December,2022-12
+208,2022-12-19,Desconocido,desconocido,12.0,19.44,5.75,efectivo,si,4.0,219.87,faltaban varios productos básicos,2022,12,December,2022-12
+210,2022-12-23,Pan,desconocido,7.0,13.86,16.07,plin,no,4.0,23.27,buenos precios y productos frescos,2022,12,December,2022-12
+212,2022-12-26,Pan,panadería,11.0,18.15,6.18,desconocido,si,2.0,187.31,había productos vencidos en el estante,2022,12,December,2022-12
+213,2022-12-28,Pan,panadería,9.0,23.009999999999998,6.24,yape,no,5.0,372.39,buenos precios y productos frescos,2022,12,December,2022-12
+214,2022-12-30,Azúcar,abarrotes,7.0,39.93,3.49,efectivo,no,5.0,77.07,excelente atención y encontré todo lo que necesitaba,2022,12,December,2022-12
+215,2022-12-31,Pan,panadería,7.0,14.61,21.51,efectivo,si,5.0,22.93,excelente atención y encontré todo lo que necesitaba,2022,12,December,2022-12
+216,2023-01-02,Huevos,abarrotes,6.0,35.0,5.66,efectivo,no,2.0,198.11,excelente atención y encontré todo lo que necesitaba,2023,1,January,2023-01
+217,2023-01-04,Arroz,abarrotes,7.0,16.15,12.58,yape,no,4.0,98.83,buenos precios y productos frescos,2023,1,January,2023-01
+219,2023-01-07,Azúcar,abarrotes,5.0,23.009999999999998,0.3,tarjeta,si,1.0,114.70484999999998,la compra fue rápida y ordenada,2023,1,January,2023-01
+220,2023-01-09,Detergente,limpieza,3.0,37.59,13.91,efectivo,no,3.0,97.08,ofertas interesantes y personal amable,2023,1,January,2023-01
+221,2023-01-11,Leche,lácteos,14.0,2.56,12.81,tarjeta,si,1.0,31.25,muy buena variedad de productos,2023,1,January,2023-01
+222,2023-01-12,Azúcar,abarrotes,3.0,11.08,20.19,yape,si,5.0,26.53,buenos precios y productos frescos,2023,1,January,2023-01
+223,2023-01-14,Pan,panadería,1.0,32.47,8.88,tarjeta,no,3.0,29.59,muy buena variedad de productos,2023,1,January,2023-01
+224,2023-01-16,Huevos,abarrotes,6.0,26.01,10.26,tarjeta,no,2.0,140.05,muy buena variedad de productos,2023,1,January,2023-01
+225,2023-01-17,Pan,panadería,7.0,23.06,4.2,yape,no,1.0,132.55,excelente atención y encontré todo lo que necesitaba,2023,1,January,2023-01
+226,2023-01-19,Aceite,abarrotes,9.0,3.9,18.52,yape,no,4.0,28.6,la compra fue rápida y ordenada,2023,1,January,2023-01
+227,2023-01-21,Desconocido,desconocido,13.0,16.65,19.62,desconocido,no,3.0,173.98,ofertas interesantes y personal amable,2023,1,January,2023-01
+229,2023-01-24,Fideos,abarrotes,5.0,2.84,0.0,plin,si,5.0,12.8,excelente atención y encontré todo lo que necesitaba,2023,1,January,2023-01
+230,2023-01-26,Leche,lácteos,14.0,18.74,22.32,yape,no,2.0,203.8,muy buena variedad de productos,2023,1,January,2023-01
+231,2023-01-28,Azúcar,abarrotes,9.0,42.61,0.07,yape,si,3.0,383.22,ofertas interesantes y personal amable,2023,1,January,2023-01
+232,2023-01-29,Gaseosa,bebidas,1.0,3.71,7.47,yape,si,2.0,3.43,excelente atención y encontré todo lo que necesitaba,2023,1,January,2023-01
+233,2023-01-31,Arroz,abarrotes,14.0,34.11,0.0,tarjeta,no,3.0,411.26,muy buena variedad de productos,2023,1,January,2023-01
+234,2023-02-02,Pan,panadería,2.0,12.71,8.35,tarjeta,no,1.0,23.3,los precios no coincidían con la etiqueta,2023,2,February,2023-02
+235,2023-02-03,Azúcar,abarrotes,9.0,39.2,6.8,tarjeta,si,3.0,328.8096,muy buena variedad de productos,2023,2,February,2023-02
+236,2023-02-05,Pan,panadería,12.0,33.95,11.5,efectivo,no,3.0,360.55,buenos precios y productos frescos,2023,2,February,2023-02
+237,2023-02-07,Atún,abarrotes,4.0,40.03,4.54,plin,no,3.0,152.85,muy buena variedad de productos,2023,2,February,2023-02
+238,2023-02-09,Azúcar,abarrotes,4.0,10.89,13.24,tarjeta,si,3.0,37.79,faltaban varios productos básicos,2023,2,February,2023-02
+239,2023-02-10,Aceite,abarrotes,7.0,24.61,17.67,tarjeta,no,4.0,141.83,había productos vencidos en el estante,2023,2,February,2023-02
+240,2023-02-12,Atún,abarrotes,13.0,23.009999999999998,14.38,plin,si,3.0,394.02,la compra fue rápida y ordenada,2023,2,February,2023-02
+241,2023-02-14,Leche,lácteos,4.0,12.19,2.33,yape,no,3.0,47.62,la compra fue rápida y ordenada,2023,2,February,2023-02
+242,2023-02-15,Fideos,abarrotes,10.0,23.009999999999998,21.11,yape,no,2.0,91.04,buenos precios y productos frescos,2023,2,February,2023-02
+244,2023-02-19,Atún,abarrotes,7.0,43.2,19.12,tarjeta,no,5.0,69.88,mala atención del personal,2023,2,February,2023-02
+245,2023-02-20,Atún,abarrotes,10.0,32.39,9.01,yape,no,4.0,294.72,faltaban varios productos básicos,2023,2,February,2023-02
+246,2023-02-22,Arroz,abarrotes,12.0,29.15,19.57,tarjeta,no,4.0,281.34,buenos precios y productos frescos,2023,2,February,2023-02
+247,2023-02-24,Pan,panadería,9.0,23.009999999999998,5.16,efectivo,si,3.0,289.02,muy buena variedad de productos,2023,2,February,2023-02
+248,2023-02-26,Azúcar,abarrotes,3.0,24.63,4.67,plin,si,5.0,70.44,la compra fue rápida y ordenada,2023,2,February,2023-02
+249,2023-02-27,Pan,panadería,3.0,23.009999999999998,12.43,tarjeta,si,3.0,58.35,desconocido,2023,2,February,2023-02
+250,2023-03-01,Arroz,abarrotes,6.0,21.05,0.82,yape,no,1.0,125.26,desconocido,2023,3,March,2023-03
+251,2023-03-03,Leche,lácteos,8.0,29.36,5.63,tarjeta,no,4.0,221.66,muy buena variedad de productos,2023,3,March,2023-03
+252,2023-03-04,Azúcar,abarrotes,8.0,10.27,18.1,yape,desconocido,4.0,67.29,la compra fue rápida y ordenada,2023,3,March,2023-03
+253,2023-03-06,Leche,lácteos,4.0,40.13,20.93,plin,si,2.0,126.92,ofertas interesantes y personal amable,2023,3,March,2023-03
+254,2023-03-08,Aceite,abarrotes,8.0,36.81,2.02,desconocido,no,3.0,288.53,había productos vencidos en el estante,2023,3,March,2023-03
+255,2023-03-09,Atún,abarrotes,5.0,16.71,22.05,desconocido,no,5.0,65.12722500000001,mala atención del personal,2023,3,March,2023-03
+256,2023-03-11,Desconocido,desconocido,10.0,26.67,0.0,yape,desconocido,3.0,213.52,excelente atención y encontré todo lo que necesitaba,2023,3,March,2023-03
+257,2023-03-13,Atún,abarrotes,12.0,7.63,21.74,plin,no,3.0,71.65,buenos precios y productos frescos,2023,3,March,2023-03
+258,2023-03-15,Leche,lácteos,10.0,43.8,17.46,desconocido,no,1.0,361.53,buenos precios y productos frescos,2023,3,March,2023-03
+259,2023-03-16,Leche,lácteos,1.0,40.78,16.85,efectivo,desconocido,1.0,33.91,excelente atención y encontré todo lo que necesitaba,2023,3,March,2023-03
+260,2023-03-18,Desconocido,desconocido,14.0,41.6,13.13,efectivo,no,2.0,505.93,los precios no coincidían con la etiqueta,2023,3,March,2023-03
+261,2023-03-20,Pan,panadería,1.0,15.95,16.32,efectivo,no,2.0,13.35,buenos precios y productos frescos,2023,3,March,2023-03
+262,2023-03-21,Leche,lácteos,14.0,8.86,22.98,efectivo,no,2.0,95.54,desconocido,2023,3,March,2023-03
+264,2023-03-25,Desconocido,desconocido,8.0,5.42,7.89,plin,no,3.0,39.94,muy buena variedad de productos,2023,3,March,2023-03
+265,2023-03-27,Detergente,limpieza,2.0,6.72,1.81,yape,si,4.0,13.2,buenos precios y productos frescos,2023,3,March,2023-03
+267,2023-03-30,Azúcar,abarrotes,10.0,23.009999999999998,11.13,plin,si,3.0,396.0,desconocido,2023,3,March,2023-03
+268,2023-04-01,Aceite,abarrotes,11.0,4.72,16.88,tarjeta,no,2.0,43.16,excelente atención y encontré todo lo que necesitaba,2023,4,April,2023-04
+271,2023-04-06,Huevos,abarrotes,5.0,23.009999999999998,4.04,tarjeta,si,5.0,128.3,los precios no coincidían con la etiqueta,2023,4,April,2023-04
+272,2023-04-07,Arroz,abarrotes,5.0,35.19,19.99,efectivo,si,1.0,140.78,excelente atención y encontré todo lo que necesitaba,2023,4,April,2023-04
+273,2023-04-09,Desconocido,desconocido,5.0,28.94,22.19,yape,si,5.0,112.59107000000002,desconocido,2023,4,April,2023-04
+276,2023-04-14,Azúcar,abarrotes,7.0,24.21,8.87,efectivo,no,3.0,132.38,desconocido,2023,4,April,2023-04
+277,2023-04-16,Azúcar,abarrotes,3.0,32.5,16.21,tarjeta,no,3.0,81.7,excelente atención y encontré todo lo que necesitaba,2023,4,April,2023-04
+278,2023-04-18,Pan,panadería,7.0,20.96,12.85,plin,no,1.0,18.27,ofertas interesantes y personal amable,2023,4,April,2023-04
+279,2023-04-19,Arroz,abarrotes,6.0,23.009999999999998,6.49,yape,si,5.0,92.86,había productos vencidos en el estante,2023,4,April,2023-04
+281,2023-04-23,Huevos,abarrotes,11.0,8.88,2.92,desconocido,no,3.0,94.83,desconocido,2023,4,April,2023-04
+282,2023-04-25,Azúcar,abarrotes,5.0,36.15,2.58,tarjeta,desconocido,2.0,176.09,excelente atención y encontré todo lo que necesitaba,2023,4,April,2023-04
+283,2023-04-26,Atún,abarrotes,5.0,12.84,15.94,yape,si,1.0,53.97,buenos precios y productos frescos,2023,4,April,2023-04
+284,2023-04-28,Azúcar,abarrotes,12.0,23.009999999999998,8.79,efectivo,no,1.0,89.53,mala atención del personal,2023,4,April,2023-04
+285,2023-04-30,Azúcar,abarrotes,10.0,12.22,5.42,efectivo,no,1.0,115.58,excelente atención y encontré todo lo que necesitaba,2023,4,April,2023-04
+286,2023-05-01,Detergente,limpieza,12.0,38.13,17.3,plin,si,3.0,378.4,excelente atención y encontré todo lo que necesitaba,2023,5,May,2023-05
+287,2023-05-03,Leche,lácteos,13.0,15.86,17.17,yape,si,3.0,170.78,mala atención del personal,2023,5,May,2023-05
+288,2023-05-05,Fideos,abarrotes,12.0,31.34,13.48,efectivo,si,1.0,325.38,ofertas interesantes y personal amable,2023,5,May,2023-05
+289,2023-05-06,Fideos,abarrotes,14.0,38.75,23.37,tarjeta,no,2.0,415.72,muy buena variedad de productos,2023,5,May,2023-05
+290,2023-05-08,Azúcar,abarrotes,6.0,4.88,9.64,efectivo,si,2.0,26.46,la compra fue rápida y ordenada,2023,5,May,2023-05
+291,2023-05-10,Gaseosa,bebidas,6.0,34.78,20.9,yape,si,3.0,165.07,había productos vencidos en el estante,2023,5,May,2023-05
+292,2023-05-12,Huevos,abarrotes,5.0,14.88,1.88,plin,si,5.0,73.0,mucha cola para pagar,2023,5,May,2023-05
+293,2023-05-13,Detergente,limpieza,4.0,10.92,18.5,tarjeta,si,4.0,35.6,excelente atención y encontré todo lo que necesitaba,2023,5,May,2023-05
+294,2023-05-15,Aceite,abarrotes,11.0,31.47,24.71,tarjeta,si,5.0,260.63,excelente atención y encontré todo lo que necesitaba,2023,5,May,2023-05
+295,2023-05-17,Fideos,abarrotes,11.0,23.009999999999998,21.16,efectivo,desconocido,1.0,356.26,la compra fue rápida y ordenada,2023,5,May,2023-05
+296,2023-05-18,Fideos,abarrotes,12.0,14.33,14.49,tarjeta,no,2.0,147.04,mucha cola para pagar,2023,5,May,2023-05
+297,2023-05-20,Gaseosa,bebidas,3.0,26.24,15.67,tarjeta,no,4.0,66.38,faltaban varios productos básicos,2023,5,May,2023-05
+298,2023-05-22,Azúcar,abarrotes,7.0,14.11,8.83,desconocido,si,2.0,90.05,la compra fue rápida y ordenada,2023,5,May,2023-05
+299,2023-05-24,Huevos,abarrotes,4.0,25.61,16.99,tarjeta,si,5.0,85.04,ofertas interesantes y personal amable,2023,5,May,2023-05
+300,2023-05-25,Arroz,abarrotes,13.0,28.55,19.26,plin,si,3.0,299.67,ofertas interesantes y personal amable,2023,5,May,2023-05
+301,2023-05-27,Aceite,abarrotes,4.0,28.05,24.96,plin,no,2.0,84.19,excelente atención y encontré todo lo que necesitaba,2023,5,May,2023-05
+302,2023-05-29,Gaseosa,bebidas,3.0,28.62,12.31,tarjeta,si,5.0,75.29,desconocido,2023,5,May,2023-05
+303,2023-05-30,Arroz,abarrotes,8.0,7.38,1.53,plin,si,3.0,58.14,ofertas interesantes y personal amable,2023,5,May,2023-05
+304,2023-06-01,Gaseosa,bebidas,13.0,31.67,14.9,efectivo,no,5.0,350.37,excelente atención y encontré todo lo que necesitaba,2023,6,June,2023-06
+306,2023-06-04,Leche,lácteos,2.0,31.19,6.12,tarjeta,si,1.0,58.56,desconocido,2023,6,June,2023-06
+307,2023-06-06,Aceite,abarrotes,5.0,4.72,8.22,yape,si,4.0,21.66,faltaban varios productos básicos,2023,6,June,2023-06
+308,2023-06-08,Fideos,abarrotes,3.0,20.94,18.28,efectivo,si,1.0,51.34,la compra fue rápida y ordenada,2023,6,June,2023-06
+309,2023-06-10,Aceite,abarrotes,5.0,19.29,0.0,plin,no,4.0,92.01,desconocido,2023,6,June,2023-06
+310,2023-06-11,Leche,lácteos,8.0,5.27,4.14,tarjeta,no,3.0,40.41,excelente atención y encontré todo lo que necesitaba,2023,6,June,2023-06
+311,2023-06-13,Atún,abarrotes,4.0,23.009999999999998,1.12,plin,si,3.0,44.18,desconocido,2023,6,June,2023-06
+312,2023-06-15,Atún,abarrotes,1.0,20.68,21.83,efectivo,si,5.0,16.17,la compra fue rápida y ordenada,2023,6,June,2023-06
+313,2023-06-16,Leche,lácteos,8.0,33.82,17.34,yape,desconocido,3.0,223.64,desconocido,2023,6,June,2023-06
+314,2023-06-18,Huevos,abarrotes,1.0,11.81,1.0,efectivo,no,5.0,11.69,excelente atención y encontré todo lo que necesitaba,2023,6,June,2023-06
+315,2023-06-20,Huevos,abarrotes,4.0,37.59,0.71,plin,si,1.0,149.29,la compra fue rápida y ordenada,2023,6,June,2023-06
+316,2023-06-21,Atún,abarrotes,1.0,25.24,13.97,tarjeta,si,1.0,21.71,los precios no coincidían con la etiqueta,2023,6,June,2023-06
+318,2023-06-25,Pan,panadería,7.0,22.06,0.0,plin,si,3.0,131.38,ofertas interesantes y personal amable,2023,6,June,2023-06
+319,2023-06-27,Detergente,limpieza,12.0,23.21,10.87,yape,si,3.0,248.24,muy buena variedad de productos,2023,6,June,2023-06
+320,2023-06-28,Pan,panadería,11.0,28.46,0.0,efectivo,desconocido,1.0,240.81,mala atención del personal,2023,6,June,2023-06
+321,2023-06-30,Desconocido,desconocido,2.0,23.009999999999998,7.2,efectivo,no,2.0,77.71,desconocido,2023,6,June,2023-06
+322,2023-07-02,Desconocido,desconocido,1.0,22.89,16.98,efectivo,desconocido,4.0,19.0,excelente atención y encontré todo lo que necesitaba,2023,7,July,2023-07
+323,2023-07-03,Atún,abarrotes,5.0,24.5,1.35,plin,no,5.0,120.85,ofertas interesantes y personal amable,2023,7,July,2023-07
+325,2023-07-07,Detergente,limpieza,11.0,33.58,24.52,tarjeta,no,3.0,278.81,ofertas interesantes y personal amable,2023,7,July,2023-07
+326,2023-07-09,Huevos,abarrotes,12.0,23.009999999999998,18.48,plin,no,3.0,45.29,muy buena variedad de productos,2023,7,July,2023-07
+327,2023-07-10,Huevos,abarrotes,5.0,23.93,11.63,efectivo,si,1.0,105.73,faltaban varios productos básicos,2023,7,July,2023-07
+328,2023-07-12,Arroz,abarrotes,7.0,22.45,0.0,yape,si,3.0,63.65,mucha cola para pagar,2023,7,July,2023-07
+329,2023-07-14,Leche,lácteos,7.0,41.59,20.31,tarjeta,si,3.0,33.14,mucha cola para pagar,2023,7,July,2023-07
+330,2023-07-15,Fideos,abarrotes,3.0,22.97,18.41,efectivo,no,3.0,56.22,la compra fue rápida y ordenada,2023,7,July,2023-07
+331,2023-07-17,Fideos,abarrotes,1.0,21.87,5.55,tarjeta,si,1.0,20.66,mala atención del personal,2023,7,July,2023-07
+332,2023-07-19,Aceite,abarrotes,7.0,43.36,11.28,tarjeta,si,3.0,500.1,mala atención del personal,2023,7,July,2023-07
+333,2023-07-20,Aceite,abarrotes,4.0,21.1,11.57,tarjeta,no,4.0,74.63492000000001,la compra fue rápida y ordenada,2023,7,July,2023-07
+334,2023-07-22,Gaseosa,bebidas,12.0,23.009999999999998,20.66,efectivo,si,3.0,89.21,buenos precios y productos frescos,2023,7,July,2023-07
+335,2023-07-24,Azúcar,abarrotes,8.0,10.94,17.1,tarjeta,no,5.0,72.55,faltaban varios productos básicos,2023,7,July,2023-07
+336,2023-07-26,Gaseosa,bebidas,8.0,5.64,0.0,efectivo,si,2.0,45.12,había productos vencidos en el estante,2023,7,July,2023-07
+337,2023-07-27,Detergente,limpieza,7.0,1.52,16.25,plin,si,2.0,8.91,faltaban varios productos básicos,2023,7,July,2023-07
+338,2023-07-29,Aceite,abarrotes,12.0,20.29,6.76,tarjeta,no,5.0,227.02,los precios no coincidían con la etiqueta,2023,7,July,2023-07
+339,2023-07-31,Huevos,abarrotes,1.0,34.96,9.29,efectivo,no,4.0,31.71,la compra fue rápida y ordenada,2023,7,July,2023-07
+340,2023-08-01,Detergente,limpieza,2.0,33.41,1.14,yape,desconocido,2.0,66.06,muy buena variedad de productos,2023,8,August,2023-08
+341,2023-08-03,Atún,abarrotes,7.0,2.9,19.67,plin,no,4.0,13.98,buenos precios y productos frescos,2023,8,August,2023-08
+343,2023-08-07,Atún,abarrotes,8.0,23.009999999999998,10.96,plin,si,3.0,58.48,había productos vencidos en el estante,2023,8,August,2023-08
+344,2023-08-08,Desconocido,desconocido,7.0,42.44,6.13,yape,desconocido,2.0,438.22,había productos vencidos en el estante,2023,8,August,2023-08
+345,2023-08-10,Detergente,limpieza,9.0,23.009999999999998,5.24,yape,si,5.0,74.88,mala atención del personal,2023,8,August,2023-08
+346,2023-08-12,Huevos,abarrotes,4.0,28.76,14.7,tarjeta,no,1.0,98.13,buenos precios y productos frescos,2023,8,August,2023-08
+347,2023-08-13,Detergente,limpieza,5.0,15.69,5.81,efectivo,si,3.0,73.89,los precios no coincidían con la etiqueta,2023,8,August,2023-08
+348,2023-08-15,Detergente,limpieza,11.0,29.41,0.0,tarjeta,si,2.0,318.3,muy buena variedad de productos,2023,8,August,2023-08
+349,2023-08-17,Leche,lácteos,3.0,19.43,19.19,plin,no,1.0,47.1,desconocido,2023,8,August,2023-08
+350,2023-08-18,Leche,lácteos,7.0,23.009999999999998,9.41,plin,no,4.0,250.32,desconocido,2023,8,August,2023-08
+351,2023-08-20,Desconocido,desconocido,7.0,11.53,0.0,plin,si,3.0,83.47,la compra fue rápida y ordenada,2023,8,August,2023-08
+352,2023-08-22,Arroz,abarrotes,11.0,40.9,10.78,plin,no,1.0,401.4,desconocido,2023,8,August,2023-08
+353,2023-08-24,Huevos,abarrotes,11.0,23.26,0.0,tarjeta,si,1.0,203.72,los precios no coincidían con la etiqueta,2023,8,August,2023-08
+354,2023-08-25,Azúcar,abarrotes,7.0,34.39,8.02,tarjeta,no,1.0,221.42,buenos precios y productos frescos,2023,8,August,2023-08
+355,2023-08-27,Detergente,limpieza,5.0,38.46,18.95,plin,no,3.0,155.86,los precios no coincidían con la etiqueta,2023,8,August,2023-08
+356,2023-08-29,Detergente,limpieza,6.0,44.95,0.0,yape,no,3.0,206.35,buenos precios y productos frescos,2023,8,August,2023-08
+357,2023-08-30,Leche,lácteos,6.0,11.24,0.0,tarjeta,no,4.0,67.44,desconocido,2023,8,August,2023-08
+358,2023-09-01,Gaseosa,bebidas,4.0,13.98,10.79,tarjeta,no,1.0,49.89,buenos precios y productos frescos,2023,9,September,2023-09
+359,2023-09-03,Arroz,abarrotes,9.0,12.39,18.69,plin,no,4.0,90.67,ofertas interesantes y personal amable,2023,9,September,2023-09
+360,2023-09-04,Pan,panadería,3.0,12.93,11.45,efectivo,no,5.0,34.35,mala atención del personal,2023,9,September,2023-09
+361,2023-09-06,Gaseosa,bebidas,10.0,26.84,10.36,desconocido,si,4.0,240.59375999999997,excelente atención y encontré todo lo que necesitaba,2023,9,September,2023-09
+362,2023-09-08,Gaseosa,bebidas,11.0,44.72,13.13,yape,desconocido,5.0,427.33,faltaban varios productos básicos,2023,9,September,2023-09
+363,2023-09-10,Huevos,abarrotes,14.0,44.58,7.94,efectivo,no,5.0,574.56,buenos precios y productos frescos,2023,9,September,2023-09
+364,2023-09-11,Gaseosa,bebidas,2.0,24.41,2.61,efectivo,si,1.0,47.55,excelente atención y encontré todo lo que necesitaba,2023,9,September,2023-09
+365,2023-09-13,Leche,lácteos,11.0,29.3,10.37,plin,no,2.0,288.88,la compra fue rápida y ordenada,2023,9,September,2023-09
+366,2023-09-15,Fideos,abarrotes,2.0,38.91,3.1,tarjeta,no,4.0,75.41,excelente atención y encontré todo lo que necesitaba,2023,9,September,2023-09
+367,2023-09-16,Azúcar,abarrotes,5.0,42.08,10.26,yape,si,2.0,188.81,desconocido,2023,9,September,2023-09
+368,2023-09-18,Aceite,abarrotes,3.0,23.009999999999998,13.92,tarjeta,si,4.0,26.78,excelente atención y encontré todo lo que necesitaba,2023,9,September,2023-09
+369,2023-09-20,Arroz,abarrotes,3.0,24.49,23.27,efectivo,si,4.0,56.37,excelente atención y encontré todo lo que necesitaba,2023,9,September,2023-09
+370,2023-09-22,Pan,panadería,3.0,37.73,0.91,efectivo,no,5.0,112.16,muy buena variedad de productos,2023,9,September,2023-09
+371,2023-09-23,Aceite,abarrotes,1.0,14.69,15.54,plin,desconocido,2.0,12.41,la compra fue rápida y ordenada,2023,9,September,2023-09
+374,2023-09-28,Aceite,abarrotes,6.0,44.35,6.24,desconocido,si,2.0,249.5,buenos precios y productos frescos,2023,9,September,2023-09
+375,2023-09-30,Gaseosa,bebidas,10.0,40.92,0.0,tarjeta,no,2.0,397.09,ofertas interesantes y personal amable,2023,9,September,2023-09
+376,2023-10-02,Arroz,abarrotes,14.0,36.23,5.42,plin,si,3.0,479.73,muy buena variedad de productos,2023,10,October,2023-10
+377,2023-10-03,Pan,panadería,12.0,13.21,6.86,yape,si,3.0,147.65,buenos precios y productos frescos,2023,10,October,2023-10
+378,2023-10-05,Pan,panadería,2.0,15.46,10.03,yape,si,5.0,27.818724,los precios no coincidían con la etiqueta,2023,10,October,2023-10
+379,2023-10-07,Aceite,abarrotes,14.0,25.31,13.23,tarjeta,no,4.0,307.46,buenos precios y productos frescos,2023,10,October,2023-10
+380,2023-10-09,Huevos,abarrotes,10.0,23.009999999999998,0.02,tarjeta,si,4.0,258.85,mucha cola para pagar,2023,10,October,2023-10
+381,2023-10-10,Arroz,abarrotes,3.0,23.49,4.05,yape,si,1.0,67.62,faltaban varios productos básicos,2023,10,October,2023-10
+382,2023-10-12,Detergente,limpieza,7.0,29.2,2.34,efectivo,si,3.0,199.62,desconocido,2023,10,October,2023-10
+383,2023-10-14,Detergente,limpieza,13.0,23.009999999999998,13.74,efectivo,si,4.0,215.98,desconocido,2023,10,October,2023-10
+384,2023-10-15,Huevos,abarrotes,6.0,34.09,8.23,yape,desconocido,2.0,187.71,la compra fue rápida y ordenada,2023,10,October,2023-10
+385,2023-10-17,Arroz,abarrotes,3.0,16.01,13.71,yape,no,3.0,41.45,la compra fue rápida y ordenada,2023,10,October,2023-10
+386,2023-10-19,Leche,lácteos,13.0,15.88,5.55,efectivo,no,4.0,194.98,excelente atención y encontré todo lo que necesitaba,2023,10,October,2023-10
+387,2023-10-21,Arroz,abarrotes,14.0,7.03,0.61,plin,no,4.0,97.82,ofertas interesantes y personal amable,2023,10,October,2023-10
+388,2023-10-22,Gaseosa,bebidas,14.0,9.71,23.53,yape,no,5.0,103.95,excelente atención y encontré todo lo que necesitaba,2023,10,October,2023-10
+389,2023-10-24,Desconocido,desconocido,14.0,38.5,2.71,efectivo,no,3.0,524.39,excelente atención y encontré todo lo que necesitaba,2023,10,October,2023-10
+390,2023-10-26,Leche,lácteos,7.0,20.91,3.17,plin,si,3.0,263.21,buenos precios y productos frescos,2023,10,October,2023-10
+391,2023-10-27,Pan,panadería,7.0,11.41,3.66,plin,no,2.0,76.95,desconocido,2023,10,October,2023-10
+392,2023-10-29,Desconocido,desconocido,3.0,34.53,24.53,tarjeta,no,4.0,78.18,desconocido,2023,10,October,2023-10
+393,2023-10-31,Aceite,abarrotes,9.0,25.6,15.44,tarjeta,no,3.0,194.83,faltaban varios productos básicos,2023,10,October,2023-10
+394,2023-11-01,Fideos,abarrotes,4.0,2.42,15.26,desconocido,si,3.0,8.2,faltaban varios productos básicos,2023,11,November,2023-11
+395,2023-11-03,Pan,panadería,7.0,15.26,24.67,yape,si,1.0,80.47,los precios no coincidían con la etiqueta,2023,11,November,2023-11
+396,2023-11-05,Gaseosa,bebidas,10.0,9.2,2.21,efectivo,no,3.0,89.97,la compra fue rápida y ordenada,2023,11,November,2023-11
+397,2023-11-07,Arroz,abarrotes,14.0,23.009999999999998,24.36,tarjeta,no,2.0,243.66669599999997,ofertas interesantes y personal amable,2023,11,November,2023-11
+398,2023-11-08,Leche,lácteos,5.0,13.46,5.1,efectivo,si,3.0,63.87,buenos precios y productos frescos,2023,11,November,2023-11
+399,2023-11-10,Huevos,abarrotes,4.0,4.33,15.58,efectivo,no,5.0,14.62,muy buena variedad de productos,2023,11,November,2023-11
+401,2023-11-13,Detergente,limpieza,1.0,26.81,9.6,yape,no,3.0,24.24,excelente atención y encontré todo lo que necesitaba,2023,11,November,2023-11
+402,2023-11-15,Pan,panadería,8.0,2.44,23.28,plin,si,5.0,14.98,los precios no coincidían con la etiqueta,2023,11,November,2023-11
+404,2023-11-18,Detergente,limpieza,8.0,8.26,24.93,efectivo,no,3.0,49.61,la compra fue rápida y ordenada,2023,11,November,2023-11
+405,2023-11-20,Azúcar,abarrotes,6.0,27.89,9.48,tarjeta,no,4.0,151.48,buenos precios y productos frescos,2023,11,November,2023-11
+406,2023-11-22,Desconocido,desconocido,12.0,20.84,16.22,yape,si,2.0,209.52,muy buena variedad de productos,2023,11,November,2023-11
+407,2023-11-24,Azúcar,abarrotes,6.0,20.76,24.2,plin,si,5.0,94.42,muy buena variedad de productos,2023,11,November,2023-11
+408,2023-11-25,Leche,lácteos,10.0,4.62,1.44,yape,no,2.0,45.53,había productos vencidos en el estante,2023,11,November,2023-11
+409,2023-11-27,Detergente,limpieza,7.0,36.42,23.07,yape,si,2.0,196.13,muy buena variedad de productos,2023,11,November,2023-11
+410,2023-11-29,Arroz,abarrotes,1.0,40.35,14.2,efectivo,no,1.0,34.62,sin comentario,2023,11,November,2023-11
+412,2023-12-02,Huevos,abarrotes,1.0,23.009999999999998,3.73,efectivo,no,3.0,8.92,la compra fue rápida y ordenada,2023,12,December,2023-12
+413,2023-12-04,Huevos,abarrotes,14.0,23.009999999999998,13.33,yape,si,5.0,495.3,ofertas interesantes y personal amable,2023,12,December,2023-12
+414,2023-12-06,Leche,lácteos,9.0,25.4,0.0,tarjeta,si,1.0,190.1,muy buena variedad de productos,2023,12,December,2023-12
+415,2023-12-07,Arroz,abarrotes,6.0,8.03,0.0,efectivo,no,3.0,42.68,buenos precios y productos frescos,2023,12,December,2023-12
+416,2023-12-09,Atún,abarrotes,7.0,10.32,3.87,yape,si,3.0,69.44,excelente atención y encontré todo lo que necesitaba,2023,12,December,2023-12
+418,2023-12-12,Leche,lácteos,4.0,33.03,21.36,desconocido,si,1.0,103.9,muy buena variedad de productos,2023,12,December,2023-12
+419,2023-12-14,Huevos,abarrotes,5.0,23.009999999999998,0.86,plin,no,1.0,136.71,excelente atención y encontré todo lo que necesitaba,2023,12,December,2023-12
+420,2023-12-16,Fideos,abarrotes,6.0,42.96,17.72,yape,si,2.0,212.084928,buenos precios y productos frescos,2023,12,December,2023-12
+421,2023-12-17,Detergente,limpieza,7.0,22.99,24.98,yape,no,3.0,68.99,desconocido,2023,12,December,2023-12
+422,2023-12-19,Atún,abarrotes,7.0,14.56,0.19,plin,no,4.0,159.86,ofertas interesantes y personal amable,2023,12,December,2023-12
+423,2023-12-21,Pan,panadería,2.0,22.26,4.03,efectivo,si,3.0,42.73,muy buena variedad de productos,2023,12,December,2023-12
+425,2023-12-24,Azúcar,abarrotes,5.0,11.26,1.5,plin,si,2.0,55.46,ofertas interesantes y personal amable,2023,12,December,2023-12
+427,2023-12-28,Gaseosa,bebidas,3.0,16.82,17.1,yape,si,3.0,41.83,excelente atención y encontré todo lo que necesitaba,2023,12,December,2023-12
+428,2023-12-29,Gaseosa,bebidas,6.0,23.009999999999998,14.7,plin,si,5.0,166.08,muy buena variedad de productos,2023,12,December,2023-12
+429,2023-12-31,Arroz,abarrotes,11.0,2.3,9.13,plin,no,3.0,22.990109999999998,la compra fue rápida y ordenada,2023,12,December,2023-12
+430,2024-01-02,Pan,panadería,7.0,20.6,17.43,plin,no,3.0,68.04,faltaban varios productos básicos,2024,1,January,2024-01
+431,2024-01-04,Arroz,abarrotes,2.0,23.009999999999998,14.86,plin,si,1.0,50.25,mala atención del personal,2024,1,January,2024-01
+432,2024-01-05,Pan,panadería,8.0,28.05,0.0,plin,si,1.0,212.75,excelente atención y encontré todo lo que necesitaba,2024,1,January,2024-01
+433,2024-01-07,Gaseosa,bebidas,3.0,35.28,14.08,tarjeta,si,5.0,90.94,los precios no coincidían con la etiqueta,2024,1,January,2024-01
+434,2024-01-09,Leche,desconocido,5.0,36.76,22.05,yape,no,2.0,143.27,excelente atención y encontré todo lo que necesitaba,2024,1,January,2024-01
+435,2024-01-10,Desconocido,desconocido,7.0,32.46,16.67,tarjeta,si,3.0,189.34,mala atención del personal,2024,1,January,2024-01
+436,2024-01-12,Leche,lácteos,8.0,5.97,11.79,plin,si,3.0,42.13,buenos precios y productos frescos,2024,1,January,2024-01
+437,2024-01-14,Fideos,abarrotes,9.0,22.16,8.04,plin,si,1.0,183.41,mucha cola para pagar,2024,1,January,2024-01
+438,2024-01-15,Detergente,limpieza,10.0,27.75,2.15,desconocido,no,3.0,271.53,muy buena variedad de productos,2024,1,January,2024-01
+439,2024-01-17,Arroz,abarrotes,12.0,12.18,6.12,yape,si,2.0,137.22,ofertas interesantes y personal amable,2024,1,January,2024-01
+440,2024-01-19,Aceite,desconocido,1.0,3.35,0.28,tarjeta,no,1.0,3.34062,buenos precios y productos frescos,2024,1,January,2024-01
+441,2024-01-21,Detergente,limpieza,6.0,11.23,24.67,efectivo,si,3.0,50.76,muy buena variedad de productos,2024,1,January,2024-01
+442,2024-01-22,Aceite,abarrotes,1.0,21.29,5.56,yape,si,3.0,20.11,muy buena variedad de productos,2024,1,January,2024-01
+443,2024-01-24,Leche,lácteos,1.0,19.51,20.37,yape,si,1.0,15.54,la compra fue rápida y ordenada,2024,1,January,2024-01
+444,2024-01-26,Azúcar,abarrotes,3.0,9.19,0.0,yape,si,3.0,26.41,mala atención del personal,2024,1,January,2024-01
+445,2024-01-27,Desconocido,desconocido,9.0,37.36,7.09,yape,no,4.0,312.4,la compra fue rápida y ordenada,2024,1,January,2024-01
+446,2024-01-29,Atún,abarrotes,13.0,23.009999999999998,0.0,plin,si,2.0,486.21,desconocido,2024,1,January,2024-01
+447,2024-01-31,Aceite,abarrotes,11.0,10.26,8.11,efectivo,si,5.0,103.71,mala atención del personal,2024,1,January,2024-01
+448,2024-02-02,Detergente,limpieza,10.0,41.94,19.96,tarjeta,si,4.0,335.69,muy buena variedad de productos,2024,2,February,2024-02
+449,2024-02-03,Fideos,abarrotes,11.0,23.009999999999998,23.94,yape,no,4.0,19.08,muy buena variedad de productos,2024,2,February,2024-02
+450,2024-02-05,Huevos,abarrotes,3.0,41.74,21.88,plin,si,1.0,97.82,la compra fue rápida y ordenada,2024,2,February,2024-02
+452,2024-02-08,Detergente,limpieza,13.0,23.009999999999998,19.42,plin,no,2.0,21.16,excelente atención y encontré todo lo que necesitaba,2024,2,February,2024-02
+453,2024-02-10,Azúcar,abarrotes,2.0,34.69,3.7,plin,no,4.0,66.81,mala atención del personal,2024,2,February,2024-02
+454,2024-02-12,Arroz,abarrotes,7.0,43.7,22.83,plin,no,5.0,236.06,buenos precios y productos frescos,2024,2,February,2024-02
+455,2024-02-13,Fideos,abarrotes,12.0,40.91,12.95,yape,no,2.0,427.35,muy buena variedad de productos,2024,2,February,2024-02
+456,2024-02-15,Fideos,abarrotes,7.0,43.73,0.0,efectivo,si,2.0,280.37,muy buena variedad de productos,2024,2,February,2024-02
+457,2024-02-17,Leche,lácteos,12.0,25.44,3.93,yape,no,1.0,293.28,muy buena variedad de productos,2024,2,February,2024-02
+458,2024-02-19,Atún,abarrotes,14.0,4.9,0.0,yape,no,4.0,68.39,excelente atención y encontré todo lo que necesitaba,2024,2,February,2024-02
+459,2024-02-20,Gaseosa,bebidas,7.0,38.47,6.2,efectivo,si,4.0,252.59,muy buena variedad de productos,2024,2,February,2024-02
+460,2024-02-22,Leche,lácteos,1.0,28.2,0.0,plin,si,3.0,21.76,ofertas interesantes y personal amable,2024,2,February,2024-02
+461,2024-02-24,Pan,panadería,5.0,28.24,19.93,yape,desconocido,1.0,113.06,desconocido,2024,2,February,2024-02
+462,2024-02-25,Leche,lácteos,7.0,19.65,24.24,plin,no,2.0,59.55,faltaban varios productos básicos,2024,2,February,2024-02
+463,2024-02-27,Desconocido,desconocido,7.0,23.009999999999998,2.52,efectivo,no,3.0,180.01,mucha cola para pagar,2024,2,February,2024-02
+464,2024-02-29,Azúcar,abarrotes,9.0,8.18,14.8,plin,si,5.0,62.72424,mala atención del personal,2024,2,February,2024-02
+466,2024-03-03,Desconocido,desconocido,3.0,4.76,13.57,yape,no,2.0,12.342203999999999,mala atención del personal,2024,3,March,2024-03
+467,2024-03-05,Leche,lácteos,5.0,33.25,8.01,yape,si,4.0,152.93,ofertas interesantes y personal amable,2024,3,March,2024-03
+468,2024-03-07,Fideos,abarrotes,10.0,38.43,7.09,yape,no,2.0,357.05313,muy buena variedad de productos,2024,3,March,2024-03
+469,2024-03-08,Leche,lácteos,1.0,22.05,14.35,plin,no,5.0,18.89,muy buena variedad de productos,2024,3,March,2024-03
+470,2024-03-10,Detergente,limpieza,3.0,23.68,4.58,efectivo,si,5.0,67.79,muy buena variedad de productos,2024,3,March,2024-03
+471,2024-03-12,Pan,panadería,13.0,15.08,11.73,yape,no,2.0,173.04,mala atención del personal,2024,3,March,2024-03
+472,2024-03-13,Gaseosa,bebidas,2.0,43.67,16.27,plin,si,3.0,73.13,mucha cola para pagar,2024,3,March,2024-03
+473,2024-03-15,Azúcar,desconocido,7.0,33.39,0.0,efectivo,desconocido,4.0,193.93,muy buena variedad de productos,2024,3,March,2024-03
+474,2024-03-17,Azúcar,abarrotes,3.0,17.55,23.26,desconocido,si,3.0,40.4,faltaban varios productos básicos,2024,3,March,2024-03
+475,2024-03-19,Atún,abarrotes,2.0,9.1,0.0,tarjeta,no,1.0,15.9,faltaban varios productos básicos,2024,3,March,2024-03
+477,2024-03-22,Gaseosa,bebidas,8.0,21.68,16.35,plin,si,2.0,145.08,los precios no coincidían con la etiqueta,2024,3,March,2024-03
+478,2024-03-24,Arroz,abarrotes,3.0,42.5,17.75,plin,no,1.0,104.87,mucha cola para pagar,2024,3,March,2024-03
+479,2024-03-25,Atún,abarrotes,2.0,33.44,17.9,plin,no,3.0,54.91,la compra fue rápida y ordenada,2024,3,March,2024-03
+480,2024-03-27,Leche,lácteos,2.0,10.86,21.88,tarjeta,no,4.0,16.97,ofertas interesantes y personal amable,2024,3,March,2024-03
+483,2024-04-01,Huevos,abarrotes,3.0,38.55,2.49,tarjeta,no,1.0,112.77,desconocido,2024,4,April,2024-04
+484,2024-04-03,Pan,panadería,5.0,12.01,15.16,efectivo,no,2.0,50.95,desconocido,2024,4,April,2024-04
+485,2024-04-05,Azúcar,abarrotes,5.0,28.41,1.66,efectivo,si,3.0,139.69,la compra fue rápida y ordenada,2024,4,April,2024-04
+486,2024-04-06,Huevos,abarrotes,6.0,41.81,6.03,plin,si,4.0,235.73,buenos precios y productos frescos,2024,4,April,2024-04
+487,2024-04-08,Aceite,abarrotes,4.0,12.72,1.52,plin,si,2.0,50.11,desconocido,2024,4,April,2024-04
+488,2024-04-10,Desconocido,desconocido,1.0,31.64,13.72,yape,no,2.0,27.3,muy buena variedad de productos,2024,4,April,2024-04
+490,2024-04-13,Desconocido,desconocido,6.0,8.05,15.26,efectivo,no,1.0,40.93,ofertas interesantes y personal amable,2024,4,April,2024-04
+491,2024-04-15,Detergente,limpieza,5.0,5.35,19.77,desconocido,si,2.0,21.46,excelente atención y encontré todo lo que necesitaba,2024,4,April,2024-04
+492,2024-04-17,Gaseosa,bebidas,4.0,30.83,0.0,yape,si,1.0,123.32,excelente atención y encontré todo lo que necesitaba,2024,4,April,2024-04
+493,2024-04-18,Pan,panadería,14.0,16.28,0.0,efectivo,si,3.0,210.28,muy buena variedad de productos,2024,4,April,2024-04
+494,2024-04-20,Atún,abarrotes,9.0,4.6,13.72,tarjeta,no,3.0,35.72,mala atención del personal,2024,4,April,2024-04
+495,2024-04-22,Huevos,abarrotes,6.0,22.18,14.08,plin,si,3.0,114.34,excelente atención y encontré todo lo que necesitaba,2024,4,April,2024-04
+497,2024-04-25,Leche,lácteos,12.0,13.9,0.0,plin,no,2.0,139.48,buenos precios y productos frescos,2024,4,April,2024-04
+498,2024-04-27,Aceite,abarrotes,13.0,16.07,5.25,tarjeta,si,5.0,197.94,ofertas interesantes y personal amable,2024,4,April,2024-04
+500,2024-04-30,Desconocido,desconocido,14.0,24.12,2.45,efectivo,no,1.0,329.41,excelente atención y encontré todo lo que necesitaba,2024,4,April,2024-04
+501,2024-05-02,Leche,lácteos,10.0,38.16,20.73,plin,si,5.0,302.49,la compra fue rápida y ordenada,2024,5,May,2024-05
+502,2024-05-04,Atún,abarrotes,2.0,23.009999999999998,14.85,efectivo,si,1.0,35.63,los precios no coincidían con la etiqueta,2024,5,May,2024-05
+503,2024-05-05,Detergente,limpieza,11.0,42.95,6.12,yape,si,2.0,443.54,ofertas interesantes y personal amable,2024,5,May,2024-05
+504,2024-05-07,Gaseosa,bebidas,2.0,29.81,18.64,yape,si,3.0,48.51,desconocido,2024,5,May,2024-05
+505,2024-05-09,Huevos,abarrotes,1.0,6.54,2.11,plin,si,1.0,6.4,mucha cola para pagar,2024,5,May,2024-05
+507,2024-05-12,Fideos,abarrotes,7.0,22.78,14.75,efectivo,si,1.0,135.94,excelente atención y encontré todo lo que necesitaba,2024,5,May,2024-05
+509,2024-05-15,Huevos,abarrotes,6.0,23.009999999999998,1.99,yape,si,5.0,47.87,los precios no coincidían con la etiqueta,2024,5,May,2024-05
+510,2024-05-17,Huevos,abarrotes,2.0,31.41,18.77,tarjeta,no,5.0,51.03,buenos precios y productos frescos,2024,5,May,2024-05
+511,2024-05-19,Detergente,limpieza,3.0,3.56,7.32,desconocido,no,2.0,9.9,ofertas interesantes y personal amable,2024,5,May,2024-05
+512,2024-05-21,Pan,panadería,12.0,13.97,22.23,tarjeta,si,3.0,130.37362800000002,muy buena variedad de productos,2024,5,May,2024-05
+513,2024-05-22,Desconocido,desconocido,14.0,7.58,19.05,tarjeta,no,3.0,85.9,excelente atención y encontré todo lo que necesitaba,2024,5,May,2024-05
+514,2024-05-24,Gaseosa,bebidas,11.0,20.69,17.45,tarjeta,si,3.0,187.88,ofertas interesantes y personal amable,2024,5,May,2024-05
+515,2024-05-26,Detergente,desconocido,2.0,19.52,6.97,tarjeta,no,4.0,36.32,buenos precios y productos frescos,2024,5,May,2024-05
+516,2024-05-27,Leche,lácteos,12.0,24.2,17.72,tarjeta,si,5.0,238.94,mucha cola para pagar,2024,5,May,2024-05
+517,2024-05-29,Gaseosa,bebidas,10.0,13.66,23.7,efectivo,no,3.0,104.23,excelente atención y encontré todo lo que necesitaba,2024,5,May,2024-05
+518,2024-05-31,Arroz,abarrotes,8.0,23.009999999999998,2.29,plin,no,3.0,22.59,buenos precios y productos frescos,2024,5,May,2024-05
+519,2024-06-02,Azúcar,abarrotes,3.0,28.23,8.15,efectivo,no,5.0,77.79,buenos precios y productos frescos,2024,6,June,2024-06
+520,2024-06-03,Desconocido,desconocido,14.0,17.76,5.87,efectivo,si,5.0,234.04,la compra fue rápida y ordenada,2024,6,June,2024-06
+521,2024-06-05,Desconocido,desconocido,7.0,29.83,9.83,efectivo,no,2.0,188.28,excelente atención y encontré todo lo que necesitaba,2024,6,June,2024-06
+522,2024-06-07,Leche,lácteos,1.0,6.23,0.0,plin,no,3.0,5.07,muy buena variedad de productos,2024,6,June,2024-06
+524,2024-06-10,Gaseosa,bebidas,6.0,12.3,0.0,tarjeta,no,3.0,63.27,desconocido,2024,6,June,2024-06
+525,2024-06-12,Aceite,abarrotes,1.0,21.36,7.85,tarjeta,si,3.0,19.68,la compra fue rápida y ordenada,2024,6,June,2024-06
+526,2024-06-13,Aceite,abarrotes,5.0,18.64,3.53,efectivo,si,5.0,89.91,muy buena variedad de productos,2024,6,June,2024-06
+527,2024-06-15,Detergente,limpieza,7.0,36.75,6.67,tarjeta,no,5.0,240.09,muy buena variedad de productos,2024,6,June,2024-06
+529,2024-06-19,Detergente,limpieza,2.0,24.57,15.06,plin,no,1.0,41.74,muy buena variedad de productos,2024,6,June,2024-06
+530,2024-06-20,Detergente,limpieza,9.0,27.32,9.45,efectivo,no,3.0,222.64,ofertas interesantes y personal amable,2024,6,June,2024-06
+531,2024-06-22,Fideos,abarrotes,13.0,2.45,19.75,tarjeta,no,4.0,25.56,desconocido,2024,6,June,2024-06
+532,2024-06-24,Leche,lácteos,12.0,23.91,0.0,plin,no,2.0,282.3,la compra fue rápida y ordenada,2024,6,June,2024-06
+533,2024-06-25,Leche,lácteos,13.0,16.5,0.0,plin,si,3.0,200.88,excelente atención y encontré todo lo que necesitaba,2024,6,June,2024-06
+535,2024-06-29,Fideos,abarrotes,12.0,5.86,24.63,efectivo,si,1.0,53.0,excelente atención y encontré todo lo que necesitaba,2024,6,June,2024-06
+536,2024-07-01,Leche,lácteos,14.0,35.55,17.65,tarjeta,no,3.0,409.86,la compra fue rápida y ordenada,2024,7,July,2024-07
+537,2024-07-02,Azúcar,abarrotes,5.0,42.49,15.44,efectivo,no,4.0,179.65,mucha cola para pagar,2024,7,July,2024-07
+538,2024-07-04,Leche,lácteos,7.0,2.47,0.12,yape,no,2.0,17.269252,los precios no coincidían con la etiqueta,2024,7,July,2024-07
+539,2024-07-06,Fideos,abarrotes,8.0,27.66,4.61,tarjeta,si,3.0,211.08,muy buena variedad de productos,2024,7,July,2024-07
+541,2024-07-09,Pan,panadería,5.0,13.89,9.49,yape,no,1.0,62.86,excelente atención y encontré todo lo que necesitaba,2024,7,July,2024-07
+542,2024-07-11,Arroz,abarrotes,14.0,35.76,0.0,plin,no,4.0,384.94,mala atención del personal,2024,7,July,2024-07
+543,2024-07-12,Leche,lácteos,14.0,29.01,19.12,tarjeta,si,2.0,328.49,la compra fue rápida y ordenada,2024,7,July,2024-07
+544,2024-07-14,Leche,lácteos,6.0,41.92,11.18,plin,si,2.0,223.4,excelente atención y encontré todo lo que necesitaba,2024,7,July,2024-07
+545,2024-07-16,Gaseosa,bebidas,12.0,44.17,18.74,tarjeta,si,4.0,430.71,ofertas interesantes y personal amable,2024,7,July,2024-07
+546,2024-07-18,Arroz,abarrotes,6.0,3.34,24.39,yape,no,1.0,15.15,excelente atención y encontré todo lo que necesitaba,2024,7,July,2024-07
+548,2024-07-21,Desconocido,desconocido,9.0,25.29,16.06,plin,no,3.0,191.06,la compra fue rápida y ordenada,2024,7,July,2024-07
+549,2024-07-23,Fideos,abarrotes,7.0,7.88,22.97,tarjeta,si,5.0,42.49,buenos precios y productos frescos,2024,7,July,2024-07
+550,2024-07-24,Desconocido,desconocido,2.0,16.13,6.22,plin,si,3.0,30.25,desconocido,2024,7,July,2024-07
+551,2024-07-26,Gaseosa,bebidas,10.0,44.46,22.16,tarjeta,no,4.0,346.08,faltaban varios productos básicos,2024,7,July,2024-07
+552,2024-07-28,Aceite,abarrotes,5.0,2.21,2.44,tarjeta,si,3.0,10.78,había productos vencidos en el estante,2024,7,July,2024-07
+553,2024-07-29,Gaseosa,bebidas,4.0,21.18,16.21,tarjeta,no,3.0,70.99,muy buena variedad de productos,2024,7,July,2024-07
+554,2024-07-31,Aceite,abarrotes,3.0,23.009999999999998,19.57,yape,si,3.0,92.08,ofertas interesantes y personal amable,2024,7,July,2024-07
+555,2024-08-02,Detergente,limpieza,14.0,15.59,15.37,yape,no,3.0,184.71,buenos precios y productos frescos,2024,8,August,2024-08
+556,2024-08-04,Fideos,abarrotes,7.0,22.37,12.39,efectivo,no,1.0,39.2,desconocido,2024,8,August,2024-08
+557,2024-08-05,Pan,panadería,12.0,44.04,15.43,plin,no,3.0,446.94,la compra fue rápida y ordenada,2024,8,August,2024-08
+558,2024-08-07,Gaseosa,bebidas,13.0,22.16,3.79,plin,si,2.0,277.16,faltaban varios productos básicos,2024,8,August,2024-08
+559,2024-08-09,Pan,panadería,1.0,23.009999999999998,5.39,efectivo,no,4.0,21.769761,ofertas interesantes y personal amable,2024,8,August,2024-08
+560,2024-08-10,Gaseosa,desconocido,7.0,3.75,6.75,plin,no,4.0,31.47,mala atención del personal,2024,8,August,2024-08
+561,2024-08-12,Fideos,abarrotes,9.0,42.63,14.94,yape,desconocido,3.0,326.35,mala atención del personal,2024,8,August,2024-08
+562,2024-08-14,Arroz,abarrotes,6.0,13.06,11.05,efectivo,si,2.0,69.7,muy buena variedad de productos,2024,8,August,2024-08
+563,2024-08-16,Azúcar,abarrotes,7.0,23.43,6.11,tarjeta,no,3.0,219.98,muy buena variedad de productos,2024,8,August,2024-08
+564,2024-08-17,Leche,lácteos,6.0,5.45,0.0,plin,si,5.0,25.48,buenos precios y productos frescos,2024,8,August,2024-08
+565,2024-08-19,Gaseosa,bebidas,7.0,19.93,9.35,tarjeta,si,5.0,126.47,los precios no coincidían con la etiqueta,2024,8,August,2024-08
+566,2024-08-21,Huevos,desconocido,7.0,41.96,11.15,plin,no,5.0,260.97,buenos precios y productos frescos,2024,8,August,2024-08
+567,2024-08-22,Desconocido,desconocido,12.0,23.35,10.24,tarjeta,no,2.0,251.51,muy buena variedad de productos,2024,8,August,2024-08
+568,2024-08-24,Huevos,abarrotes,9.0,43.74,4.55,efectivo,si,3.0,375.75,excelente atención y encontré todo lo que necesitaba,2024,8,August,2024-08
+569,2024-08-26,Atún,abarrotes,6.0,12.76,18.29,tarjeta,si,2.0,62.56,mala atención del personal,2024,8,August,2024-08
+570,2024-08-27,Fideos,abarrotes,13.0,23.45,11.21,yape,no,5.0,270.676315,muy buena variedad de productos,2024,8,August,2024-08
+571,2024-08-29,Detergente,limpieza,12.0,38.89,0.41,yape,no,5.0,464.77,muy buena variedad de productos,2024,8,August,2024-08
+573,2024-09-02,Huevos,abarrotes,11.0,13.66,20.39,efectivo,no,1.0,119.62,buenos precios y productos frescos,2024,9,September,2024-09
+574,2024-09-03,Arroz,abarrotes,6.0,38.71,18.09,plin,no,2.0,190.24,los precios no coincidían con la etiqueta,2024,9,September,2024-09
+575,2024-09-05,Desconocido,desconocido,7.0,18.46,21.73,yape,no,4.0,158.94,los precios no coincidían con la etiqueta,2024,9,September,2024-09
+576,2024-09-07,Aceite,abarrotes,5.0,24.59,22.67,efectivo,si,4.0,95.08,los precios no coincidían con la etiqueta,2024,9,September,2024-09
+577,2024-09-08,Detergente,limpieza,4.0,43.98,8.44,plin,no,2.0,161.07,excelente atención y encontré todo lo que necesitaba,2024,9,September,2024-09
+578,2024-09-10,Desconocido,desconocido,7.0,23.009999999999998,15.27,tarjeta,no,1.0,136.47461099999998,excelente atención y encontré todo lo que necesitaba,2024,9,September,2024-09
+579,2024-09-12,Desconocido,desconocido,14.0,14.61,15.22,yape,no,1.0,173.41,excelente atención y encontré todo lo que necesitaba,2024,9,September,2024-09
+580,2024-09-14,Leche,lácteos,8.0,2.85,6.68,yape,no,4.0,21.28,excelente atención y encontré todo lo que necesitaba,2024,9,September,2024-09
+581,2024-09-15,Arroz,abarrotes,6.0,18.54,5.55,efectivo,si,3.0,105.07,excelente atención y encontré todo lo que necesitaba,2024,9,September,2024-09
+582,2024-09-17,Gaseosa,bebidas,7.0,10.21,2.85,efectivo,si,3.0,69.43,había productos vencidos en el estante,2024,9,September,2024-09
+583,2024-09-19,Leche,lácteos,7.0,31.08,16.48,yape,si,5.0,129.79,había productos vencidos en el estante,2024,9,September,2024-09
+584,2024-09-20,Arroz,abarrotes,10.0,9.39,19.52,tarjeta,si,1.0,75.57,desconocido,2024,9,September,2024-09
+585,2024-09-22,Azúcar,abarrotes,5.0,30.85,19.02,efectivo,si,4.0,124.91,ofertas interesantes y personal amable,2024,9,September,2024-09
+586,2024-09-24,Detergente,limpieza,8.0,12.96,7.91,efectivo,si,2.0,95.48,muy buena variedad de productos,2024,9,September,2024-09
+588,2024-09-27,Arroz,abarrotes,5.0,16.68,11.34,efectivo,no,5.0,73.94,muy buena variedad de productos,2024,9,September,2024-09
+589,2024-09-29,Gaseosa,bebidas,14.0,32.68,13.67,efectivo,no,3.0,394.98,ofertas interesantes y personal amable,2024,9,September,2024-09
+590,2024-10-01,Gaseosa,bebidas,5.0,21.79,0.0,yape,no,2.0,83.91,ofertas interesantes y personal amable,2024,10,October,2024-10
+591,2024-10-02,Gaseosa,bebidas,1.0,17.22,21.87,efectivo,desconocido,2.0,13.45,desconocido,2024,10,October,2024-10
+592,2024-10-04,Detergente,limpieza,6.0,38.59,22.9,yape,si,1.0,178.51734000000002,la compra fue rápida y ordenada,2024,10,October,2024-10
+593,2024-10-06,Huevos,abarrotes,8.0,26.38,21.26,yape,si,5.0,166.17,excelente atención y encontré todo lo que necesitaba,2024,10,October,2024-10
+595,2024-10-09,Aceite,abarrotes,5.0,40.65,11.64,tarjeta,si,3.0,179.59,muy buena variedad de productos,2024,10,October,2024-10
+596,2024-10-11,Gaseosa,bebidas,3.0,16.41,1.19,plin,no,3.0,48.644163000000006,muy buena variedad de productos,2024,10,October,2024-10
+597,2024-10-13,Fideos,abarrotes,8.0,3.2,2.09,yape,no,4.0,25.06496,la compra fue rápida y ordenada,2024,10,October,2024-10
+598,2024-10-14,Pan,panadería,11.0,23.02,9.76,tarjeta,no,5.0,228.51,excelente atención y encontré todo lo que necesitaba,2024,10,October,2024-10
+599,2024-10-16,Atún,abarrotes,14.0,6.89,6.44,efectivo,si,3.0,90.25,mala atención del personal,2024,10,October,2024-10
+600,2024-10-18,Atún,desconocido,6.0,11.87,4.25,tarjeta,no,4.0,68.19,excelente atención y encontré todo lo que necesitaba,2024,10,October,2024-10
+602,2024-10-21,Pan,panadería,4.0,7.19,4.89,efectivo,desconocido,3.0,27.35,muy buena variedad de productos,2024,10,October,2024-10
+603,2024-10-23,Pan,desconocido,11.0,36.6,23.98,tarjeta,si,1.0,306.05652000000003,desconocido,2024,10,October,2024-10
+604,2024-10-24,Leche,lácteos,8.0,42.26,19.02,efectivo,no,2.0,273.777184,mala atención del personal,2024,10,October,2024-10
+605,2024-10-26,Gaseosa,desconocido,11.0,27.88,16.02,efectivo,si,3.0,257.55,los precios no coincidían con la etiqueta,2024,10,October,2024-10
+606,2024-10-28,Fideos,abarrotes,11.0,32.4,16.9,tarjeta,no,1.0,296.17,la compra fue rápida y ordenada,2024,10,October,2024-10
+608,2024-10-31,Fideos,abarrotes,4.0,44.69,16.16,efectivo,si,3.0,149.87,la compra fue rápida y ordenada,2024,10,October,2024-10
+609,2024-11-02,Detergente,limpieza,8.0,16.36,4.67,tarjeta,no,3.0,124.77,faltaban varios productos básicos,2024,11,November,2024-11
+612,2024-11-07,Azúcar,abarrotes,13.0,24.7,6.38,efectivo,si,4.0,300.61,muy buena variedad de productos,2024,11,November,2024-11
+613,2024-11-09,Pan,panadería,3.0,9.24,17.78,tarjeta,si,1.0,22.79,excelente atención y encontré todo lo que necesitaba,2024,11,November,2024-11
+614,2024-11-10,Aceite,abarrotes,9.0,28.17,16.41,yape,no,3.0,211.92572700000002,la compra fue rápida y ordenada,2024,11,November,2024-11
+615,2024-11-12,Atún,abarrotes,7.0,2.11,11.28,plin,si,4.0,3.74,desconocido,2024,11,November,2024-11
+616,2024-11-14,Atún,abarrotes,10.0,41.85,15.81,yape,si,3.0,352.34,ofertas interesantes y personal amable,2024,11,November,2024-11
+617,2024-11-16,Huevos,abarrotes,7.0,13.01,0.0,yape,no,3.0,174.87,había productos vencidos en el estante,2024,11,November,2024-11
+618,2024-11-17,Huevos,abarrotes,1.0,3.22,16.83,plin,no,3.0,2.68,desconocido,2024,11,November,2024-11
+619,2024-11-19,Arroz,abarrotes,10.0,6.21,6.77,tarjeta,desconocido,3.0,57.9,excelente atención y encontré todo lo que necesitaba,2024,11,November,2024-11
+620,2024-11-21,Leche,lácteos,14.0,11.95,6.82,plin,no,3.0,155.89,mala atención del personal,2024,11,November,2024-11
+621,2024-11-22,Azúcar,abarrotes,12.0,13.41,4.05,plin,si,1.0,154.4,0,2024,11,November,2024-11
+622,2024-11-24,Azúcar,abarrotes,6.0,2.93,8.31,yape,no,3.0,16.12,buenos precios y productos frescos,2024,11,November,2024-11
+624,2024-11-28,Azúcar,abarrotes,13.0,9.89,11.35,efectivo,no,4.0,113.98,muy buena variedad de productos,2024,11,November,2024-11
+626,2024-12-01,Desconocido,desconocido,9.0,18.25,4.83,yape,si,3.0,156.32,ofertas interesantes y personal amable,2024,12,December,2024-12
+627,2024-12-03,Aceite,abarrotes,14.0,16.25,13.54,efectivo,no,2.0,196.7,muy buena variedad de productos,2024,12,December,2024-12
+628,2024-12-04,Aceite,abarrotes,1.0,15.76,3.22,efectivo,no,5.0,15.25,buenos precios y productos frescos,2024,12,December,2024-12
+630,2024-12-08,Aceite,abarrotes,7.0,2.6,23.6,tarjeta,si,3.0,1.99,mala atención del personal,2024,12,December,2024-12
+631,2024-12-09,Pan,panadería,7.0,10.29,10.67,tarjeta,si,1.0,128.69,buenos precios y productos frescos,2024,12,December,2024-12
+632,2024-12-11,Aceite,abarrotes,10.0,34.41,22.53,tarjeta,no,3.0,266.57,faltaban varios productos básicos,2024,12,December,2024-12
+633,2024-12-13,Azúcar,abarrotes,7.0,44.6,2.46,plin,si,2.0,565.54,muy buena variedad de productos,2024,12,December,2024-12
+634,2024-12-15,Aceite,abarrotes,8.0,41.89,1.07,tarjeta,no,2.0,331.53,faltaban varios productos básicos,2024,12,December,2024-12
+635,2024-12-16,Leche,lácteos,2.0,23.43,18.03,efectivo,no,4.0,38.41,mala atención del personal,2024,12,December,2024-12
+636,2024-12-18,Desconocido,desconocido,7.0,24.63,19.03,tarjeta,no,3.0,19.94,buenos precios y productos frescos,2024,12,December,2024-12
+637,2024-12-20,Huevos,abarrotes,5.0,15.18,21.08,desconocido,desconocido,5.0,59.9,buenos precios y productos frescos,2024,12,December,2024-12
+638,2024-12-21,Huevos,abarrotes,11.0,35.17,1.42,yape,no,3.0,381.38,buenos precios y productos frescos,2024,12,December,2024-12
+640,2024-12-25,Detergente,limpieza,12.0,38.23,9.41,plin,si,3.0,415.59,ofertas interesantes y personal amable,2024,12,December,2024-12
+642,2024-12-28,Detergente,limpieza,7.0,20.39,4.33,plin,no,4.0,136.55,mala atención del personal,2024,12,December,2024-12
+643,2024-12-30,Gaseosa,bebidas,3.0,34.86,24.9,tarjeta,no,3.0,78.54,muy buena variedad de productos,2024,12,December,2024-12
+644,2025-01-01,Azúcar,abarrotes,7.0,36.58,1.59,yape,no,2.0,251.988646,buenos precios y productos frescos,2025,1,January,2025-01
+645,2025-01-02,Pan,panadería,7.0,14.92,20.68,efectivo,si,3.0,82.84,todo bien,2025,1,January,2025-01
+646,2025-01-04,Aceite,abarrotes,1.0,41.92,15.99,yape,no,4.0,35.22,muy buena variedad de productos,2025,1,January,2025-01
+647,2025-01-06,Azúcar,abarrotes,8.0,5.6,18.38,yape,no,2.0,36.57,los precios no coincidían con la etiqueta,2025,1,January,2025-01
+649,2025-01-09,Detergente,limpieza,14.0,35.0,21.46,yape,no,5.0,384.85,la compra fue rápida y ordenada,2025,1,January,2025-01
+650,2025-01-11,Gaseosa,bebidas,5.0,5.56,4.59,yape,si,3.0,26.523979999999995,mucha cola para pagar,2025,1,January,2025-01
+651,2025-01-13,Azúcar,abarrotes,13.0,30.05,0.02,tarjeta,no,2.0,390.57,mala atención del personal,2025,1,January,2025-01
+652,2025-01-14,Atún,abarrotes,13.0,2.99,14.96,yape,no,3.0,33.06,muy buena variedad de productos,2025,1,January,2025-01
+653,2025-01-16,Huevos,abarrotes,14.0,35.0,8.85,tarjeta,si,5.0,446.64,la compra fue rápida y ordenada,2025,1,January,2025-01
+654,2025-01-18,Desconocido,desconocido,6.0,36.27,3.09,tarjeta,si,1.0,210.9,faltaban varios productos básicos,2025,1,January,2025-01
+655,2025-01-19,Fideos,abarrotes,12.0,27.7,4.65,efectivo,si,5.0,316.9434,muy buena variedad de productos,2025,1,January,2025-01
+656,2025-01-21,Fideos,abarrotes,8.0,38.77,8.29,tarjeta,no,3.0,284.45,muy buena variedad de productos,2025,1,January,2025-01
+657,2025-01-23,Pan,panadería,1.0,5.76,1.76,plin,si,5.0,5.66,buenos precios y productos frescos,2025,1,January,2025-01
+658,2025-01-24,Atún,abarrotes,7.0,13.5,1.42,plin,no,4.0,53.23,buenos precios y productos frescos,2025,1,January,2025-01
+659,2025-01-26,Arroz,abarrotes,10.0,19.52,22.9,yape,si,4.0,150.5,ofertas interesantes y personal amable,2025,1,January,2025-01
+660,2025-01-28,Huevos,abarrotes,3.0,3.35,7.8,yape,no,5.0,9.27,mucha cola para pagar,2025,1,January,2025-01
+661,2025-01-30,Leche,lácteos,7.0,21.0,24.56,yape,no,1.0,110.9,la compra fue rápida y ordenada,2025,1,January,2025-01
+663,2025-02-02,Arroz,abarrotes,3.0,18.58,3.56,tarjeta,no,1.0,53.76,mala atención del personal,2025,2,February,2025-02
+664,2025-02-04,Huevos,abarrotes,7.0,19.99,17.87,yape,no,2.0,114.92,???,2025,2,February,2025-02
+665,2025-02-05,Fideos,abarrotes,4.0,39.75,15.02,plin,si,3.0,135.12,la compra fue rápida y ordenada,2025,2,February,2025-02
+666,2025-02-07,Atún,abarrotes,8.0,13.26,17.27,tarjeta,si,4.0,87.76,desconocido,2025,2,February,2025-02
+667,2025-02-09,Fideos,abarrotes,4.0,40.38,2.4,yape,no,3.0,157.64,ofertas interesantes y personal amable,2025,2,February,2025-02
+668,2025-02-11,Gaseosa,bebidas,14.0,23.009999999999998,4.71,tarjeta,si,4.0,267.21,la compra fue rápida y ordenada,2025,2,February,2025-02
+669,2025-02-12,Detergente,limpieza,2.0,15.76,1.92,tarjeta,si,1.0,30.91,buenos precios y productos frescos,2025,2,February,2025-02
+670,2025-02-14,Leche,lácteos,14.0,23.36,15.1,tarjeta,no,2.0,277.66,los precios no coincidían con la etiqueta,2025,2,February,2025-02
+671,2025-02-16,Detergente,limpieza,12.0,19.67,24.66,efectivo,no,4.0,177.83,desconocido,2025,2,February,2025-02
+672,2025-02-17,Atún,abarrotes,12.0,12.7,16.8,tarjeta,si,5.0,126.79679999999998,ofertas interesantes y personal amable,2025,2,February,2025-02
+673,2025-02-19,Atún,abarrotes,12.0,23.37,17.77,yape,si,5.0,230.61,buenos precios y productos frescos,2025,2,February,2025-02
+674,2025-02-21,Arroz,abarrotes,3.0,8.1,24.61,yape,si,1.0,18.31977,desconocido,2025,2,February,2025-02
+675,2025-02-22,Atún,desconocido,14.0,16.81,0.0,plin,no,3.0,195.45,excelente atención y encontré todo lo que necesitaba,2025,2,February,2025-02
+676,2025-02-24,Pan,panadería,9.0,26.11,0.0,efectivo,si,1.0,232.64,ofertas interesantes y personal amable,2025,2,February,2025-02
+677,2025-02-26,Fideos,abarrotes,14.0,19.48,21.68,plin,no,5.0,213.59,faltaban varios productos básicos,2025,2,February,2025-02
+678,2025-02-28,Arroz,abarrotes,13.0,37.34,9.12,plin,no,1.0,441.1496960000001,buenos precios y productos frescos,2025,2,February,2025-02
+680,2025-03-03,Detergente,limpieza,6.0,43.69,12.68,tarjeta,no,1.0,228.9,ofertas interesantes y personal amable,2025,3,March,2025-03
+681,2025-03-05,Pan,panadería,2.0,35.64,23.43,tarjeta,no,1.0,54.58,la compra fue rápida y ordenada,2025,3,March,2025-03
+682,2025-03-06,Leche,lácteos,7.0,43.59,6.43,yape,si,5.0,81.57,la compra fue rápida y ordenada,2025,3,March,2025-03
+683,2025-03-08,Detergente,limpieza,6.0,37.96,0.0,desconocido,desconocido,3.0,227.76,ofertas interesantes y personal amable,2025,3,March,2025-03
+684,2025-03-10,Detergente,limpieza,12.0,7.68,4.34,yape,si,3.0,88.16,los precios no coincidían con la etiqueta,2025,3,March,2025-03
+685,2025-03-12,Desconocido,desconocido,8.0,24.4,1.44,yape,no,4.0,192.39,muy buena variedad de productos,2025,3,March,2025-03
+687,2025-03-15,Azúcar,abarrotes,4.0,37.09,18.18,efectivo,si,4.0,121.39,desconocido,2025,3,March,2025-03
+688,2025-03-17,Fideos,abarrotes,8.0,26.91,21.6,yape,si,3.0,168.78,faltaban varios productos básicos,2025,3,March,2025-03
+689,2025-03-18,Azúcar,abarrotes,9.0,12.96,3.58,efectivo,no,2.0,112.46,la compra fue rápida y ordenada,2025,3,March,2025-03
+690,2025-03-20,Pan,panadería,14.0,41.94,7.21,plin,no,2.0,544.83,muy buena variedad de productos,2025,3,March,2025-03
+691,2025-03-22,Desconocido,desconocido,11.0,23.009999999999998,4.88,plin,desconocido,1.0,68.12,faltaban varios productos básicos,2025,3,March,2025-03
+693,2025-03-25,Detergente,limpieza,13.0,32.87,13.84,tarjeta,no,3.0,368.17,mala atención del personal,2025,3,March,2025-03
+694,2025-03-27,Detergente,limpieza,7.0,4.06,17.5,yape,no,1.0,20.1,ofertas interesantes y personal amable,2025,3,March,2025-03
+695,2025-03-29,Arroz,abarrotes,14.0,27.51,16.2,yape,si,1.0,322.75,ofertas interesantes y personal amable,2025,3,March,2025-03
+696,2025-03-30,Huevos,abarrotes,6.0,36.99,9.7,yape,no,4.0,200.41,los precios no coincidían con la etiqueta,2025,3,March,2025-03
+697,2025-04-01,Pan,panadería,2.0,4.44,13.88,yape,no,3.0,7.65,la compra fue rápida y ordenada,2025,4,April,2025-04
+698,2025-04-03,Fideos,abarrotes,6.0,23.78,2.35,efectivo,no,3.0,139.32702,buenos precios y productos frescos,2025,4,April,2025-04
+699,2025-04-04,Arroz,abarrotes,2.0,12.75,3.86,efectivo,si,4.0,24.52,muy buena variedad de productos,2025,4,April,2025-04
+701,2025-04-08,Fideos,abarrotes,13.0,6.66,19.04,yape,no,1.0,70.1,la compra fue rápida y ordenada,2025,4,April,2025-04
+702,2025-04-09,Atún,abarrotes,12.0,42.26,23.07,tarjeta,si,2.0,390.13,buenos precios y productos frescos,2025,4,April,2025-04
+703,2025-04-11,Leche,lácteos,4.0,40.42,22.92,yape,no,2.0,124.62,ofertas interesantes y personal amable,2025,4,April,2025-04
+704,2025-04-13,Leche,lácteos,12.0,23.009999999999998,16.23,tarjeta,si,3.0,96.4,excelente atención y encontré todo lo que necesitaba,2025,4,April,2025-04
+705,2025-04-15,Leche,lácteos,1.0,15.56,23.21,plin,no,1.0,11.95,la compra fue rápida y ordenada,2025,4,April,2025-04
+706,2025-04-16,Fideos,abarrotes,4.0,27.06,10.42,tarjeta,no,3.0,96.96,ofertas interesantes y personal amable,2025,4,April,2025-04
+707,2025-04-18,Arroz,abarrotes,10.0,32.74,0.09,plin,no,2.0,327.11,ofertas interesantes y personal amable,2025,4,April,2025-04
+708,2025-04-20,Fideos,abarrotes,5.0,20.76,1.56,tarjeta,si,1.0,102.18,muy buena variedad de productos,2025,4,April,2025-04
+710,2025-04-23,Azúcar,abarrotes,13.0,6.03,2.38,yape,no,1.0,76.524318,los precios no coincidían con la etiqueta,2025,4,April,2025-04
+711,2025-04-25,Atún,abarrotes,1.0,44.99,8.79,tarjeta,si,1.0,41.04,la compra fue rápida y ordenada,2025,4,April,2025-04
+712,2025-04-27,Fideos,abarrotes,1.0,21.31,0.0,efectivo,no,3.0,17.57,faltaban varios productos básicos,2025,4,April,2025-04
+713,2025-04-28,Pan,panadería,14.0,39.46,19.77,tarjeta,no,3.0,443.22,mucha cola para pagar,2025,4,April,2025-04
+714,2025-04-30,Pan,panadería,8.0,22.48,14.76,plin,no,3.0,153.3,excelente atención y encontré todo lo que necesitaba,2025,4,April,2025-04
+715,2025-05-02,Detergente,limpieza,7.0,41.62,3.66,efectivo,no,4.0,320.77,faltaban varios productos básicos,2025,5,May,2025-05
+716,2025-05-03,Desconocido,desconocido,7.0,5.32,18.7,tarjeta,si,3.0,30.28,ofertas interesantes y personal amable,2025,5,May,2025-05
+717,2025-05-05,Fideos,abarrotes,7.0,6.46,8.87,yape,no,4.0,41.21,ofertas interesantes y personal amable,2025,5,May,2025-05
+718,2025-05-07,Azúcar,abarrotes,10.0,41.94,0.32,yape,si,1.0,418.06,buenos precios y productos frescos,2025,5,May,2025-05
+719,2025-05-08,Huevos,desconocido,9.0,23.009999999999998,7.01,tarjeta,no,3.0,357.53,había productos vencidos en el estante,2025,5,May,2025-05
+720,2025-05-10,Fideos,desconocido,7.0,15.19,8.27,efectivo,no,2.0,97.536509,mucha cola para pagar,2025,5,May,2025-05
+721,2025-05-12,Leche,lácteos,9.0,16.95,6.86,efectivo,no,5.0,142.09,muy buena variedad de productos,2025,5,May,2025-05
+722,2025-05-14,Detergente,limpieza,10.0,21.18,20.3,tarjeta,si,3.0,168.8046,???,2025,5,May,2025-05
+723,2025-05-15,Desconocido,desconocido,2.0,23.009999999999998,19.0,desconocido,no,1.0,31.75,faltaban varios productos básicos,2025,5,May,2025-05
+724,2025-05-17,Leche,lácteos,6.0,9.77,17.39,efectivo,no,5.0,48.43,la compra fue rápida y ordenada,2025,5,May,2025-05
+725,2025-05-19,Pan,panadería,12.0,40.58,0.0,plin,no,2.0,470.01,excelente atención y encontré todo lo que necesitaba,2025,5,May,2025-05
+726,2025-05-20,Leche,lácteos,9.0,12.52,0.0,yape,no,2.0,89.92,buenos precios y productos frescos,2025,5,May,2025-05
+728,2025-05-24,Arroz,abarrotes,1.0,4.42,4.87,tarjeta,no,4.0,4.2,había productos vencidos en el estante,2025,5,May,2025-05
+729,2025-05-26,Azúcar,abarrotes,9.0,3.19,16.2,efectivo,desconocido,3.0,24.06,faltaban varios productos básicos,2025,5,May,2025-05
+730,2025-05-27,Atún,abarrotes,7.0,29.94,12.09,plin,no,4.0,184.24,ofertas interesantes y personal amable,2025,5,May,2025-05
+731,2025-05-29,Pan,panadería,14.0,16.25,10.98,yape,no,5.0,202.52,mucha cola para pagar,2025,5,May,2025-05
+732,2025-05-31,Azúcar,abarrotes,8.0,23.009999999999998,2.8,tarjeta,si,1.0,233.36,ofertas interesantes y personal amable,2025,5,May,2025-05
+733,2025-06-01,Detergente,limpieza,14.0,5.59,12.96,tarjeta,si,3.0,68.12,excelente atención y encontré todo lo que necesitaba,2025,6,June,2025-06
+734,2025-06-03,Pan,panadería,4.0,42.82,2.5,yape,si,2.0,167.0,la compra fue rápida y ordenada,2025,6,June,2025-06
+735,2025-06-05,Huevos,abarrotes,7.0,34.06,4.11,efectivo,no,2.0,228.62,buenos precios y productos frescos,2025,6,June,2025-06
+736,2025-06-06,Atún,abarrotes,2.0,39.62,0.0,tarjeta,no,2.0,76.62,muy buena variedad de productos,2025,6,June,2025-06
+738,2025-06-10,Aceite,abarrotes,3.0,15.43,7.12,yape,si,3.0,42.99,excelente atención y encontré todo lo que necesitaba,2025,6,June,2025-06
+739,2025-06-12,Pan,panadería,7.0,17.52,8.88,yape,no,5.0,111.75,la compra fue rápida y ordenada,2025,6,June,2025-06
+740,2025-06-13,Gaseosa,bebidas,5.0,24.87,8.05,tarjeta,si,4.0,114.34,mucha cola para pagar,2025,6,June,2025-06
+741,2025-06-15,Gaseosa,bebidas,3.0,14.41,22.46,efectivo,si,2.0,33.52,buenos precios y productos frescos,2025,6,June,2025-06
+742,2025-06-17,Pan,panadería,2.0,4.14,14.07,tarjeta,si,3.0,7.12,desconocido,2025,6,June,2025-06
+743,2025-06-18,Atún,abarrotes,8.0,23.009999999999998,22.98,plin,no,3.0,108.14,muy buena variedad de productos,2025,6,June,2025-06
+745,2025-06-22,Pan,panadería,3.0,18.29,2.87,efectivo,si,3.0,53.3,faltaban varios productos básicos,2025,6,June,2025-06
+746,2025-06-24,Aceite,abarrotes,6.0,10.07,13.91,efectivo,no,4.0,52.02,muy buena variedad de productos,2025,6,June,2025-06
+747,2025-06-25,Fideos,abarrotes,4.0,12.89,8.64,plin,si,2.0,47.11,buenos precios y productos frescos,2025,6,June,2025-06
+748,2025-06-27,Aceite,abarrotes,12.0,28.77,20.05,efectivo,si,3.0,276.02,desconocido,2025,6,June,2025-06
+749,2025-06-29,Aceite,abarrotes,6.0,18.38,21.99,yape,no,4.0,86.03,desconocido,2025,6,June,2025-06
+750,2025-06-30,Leche,lácteos,14.0,16.52,11.81,plin,no,3.0,203.97,mucha cola para pagar,2025,6,June,2025-06
+752,2025-07-04,Leche,lácteos,2.0,35.08,13.83,tarjeta,si,3.0,60.46,excelente atención y encontré todo lo que necesitaba,2025,7,July,2025-07
+753,2025-07-05,Arroz,abarrotes,9.0,17.98,6.77,efectivo,si,4.0,150.86,buenos precios y productos frescos,2025,7,July,2025-07
+754,2025-07-07,Detergente,limpieza,7.0,27.06,0.0,efectivo,no,2.0,237.53,faltaban varios productos básicos,2025,7,July,2025-07
+755,2025-07-09,Fideos,desconocido,14.0,43.53,0.93,efectivo,no,3.0,603.75,muy buena variedad de productos,2025,7,July,2025-07
+756,2025-07-11,Azúcar,abarrotes,13.0,24.21,20.1,plin,si,4.0,251.47,excelente atención y encontré todo lo que necesitaba,2025,7,July,2025-07
+757,2025-07-12,Pan,panadería,13.0,41.08,2.54,efectivo,no,2.0,520.48,ofertas interesantes y personal amable,2025,7,July,2025-07
+758,2025-07-14,Desconocido,desconocido,9.0,36.02,7.72,efectivo,no,2.0,299.15,muy buena variedad de productos,2025,7,July,2025-07
+759,2025-07-16,Leche,lácteos,6.0,4.05,14.13,plin,si,3.0,20.87,buenos precios y productos frescos,2025,7,July,2025-07
+762,2025-07-21,Fideos,abarrotes,7.0,44.42,0.0,yape,no,1.0,256.84,excelente atención y encontré todo lo que necesitaba,2025,7,July,2025-07
+763,2025-07-22,Detergente,desconocido,6.0,21.44,1.79,yape,no,5.0,126.34,mucha cola para pagar,2025,7,July,2025-07
+764,2025-07-24,Detergente,limpieza,1.0,5.54,11.93,plin,si,3.0,4.88,buenos precios y productos frescos,2025,7,July,2025-07
+765,2025-07-26,Aceite,abarrotes,3.0,25.95,8.47,tarjeta,si,4.0,71.26,excelente atención y encontré todo lo que necesitaba,2025,7,July,2025-07
+766,2025-07-28,Desconocido,desconocido,8.0,7.01,5.7,yape,si,4.0,52.88,muy buena variedad de productos,2025,7,July,2025-07
+767,2025-07-29,Atún,abarrotes,6.0,34.19,4.72,plin,si,2.0,195.45739199999997,buenos precios y productos frescos,2025,7,July,2025-07
+768,2025-07-31,Azúcar,abarrotes,14.0,23.58,19.09,tarjeta,si,2.0,267.1,mucha cola para pagar,2025,7,July,2025-07
+769,2025-08-02,Leche,lácteos,7.0,32.97,0.0,tarjeta,si,4.0,175.89,faltaban varios productos básicos,2025,8,August,2025-08
+770,2025-08-03,Aceite,abarrotes,14.0,39.32,3.5,plin,no,3.0,531.21,excelente atención y encontré todo lo que necesitaba,2025,8,August,2025-08
+771,2025-08-05,Desconocido,desconocido,10.0,23.009999999999998,23.99,efectivo,no,1.0,219.36,había productos vencidos en el estante,2025,8,August,2025-08
+772,2025-08-07,Detergente,limpieza,1.0,28.14,14.87,efectivo,no,5.0,23.955582,buenos precios y productos frescos,2025,8,August,2025-08
+773,2025-08-09,Arroz,abarrotes,3.0,34.32,16.04,yape,no,5.0,86.45,buenos precios y productos frescos,2025,8,August,2025-08
+774,2025-08-10,Pan,panadería,10.0,38.15,17.75,desconocido,si,1.0,313.78,ofertas interesantes y personal amable,2025,8,August,2025-08
+775,2025-08-12,Gaseosa,bebidas,8.0,39.3,17.6,efectivo,no,3.0,259.07,mala atención del personal,2025,8,August,2025-08
+777,2025-08-15,Azúcar,abarrotes,8.0,25.69,0.0,plin,no,5.0,180.67,buenos precios y productos frescos,2025,8,August,2025-08
+778,2025-08-17,Leche,lácteos,13.0,10.91,13.33,desconocido,no,2.0,122.92,mala atención del personal,2025,8,August,2025-08
+779,2025-08-19,Huevos,abarrotes,6.0,38.93,0.0,tarjeta,si,4.0,214.66,muy buena variedad de productos,2025,8,August,2025-08
+780,2025-08-20,Gaseosa,bebidas,1.0,29.71,2.63,tarjeta,no,3.0,28.93,los precios no coincidían con la etiqueta,2025,8,August,2025-08
+781,2025-08-22,Gaseosa,bebidas,5.0,19.78,0.0,yape,no,2.0,98.9,había productos vencidos en el estante,2025,8,August,2025-08
+782,2025-08-24,Atún,abarrotes,14.0,9.68,0.84,efectivo,si,2.0,134.38,muy buena variedad de productos,2025,8,August,2025-08
+783,2025-08-26,Leche,lácteos,7.0,16.25,6.89,plin,si,5.0,166.43,mala atención del personal,2025,8,August,2025-08
+784,2025-08-27,Leche,lácteos,12.0,32.11,2.36,yape,desconocido,2.0,376.23,excelente atención y encontré todo lo que necesitaba,2025,8,August,2025-08
+785,2025-08-29,Azúcar,abarrotes,13.0,10.39,4.77,tarjeta,si,3.0,128.63,muy buena variedad de productos,2025,8,August,2025-08
+786,2025-08-31,Fideos,abarrotes,2.0,5.57,0.0,yape,no,3.0,11.14,mucha cola para pagar,2025,8,August,2025-08
+787,2025-09-01,Arroz,abarrotes,4.0,40.13,15.71,yape,si,3.0,135.3,la compra fue rápida y ordenada,2025,9,September,2025-09
+788,2025-09-03,Atún,abarrotes,1.0,34.74,0.0,yape,no,2.0,31.08,ofertas interesantes y personal amable,2025,9,September,2025-09
+789,2025-09-05,Fideos,abarrotes,1.0,23.009999999999998,2.25,plin,si,4.0,9.96,muy buena variedad de productos,2025,9,September,2025-09
+790,2025-09-07,Arroz,abarrotes,12.0,14.22,10.83,plin,si,4.0,152.16,la compra fue rápida y ordenada,2025,9,September,2025-09
+791,2025-09-08,Arroz,abarrotes,14.0,43.79,8.82,plin,no,2.0,558.99,excelente atención y encontré todo lo que necesitaba,2025,9,September,2025-09
+792,2025-09-10,Azúcar,abarrotes,3.0,32.31,18.01,yape,si,3.0,79.47,los precios no coincidían con la etiqueta,2025,9,September,2025-09
+793,2025-09-12,Pan,panadería,7.0,28.06,14.48,yape,no,1.0,263.97,muy buena variedad de productos,2025,9,September,2025-09
+794,2025-09-13,Gaseosa,bebidas,7.0,14.88,12.29,desconocido,si,2.0,104.41,había productos vencidos en el estante,2025,9,September,2025-09
+795,2025-09-15,Azúcar,abarrotes,1.0,14.51,12.17,efectivo,si,5.0,12.74,desconocido,2025,9,September,2025-09
+796,2025-09-17,Huevos,abarrotes,13.0,3.22,24.16,tarjeta,no,3.0,31.75,buenos precios y productos frescos,2025,9,September,2025-09
+797,2025-09-18,Detergente,limpieza,7.0,33.19,18.91,plin,desconocido,4.0,188.39639699999998,había productos vencidos en el estante,2025,9,September,2025-09
+798,2025-09-20,Azúcar,abarrotes,8.0,3.38,12.42,desconocido,si,5.0,23.68,la compra fue rápida y ordenada,2025,9,September,2025-09
+799,2025-09-22,Aceite,abarrotes,7.0,1.71,11.98,yape,no,4.0,10.535993999999999,desconocido,2025,9,September,2025-09
+800,2025-09-24,Azúcar,abarrotes,6.0,33.23,0.66,efectivo,no,4.0,198.06,mala atención del personal,2025,9,September,2025-09
+801,2025-09-25,Arroz,abarrotes,7.0,42.78,23.56,tarjeta,no,3.0,392.41,los precios no coincidían con la etiqueta,2025,9,September,2025-09
+802,2025-09-27,Aceite,abarrotes,7.0,34.41,7.98,efectivo,no,3.0,221.65,ofertas interesantes y personal amable,2025,9,September,2025-09
+803,2025-09-29,Fideos,abarrotes,14.0,22.02,6.4,yape,no,4.0,288.55,mala atención del personal,2025,9,September,2025-09
+804,2025-09-30,Detergente,limpieza,1.0,22.64,24.99,plin,no,2.0,16.98,faltaban varios productos básicos,2025,9,September,2025-09
+805,2025-10-02,Pan,panadería,3.0,20.47,17.97,plin,no,5.0,50.37,la compra fue rápida y ordenada,2025,10,October,2025-10
+806,2025-10-04,Pan,panadería,14.0,15.62,1.18,yape,desconocido,1.0,216.1,excelente atención y encontré todo lo que necesitaba,2025,10,October,2025-10
+807,2025-10-05,Fideos,abarrotes,5.0,24.19,1.55,efectivo,desconocido,5.0,119.08,excelente atención y encontré todo lo que necesitaba,2025,10,October,2025-10
+808,2025-10-07,Leche,lácteos,7.0,20.26,0.0,yape,si,3.0,141.82000000000002,la compra fue rápida y ordenada,2025,10,October,2025-10
+809,2025-10-09,Aceite,abarrotes,12.0,27.52,14.99,efectivo,no,1.0,280.737024,la compra fue rápida y ordenada,2025,10,October,2025-10
+810,2025-10-11,Desconocido,desconocido,3.0,40.57,1.79,tarjeta,si,3.0,119.53,excelente atención y encontré todo lo que necesitaba,2025,10,October,2025-10
+811,2025-10-12,Arroz,abarrotes,8.0,44.78,23.33,yape,no,5.0,274.66,excelente atención y encontré todo lo que necesitaba,2025,10,October,2025-10
+812,2025-10-14,Gaseosa,bebidas,5.0,4.93,23.42,yape,no,3.0,18.88,mala atención del personal,2025,10,October,2025-10
+813,2025-10-16,Atún,abarrotes,3.0,18.23,13.65,desconocido,no,2.0,47.22,buenos precios y productos frescos,2025,10,October,2025-10
+814,2025-10-17,Huevos,abarrotes,7.0,9.36,15.42,plin,no,3.0,110.83,faltaban varios productos básicos,2025,10,October,2025-10
+815,2025-10-19,Pan,panadería,3.0,16.82,7.3,tarjeta,si,3.0,46.78,excelente atención y encontré todo lo que necesitaba,2025,10,October,2025-10
+816,2025-10-21,Gaseosa,bebidas,2.0,14.01,1.6,plin,si,1.0,27.57,la compra fue rápida y ordenada,2025,10,October,2025-10
+817,2025-10-23,Arroz,abarrotes,7.0,9.09,18.44,yape,si,2.0,74.14,mucha cola para pagar,2025,10,October,2025-10
+818,2025-10-24,Leche,lácteos,7.0,34.74,2.54,yape,no,4.0,440.15,buenos precios y productos frescos,2025,10,October,2025-10
+819,2025-10-26,Atún,abarrotes,2.0,23.09,0.0,yape,no,3.0,46.18,la compra fue rápida y ordenada,2025,10,October,2025-10
+820,2025-10-28,Detergente,desconocido,10.0,41.49,7.78,plin,si,2.0,382.62,ofertas interesantes y personal amable,2025,10,October,2025-10
+821,2025-10-29,Arroz,abarrotes,8.0,2.92,0.31,efectivo,si,3.0,23.29,mucha cola para pagar,2025,10,October,2025-10
+822,2025-10-31,Atún,abarrotes,12.0,4.41,10.85,yape,si,1.0,47.18,ofertas interesantes y personal amable,2025,10,October,2025-10
+823,2025-11-02,Leche,lácteos,2.0,19.04,17.69,efectivo,no,2.0,31.34,la compra fue rápida y ordenada,2025,11,November,2025-11
+825,2025-11-05,Atún,abarrotes,7.0,12.93,15.11,plin,no,1.0,98.79,excelente atención y encontré todo lo que necesitaba,2025,11,November,2025-11
+826,2025-11-07,Arroz,abarrotes,7.0,44.39,21.17,plin,no,2.0,419.91,excelente atención y encontré todo lo que necesitaba,2025,11,November,2025-11
+828,2025-11-10,Gaseosa,bebidas,7.0,10.12,21.22,tarjeta,si,5.0,111.62,faltaban varios productos básicos,2025,11,November,2025-11
+829,2025-11-12,Gaseosa,bebidas,9.0,26.45,12.66,yape,no,5.0,207.91,buenos precios y productos frescos,2025,11,November,2025-11
+830,2025-11-14,Arroz,abarrotes,2.0,23.16,5.58,tarjeta,desconocido,2.0,43.74,faltaban varios productos básicos,2025,11,November,2025-11
+831,2025-11-15,Huevos,abarrotes,13.0,26.75,23.6,efectivo,no,1.0,265.68,desconocido,2025,11,November,2025-11
+832,2025-11-17,Huevos,abarrotes,12.0,23.009999999999998,6.87,tarjeta,desconocido,5.0,199.93,muy buena variedad de productos,2025,11,November,2025-11
+833,2025-11-19,Azúcar,abarrotes,5.0,37.46,0.66,desconocido,no,2.0,186.06,había productos vencidos en el estante,2025,11,November,2025-11
+834,2025-11-21,Leche,lácteos,8.0,7.53,6.07,yape,no,4.0,56.58,buenos precios y productos frescos,2025,11,November,2025-11
+835,2025-11-22,Gaseosa,bebidas,6.0,20.14,9.17,plin,no,1.0,109.758972,mucha cola para pagar,2025,11,November,2025-11
+836,2025-11-24,Pan,panadería,7.0,31.5,8.78,yape,si,4.0,229.87,mucha cola para pagar,2025,11,November,2025-11
+838,2025-11-27,Leche,lácteos,13.0,17.58,22.08,yape,si,5.0,178.08,la compra fue rápida y ordenada,2025,11,November,2025-11
+839,2025-11-29,Arroz,abarrotes,4.0,26.2,7.31,plin,no,1.0,97.14,buenos precios y productos frescos,2025,11,November,2025-11
+840,2025-12-01,Detergente,limpieza,14.0,4.51,0.0,tarjeta,no,3.0,54.92,la compra fue rápida y ordenada,2025,12,December,2025-12
+841,2025-12-02,Huevos,abarrotes,7.0,8.91,8.5,tarjeta,si,5.0,57.07,muy buena variedad de productos,2025,12,December,2025-12
+842,2025-12-04,Atún,abarrotes,10.0,4.51,20.54,efectivo,si,2.0,35.84,excelente atención y encontré todo lo que necesitaba,2025,12,December,2025-12
+843,2025-12-06,Detergente,limpieza,11.0,33.16,3.94,plin,no,4.0,350.39,excelente atención y encontré todo lo que necesitaba,2025,12,December,2025-12
+844,2025-12-08,Arroz,abarrotes,7.0,14.03,2.59,plin,si,1.0,95.67,mucha cola para pagar,2025,12,December,2025-12
+845,2025-12-09,Arroz,abarrotes,7.0,32.98,12.57,efectivo,no,3.0,201.84,mala atención del personal,2025,12,December,2025-12
+846,2025-12-11,Arroz,abarrotes,7.0,4.39,16.8,tarjeta,no,2.0,25.57,la compra fue rápida y ordenada,2025,12,December,2025-12
+847,2025-12-13,Leche,lácteos,13.0,39.02,19.89,tarjeta,si,3.0,406.37,ofertas interesantes y personal amable,2025,12,December,2025-12
+848,2025-12-14,Arroz,abarrotes,6.0,23.009999999999998,14.74,plin,si,5.0,193.63,la compra fue rápida y ordenada,2025,12,December,2025-12
+849,2025-12-16,Gaseosa,bebidas,4.0,5.37,19.35,desconocido,si,4.0,17.32,ofertas interesantes y personal amable,2025,12,December,2025-12
+850,2025-12-18,Atún,abarrotes,7.0,2.53,0.0,efectivo,no,3.0,13.69,la compra fue rápida y ordenada,2025,12,December,2025-12
+851,2025-12-19,Detergente,limpieza,3.0,3.95,0.82,tarjeta,si,1.0,11.75,había productos vencidos en el estante,2025,12,December,2025-12
+852,2025-12-21,Gaseosa,bebidas,6.0,38.63,2.9,yape,si,2.0,225.06,buenos precios y productos frescos,2025,12,December,2025-12
+854,2025-12-25,Huevos,abarrotes,2.0,25.35,8.22,yape,si,2.0,46.53,la compra fue rápida y ordenada,2025,12,December,2025-12
+856,2025-12-28,Gaseosa,bebidas,2.0,36.11,8.91,plin,si,3.0,65.79,había productos vencidos en el estante,2025,12,December,2025-12
+857,2025-12-30,Huevos,abarrotes,8.0,22.77,14.01,desconocido,si,2.0,156.64,buenos precios y productos frescos,2025,12,December,2025-12
+858,2025-12-31,Arroz,abarrotes,11.0,23.28,12.02,efectivo,si,4.0,225.3,muy buena variedad de productos,2025,12,December,2025-12
+859,2026-01-02,Atún,abarrotes,7.0,44.53,16.95,efectivo,si,2.0,406.8,excelente atención y encontré todo lo que necesitaba,2026,1,January,2026-01
+860,2026-01-04,Gaseosa,bebidas,7.0,8.03,16.67,plin,si,2.0,46.84,muy buena variedad de productos,2026,1,January,2026-01
+861,2026-01-06,Detergente,limpieza,3.0,37.64,7.95,yape,no,3.0,103.94,la compra fue rápida y ordenada,2026,1,January,2026-01
+863,2026-01-09,Leche,lácteos,7.0,23.009999999999998,14.63,plin,no,5.0,228.25,muy buena variedad de productos,2026,1,January,2026-01
+864,2026-01-11,Pan,panadería,9.0,40.06,14.91,yape,no,4.0,306.78,muy buena variedad de productos,2026,1,January,2026-01
+865,2026-01-12,Gaseosa,bebidas,7.0,30.44,7.87,efectivo,no,4.0,56.09,desconocido,2026,1,January,2026-01
+866,2026-01-14,Atún,abarrotes,1.0,31.31,8.26,yape,no,4.0,28.72,mala atención del personal,2026,1,January,2026-01
+867,2026-01-16,Desconocido,desconocido,7.0,23.009999999999998,17.35,yape,si,2.0,53.52,faltaban varios productos básicos,2026,1,January,2026-01
+869,2026-01-19,Azúcar,abarrotes,13.0,17.45,3.38,yape,no,3.0,219.18,buenos precios y productos frescos,2026,1,January,2026-01
+870,2026-01-21,Arroz,abarrotes,3.0,24.18,11.03,tarjeta,no,4.0,64.54,excelente atención y encontré todo lo que necesitaba,2026,1,January,2026-01
+871,2026-01-23,Desconocido,desconocido,7.0,21.61,0.0,efectivo,si,4.0,67.15,la compra fue rápida y ordenada,2026,1,January,2026-01
+872,2026-01-24,Desconocido,desconocido,14.0,15.72,0.0,tarjeta,no,1.0,218.08,había productos vencidos en el estante,2026,1,January,2026-01
+873,2026-01-26,Leche,lácteos,12.0,14.79,21.38,desconocido,no,4.0,139.53,ofertas interesantes y personal amable,2026,1,January,2026-01
+874,2026-01-28,Leche,lácteos,4.0,12.41,0.0,tarjeta,no,2.0,47.61,???,2026,1,January,2026-01
+875,2026-01-29,Atún,abarrotes,6.0,17.38,12.68,tarjeta,si,5.0,91.06,excelente atención y encontré todo lo que necesitaba,2026,1,January,2026-01
+876,2026-01-31,Fideos,abarrotes,8.0,8.02,10.61,yape,si,4.0,57.35,muy buena variedad de productos,2026,1,January,2026-01
+878,2026-02-04,Pan,panadería,14.0,27.69,0.0,tarjeta,si,4.0,298.96,mucha cola para pagar,2026,2,February,2026-02
+879,2026-02-05,Fideos,abarrotes,13.0,7.32,0.0,plin,si,3.0,84.34,mucha cola para pagar,2026,2,February,2026-02
+880,2026-02-07,Atún,abarrotes,14.0,31.68,23.86,efectivo,si,1.0,337.7,la compra fue rápida y ordenada,2026,2,February,2026-02
+881,2026-02-09,Arroz,abarrotes,1.0,38.37,7.17,tarjeta,si,3.0,35.618871,muy buena variedad de productos,2026,2,February,2026-02
+882,2026-02-10,Desconocido,desconocido,4.0,11.83,21.66,efectivo,si,5.0,37.07,había productos vencidos en el estante,2026,2,February,2026-02
+883,2026-02-12,Azúcar,abarrotes,8.0,8.05,23.06,plin,si,2.0,49.55,mucha cola para pagar,2026,2,February,2026-02
+884,2026-02-14,Leche,lácteos,1.0,23.009999999999998,13.92,efectivo,si,1.0,1.61,muy buena variedad de productos,2026,2,February,2026-02
+885,2026-02-15,Desconocido,desconocido,5.0,3.56,5.07,plin,si,2.0,16.9,buenos precios y productos frescos,2026,2,February,2026-02
+887,2026-02-19,Arroz,abarrotes,14.0,44.44,13.72,tarjeta,no,4.0,536.8,la compra fue rápida y ordenada,2026,2,February,2026-02
+888,2026-02-21,Leche,lácteos,1.0,3.45,23.61,yape,no,5.0,2.64,mala atención del personal,2026,2,February,2026-02
+889,2026-02-22,Arroz,abarrotes,7.0,34.04,10.98,plin,no,5.0,90.91,ofertas interesantes y personal amable,2026,2,February,2026-02
+890,2026-02-24,Huevos,abarrotes,3.0,4.63,0.0,efectivo,si,3.0,12.96,los precios no coincidían con la etiqueta,2026,2,February,2026-02
+891,2026-02-26,Arroz,abarrotes,3.0,27.26,3.46,efectivo,no,3.0,78.95,había productos vencidos en el estante,2026,2,February,2026-02
+892,2026-02-27,Pan,panadería,8.0,34.39,17.47,plin,si,5.0,227.06,buenos precios y productos frescos,2026,2,February,2026-02
+893,2026-03-01,Fideos,abarrotes,7.0,17.13,24.35,tarjeta,no,1.0,77.75,había productos vencidos en el estante,2026,3,March,2026-03
+894,2026-03-03,Detergente,limpieza,13.0,1.98,0.71,efectivo,si,3.0,25.56,muy buena variedad de productos,2026,3,March,2026-03
+896,2026-03-06,Atún,abarrotes,8.0,44.62,23.17,efectivo,si,4.0,274.25,muy buena variedad de productos,2026,3,March,2026-03
+897,2026-03-08,Fideos,abarrotes,10.0,12.71,1.87,plin,si,5.0,124.72,desconocido,2026,3,March,2026-03
+899,2026-03-11,Arroz,abarrotes,12.0,23.009999999999998,17.3,plin,no,3.0,228.35124,faltaban varios productos básicos,2026,3,March,2026-03
+900,2026-03-13,Atún,abarrotes,3.0,25.65,16.2,tarjeta,si,4.0,64.48409999999998,mala atención del personal,2026,3,March,2026-03
+901,2026-03-15,Arroz,abarrotes,8.0,27.45,1.72,efectivo,si,3.0,215.82,la compra fue rápida y ordenada,2026,3,March,2026-03
+903,2026-03-18,Huevos,abarrotes,13.0,34.26,13.09,tarjeta,no,2.0,387.08,faltaban varios productos básicos,2026,3,March,2026-03
+904,2026-03-20,Gaseosa,bebidas,9.0,40.33,22.68,plin,no,4.0,280.65,los precios no coincidían con la etiqueta,2026,3,March,2026-03
+905,2026-03-22,Azúcar,abarrotes,10.0,36.55,21.95,yape,desconocido,4.0,285.27,ofertas interesantes y personal amable,2026,3,March,2026-03
+906,2026-03-23,Pan,panadería,13.0,23.009999999999998,20.31,plin,no,2.0,238.376697,ofertas interesantes y personal amable,2026,3,March,2026-03
+907,2026-03-25,Azúcar,abarrotes,9.0,25.68,12.9,plin,no,5.0,201.31,la compra fue rápida y ordenada,2026,3,March,2026-03
+908,2026-03-27,Leche,lácteos,14.0,23.009999999999998,6.29,yape,no,5.0,189.44,buenos precios y productos frescos,2026,3,March,2026-03
+909,2026-03-28,Aceite,abarrotes,2.0,15.85,12.65,efectivo,si,4.0,27.69,excelente atención y encontré todo lo que necesitaba,2026,3,March,2026-03
+910,2026-03-30,Arroz,abarrotes,5.0,42.04,2.52,desconocido,no,2.0,204.9,había productos vencidos en el estante,2026,3,March,2026-03
+911,2026-04-01,Pan,panadería,2.0,31.16,16.47,efectivo,si,5.0,52.055896000000004,había productos vencidos en el estante,2026,4,April,2026-04
+912,2026-04-02,Leche,lácteos,2.0,43.89,3.35,yape,desconocido,2.0,84.84,excelente atención y encontré todo lo que necesitaba,2026,4,April,2026-04
+913,2026-04-04,Aceite,abarrotes,7.0,19.64,12.78,efectivo,no,3.0,119.91,mala atención del personal,2026,4,April,2026-04
+914,2026-04-06,Detergente,limpieza,4.0,24.88,1.36,plin,si,5.0,98.17,buenos precios y productos frescos,2026,4,April,2026-04
+915,2026-04-08,Fideos,abarrotes,6.0,22.69,7.49,efectivo,no,3.0,125.94,los precios no coincidían con la etiqueta,2026,4,April,2026-04
+916,2026-04-09,Azúcar,abarrotes,7.0,6.17,5.8,plin,no,2.0,40.684979999999996,buenos precios y productos frescos,2026,4,April,2026-04
+917,2026-04-11,Fideos,abarrotes,9.0,11.8,15.5,yape,si,1.0,89.74,ofertas interesantes y personal amable,2026,4,April,2026-04
+918,2026-04-13,Desconocido,desconocido,14.0,24.45,19.67,efectivo,si,2.0,274.97,la compra fue rápida y ordenada,2026,4,April,2026-04
+919,2026-04-14,Huevos,abarrotes,7.0,4.43,0.0,efectivo,no,4.0,52.4,mucha cola para pagar,2026,4,April,2026-04
+920,2026-04-16,Atún,abarrotes,6.0,23.009999999999998,21.26,tarjeta,no,4.0,198.52,mucha cola para pagar,2026,4,April,2026-04
+921,2026-04-18,Gaseosa,bebidas,5.0,6.89,21.52,tarjeta,no,2.0,27.036359999999995,excelente atención y encontré todo lo que necesitaba,2026,4,April,2026-04
+923,2026-04-21,Azúcar,abarrotes,2.0,34.79,16.48,yape,no,4.0,58.11,muy buena variedad de productos,2026,4,April,2026-04
+924,2026-04-23,Leche,lácteos,7.0,5.72,10.07,efectivo,si,1.0,41.15,desconocido,2026,4,April,2026-04
+925,2026-04-25,Huevos,abarrotes,6.0,40.66,3.85,efectivo,si,1.0,234.57,los precios no coincidían con la etiqueta,2026,4,April,2026-04
+926,2026-04-26,Detergente,limpieza,3.0,33.07,13.22,yape,si,3.0,86.09,buenos precios y productos frescos,2026,4,April,2026-04
+927,2026-04-28,Fideos,abarrotes,9.0,4.49,2.16,plin,si,3.0,39.54,los precios no coincidían con la etiqueta,2026,4,April,2026-04
+928,2026-04-30,Aceite,abarrotes,7.0,31.6,21.96,tarjeta,no,2.0,123.3,los precios no coincidían con la etiqueta,2026,4,April,2026-04
+929,2026-05-01,Desconocido,desconocido,3.0,28.98,23.11,plin,no,2.0,66.85,la compra fue rápida y ordenada,2026,5,May,2026-05
+931,2026-05-05,Fideos,abarrotes,3.0,37.53,14.06,tarjeta,no,2.0,96.76,desconocido,2026,5,May,2026-05
+932,2026-05-07,Atún,abarrotes,10.0,32.75,13.94,efectivo,si,1.0,281.85,mala atención del personal,2026,5,May,2026-05
+933,2026-05-08,Huevos,abarrotes,3.0,27.0,24.62,tarjeta,no,1.0,61.06,excelente atención y encontré todo lo que necesitaba,2026,5,May,2026-05
+934,2026-05-10,Atún,abarrotes,7.0,15.53,6.2,tarjeta,si,2.0,101.97,muy buena variedad de productos,2026,5,May,2026-05
+935,2026-05-12,Azúcar,abarrotes,12.0,31.83,1.9,yape,si,1.0,374.7,buenos precios y productos frescos,2026,5,May,2026-05
+936,2026-05-13,Detergente,limpieza,4.0,43.13,14.05,efectivo,no,3.0,148.28094,los precios no coincidían con la etiqueta,2026,5,May,2026-05
+937,2026-05-15,Leche,lácteos,11.0,27.06,8.22,efectivo,no,3.0,273.19,la compra fue rápida y ordenada,2026,5,May,2026-05
+938,2026-05-17,Leche,lácteos,11.0,30.4,8.06,tarjeta,no,3.0,307.45,ofertas interesantes y personal amable,2026,5,May,2026-05
+939,2026-05-19,Azúcar,abarrotes,13.0,20.52,0.18,efectivo,no,4.0,266.28,muy buena variedad de productos,2026,5,May,2026-05
+940,2026-05-20,Fideos,abarrotes,3.0,34.39,14.91,efectivo,si,4.0,87.79,ofertas interesantes y personal amable,2026,5,May,2026-05
+941,2026-05-22,Atún,abarrotes,11.0,44.9,6.6,yape,si,3.0,461.3,los precios no coincidían con la etiqueta,2026,5,May,2026-05
+942,2026-05-24,Azúcar,abarrotes,14.0,8.48,4.7,plin,no,4.0,113.14,buenos precios y productos frescos,2026,5,May,2026-05
+943,2026-05-25,Detergente,limpieza,11.0,23.009999999999998,1.01,yape,no,5.0,112.16,ofertas interesantes y personal amable,2026,5,May,2026-05
+944,2026-05-27,Azúcar,abarrotes,3.0,24.97,9.11,efectivo,si,1.0,68.09,buenos precios y productos frescos,2026,5,May,2026-05
+946,2026-05-30,Leche,lácteos,7.0,26.36,8.42,yape,no,2.0,48.28,la compra fue rápida y ordenada,2026,5,May,2026-05
+948,2026-06-03,Leche,lácteos,7.0,19.09,18.91,efectivo,desconocido,5.0,108.36,ofertas interesantes y personal amable,2026,6,June,2026-06
+949,2026-06-05,Detergente,limpieza,8.0,26.86,8.2,yape,no,5.0,197.26,mala atención del personal,2026,6,June,2026-06
+950,2026-06-06,Huevos,desconocido,8.0,26.96,20.54,efectivo,si,3.0,171.38,había productos vencidos en el estante,2026,6,June,2026-06
+951,2026-06-08,Arroz,abarrotes,7.0,30.09,17.3,yape,si,3.0,24.88,buenos precios y productos frescos,2026,6,June,2026-06
+952,2026-06-10,Aceite,abarrotes,8.0,32.83,13.98,efectivo,no,3.0,225.92,ofertas interesantes y personal amable,2026,6,June,2026-06
+953,2026-06-11,Atún,abarrotes,14.0,29.41,0.02,plin,si,1.0,411.66,los precios no coincidían con la etiqueta,2026,6,June,2026-06
+955,2026-06-15,Pan,panadería,4.0,28.68,24.77,yape,no,3.0,86.3,muy buena variedad de productos,2026,6,June,2026-06
+956,2026-06-16,Atún,abarrotes,14.0,24.88,19.56,efectivo,si,2.0,280.19,ofertas interesantes y personal amable,2026,6,June,2026-06
+957,2026-06-18,Azúcar,abarrotes,2.0,27.87,23.44,yape,no,4.0,42.67,desconocido,2026,6,June,2026-06
+958,2026-06-20,Atún,abarrotes,7.0,5.9,0.0,tarjeta,no,5.0,31.98,muy buena variedad de productos,2026,6,June,2026-06
+959,2026-06-22,Detergente,limpieza,8.0,13.38,0.51,plin,si,2.0,106.49,excelente atención y encontré todo lo que necesitaba,2026,6,June,2026-06
+960,2026-06-23,Azúcar,abarrotes,7.0,24.44,19.8,yape,no,5.0,137.21,la compra fue rápida y ordenada,2026,6,June,2026-06
+962,2026-06-27,Azúcar,abarrotes,6.0,31.04,19.74,efectivo,si,5.0,149.48,la compra fue rápida y ordenada,2026,6,June,2026-06
+963,2026-06-28,Gaseosa,bebidas,14.0,5.43,0.17,yape,no,3.0,75.89,muy buena variedad de productos,2026,6,June,2026-06
+964,2026-06-30,Huevos,abarrotes,1.0,27.26,7.2,tarjeta,no,2.0,25.3,buenos precios y productos frescos,2026,6,June,2026-06
+965,2026-07-02,Detergente,limpieza,7.0,11.15,18.78,efectivo,no,4.0,99.62,mala atención del personal,2026,7,July,2026-07
+966,2026-07-04,Fideos,abarrotes,7.0,33.43,19.83,yape,no,2.0,241.21,faltaban varios productos básicos,2026,7,July,2026-07
+967,2026-07-05,Atún,abarrotes,4.0,37.49,15.49,efectivo,no,4.0,126.73,excelente atención y encontré todo lo que necesitaba,2026,7,July,2026-07
+968,2026-07-07,Aceite,abarrotes,4.0,27.32,7.53,efectivo,si,3.0,101.05,la compra fue rápida y ordenada,2026,7,July,2026-07
+969,2026-07-09,Detergente,limpieza,7.0,27.22,7.76,desconocido,si,2.0,175.754096,ofertas interesantes y personal amable,2026,7,July,2026-07
+970,2026-07-10,Desconocido,desconocido,9.0,16.23,24.17,tarjeta,no,2.0,110.76,excelente atención y encontré todo lo que necesitaba,2026,7,July,2026-07
+971,2026-07-12,Huevos,abarrotes,9.0,20.91,10.98,efectivo,no,1.0,167.53,mala atención del personal,2026,7,July,2026-07
+973,2026-07-15,Azúcar,abarrotes,9.0,32.96,13.81,tarjeta,desconocido,4.0,255.67,mala atención del personal,2026,7,July,2026-07
+974,2026-07-17,Desconocido,desconocido,14.0,24.11,10.24,efectivo,no,4.0,302.98,muy buena variedad de productos,2026,7,July,2026-07
+975,2026-07-19,Leche,desconocido,1.0,17.52,13.82,desconocido,si,3.0,15.1,excelente atención y encontré todo lo que necesitaba,2026,7,July,2026-07
+977,2026-07-22,Arroz,abarrotes,7.0,7.72,20.67,efectivo,no,2.0,42.87,la compra fue rápida y ordenada,2026,7,July,2026-07
+978,2026-07-24,Fideos,desconocido,13.0,9.9,22.73,plin,si,5.0,99.45,faltaban varios productos básicos,2026,7,July,2026-07
+979,2026-07-26,Aceite,abarrotes,4.0,17.74,23.3,tarjeta,no,2.0,54.43,excelente atención y encontré todo lo que necesitaba,2026,7,July,2026-07
+980,2026-07-27,Fideos,abarrotes,7.0,42.57,14.11,plin,no,1.0,255.94,buenos precios y productos frescos,2026,7,July,2026-07
+981,2026-07-29,Fideos,abarrotes,11.0,23.47,11.05,plin,no,3.0,229.64221499999996,los precios no coincidían con la etiqueta,2026,7,July,2026-07
+982,2026-07-31,Pan,panadería,7.0,11.72,17.63,plin,no,1.0,9.65,buenos precios y productos frescos,2026,7,July,2026-07
+983,2026-08-02,Fideos,abarrotes,12.0,6.1,0.0,yape,no,2.0,57.86,ofertas interesantes y personal amable,2026,8,August,2026-08
+984,2026-08-03,Atún,abarrotes,12.0,16.22,0.0,tarjeta,no,5.0,167.25,sin comentario,2026,8,August,2026-08
+985,2026-08-05,Fideos,abarrotes,11.0,36.98,17.5,yape,si,2.0,335.59,la compra fue rápida y ordenada,2026,8,August,2026-08
+986,2026-08-07,Atún,abarrotes,10.0,18.18,18.74,efectivo,no,4.0,147.73,los precios no coincidían con la etiqueta,2026,8,August,2026-08
+991,2026-08-15,Aceite,abarrotes,7.0,23.009999999999998,14.71,efectivo,si,2.0,258.04,muy buena variedad de productos,2026,8,August,2026-08
+992,2026-08-17,Fideos,abarrotes,9.0,18.99,0.06,efectivo,desconocido,2.0,170.81,ofertas interesantes y personal amable,2026,8,August,2026-08
+993,2026-08-19,Leche,desconocido,3.0,3.72,21.4,yape,no,5.0,8.77,desconocido,2026,8,August,2026-08
+994,2026-08-20,Azúcar,abarrotes,12.0,41.66,15.25,efectivo,si,1.0,423.68,había productos vencidos en el estante,2026,8,August,2026-08
+995,2026-08-22,Desconocido,desconocido,11.0,39.94,3.23,plin,si,5.0,425.15,mucha cola para pagar,2026,8,August,2026-08
+996,2026-08-24,Atún,abarrotes,7.0,24.21,20.41,tarjeta,si,3.0,173.42,muy buena variedad de productos,2026,8,August,2026-08
+997,2026-08-25,Fideos,abarrotes,5.0,25.52,0.0,yape,si,5.0,104.72,ofertas interesantes y personal amable,2026,8,August,2026-08
+998,2026-08-27,Aceite,abarrotes,5.0,10.71,18.96,tarjeta,no,2.0,43.4,los precios no coincidían con la etiqueta,2026,8,August,2026-08
+999,2026-08-29,Detergente,limpieza,7.0,37.15,9.8,efectivo,si,3.0,234.57,excelente atención y encontré todo lo que necesitaba,2026,8,August,2026-08
+1000,2026-08-31,Fideos,abarrotes,10.0,23.19,21.36,efectivo,no,4.0,182.37,buenos precios y productos frescos,2026,8,August,2026-08
+522,2024-06-07,Leche,lácteos,1.0,6.23,0.0,plin,no,3.0,5.07,excelente atención y encontré todo lo que necesitaba,2024,6,June,2024-06
+738,2025-06-10,Aceite,abarrotes,3.0,15.43,7.12,yape,si,3.0,42.99,mucha cola para pagar,2025,6,June,2025-06
+741,2025-06-15,Gaseosa,bebidas,3.0,14.41,22.46,efectivo,si,2.0,33.52,ofertas interesantes y personal amable,2025,6,June,2025-06
+661,2025-01-30,Leche,lácteos,7.0,21.0,24.56,yape,no,1.0,110.9,faltaban varios productos básicos,2025,1,January,2025-01
+412,2023-12-02,Huevos,abarrotes,1.0,23.009999999999998,3.73,efectivo,no,3.0,8.92,muy buena variedad de productos,2023,12,December,2023-12
+627,2024-12-03,Aceite,abarrotes,14.0,16.25,13.54,efectivo,no,2.0,196.7,la compra fue rápida y ordenada,2024,12,December,2024-12
+514,2024-05-24,Gaseosa,bebidas,11.0,20.69,17.45,tarjeta,si,3.0,187.88,había productos vencidos en el estante,2024,5,May,2024-05
+860,2026-01-04,Gaseosa,bebidas,7.0,8.03,16.67,plin,si,2.0,46.84,ofertas interesantes y personal amable,2026,1,January,2026-01
+77,2022-05-10,Aceite,abarrotes,7.0,36.0,17.42,plin,no,4.0,208.1,faltaban varios productos básicos,2022,5,May,2022-05
+637,2024-12-20,Huevos,abarrotes,5.0,15.18,21.08,desconocido,desconocido,5.0,59.9,mala atención del personal,2024,12,December,2024-12
+974,2026-07-17,Desconocido,desconocido,14.0,24.11,10.24,efectivo,no,4.0,302.98,mucha cola para pagar,2026,7,July,2026-07
+939,2026-05-19,Azúcar,abarrotes,13.0,20.52,0.18,efectivo,no,4.0,266.28,faltaban varios productos básicos,2026,5,May,2026-05
+281,2023-04-23,Huevos,abarrotes,11.0,8.88,2.92,desconocido,no,3.0,94.83,había productos vencidos en el estante,2023,4,April,2023-04
+884,2026-02-14,Leche,lácteos,1.0,23.009999999999998,13.92,efectivo,si,1.0,1.61,había productos vencidos en el estante,2026,2,February,2026-02
+762,2025-07-21,Fideos,abarrotes,7.0,44.42,0.0,yape,no,1.0,256.84,la compra fue rápida y ordenada,2025,7,July,2025-07
+320,2023-06-28,Pan,panadería,11.0,28.46,0.0,efectivo,desconocido,1.0,240.81,ofertas interesantes y personal amable,2023,6,June,2023-06
