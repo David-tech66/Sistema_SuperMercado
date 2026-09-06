@@ -1,3 +1,7 @@
+"""
+SMARTBUSINESS IA - Modulo 5 - Jianela
+Red Neuronal para clasificar opiniones POSITIVO / NEGATIVO
+"""
 import re, pickle, time
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -31,13 +35,13 @@ df = df.dropna(subset=["sentimiento"]).copy()
 df["label"] = df["sentimiento"].map({"NEGATIVO":0, "POSITIVO":1})
 print(f"Dataset: {len(df)} opiniones -> {(df['label']==1).sum()} POSITIVO, {(df['label']==0).sum()} NEGATIVO")
 
-# Funcion para limpiar texto
+# Limpia texto: minusculas y sin signos para que 'Excelente!!!' y 'excelente' sean iguales - sirve para no confundir a la compu
 def limpiar(t):
     t = t.lower()
     t = re.sub(r"[^a-záéíóúñü0-9\s]", " ", t)
     return re.sub(r"\s+", " ", t).strip()
 
-# Aumento de datos con frases variadas para generalizar con palabras nuevas
+# Aumento de datos: agregamos frases variadas para que aprenda palabras nuevas como 'malo' y no falle con opiniones desconocidas
 frases_extra = [
     ("el producto fue muy malo", "NEGATIVO"), ("no me gusto la entrega", "NEGATIVO"),
     ("el producto fue muy malo no me gusto la entrega", "NEGATIVO"),
@@ -97,11 +101,11 @@ Xte_pad = pad_sequences(Xte_seq, maxlen=20, padding="post")
 
 # Definir arquitectura de la red
 model = Sequential([
-    Embedding(1000, 16, input_length=20),  # Convierte palabras en vectores
-    LSTM(16),                               # Aprende el orden de las palabras
-    Dropout(0.3),                           # Evita memorizacion
-    Dense(16, activation="relu"),
-    Dense(1, activation="sigmoid")         # Salida 0=NEGATIVO, 1=POSITIVO
+    Embedding(1000, 16, input_length=20),  # Traduce palabras a vectores con significado - 'bueno' y 'excelente' quedan cerca
+    LSTM(16),                               # Lee en orden y recuerda contexto - entiende 'no bueno' vs 'muy bueno'
+    Dropout(0.3),                           # Apaga 30% al azar para no memorizar - evita copiar las 12 frases
+    Dense(16, activation="relu"),          # Mezcla lo aprendido y busca patrones
+    Dense(1, activation="sigmoid")         # Da probabilidad 0 a 1 - sirve para decidir POSITIVO/NEGATIVO
 ])
 model.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
 
@@ -172,22 +176,30 @@ print("Modelos guardados: modelo_dl.h5, tokenizer.pkl, vectorizer.pkl, modelo_tr
 
 # 7. Funciones para predecir opiniones nuevas
 def predecir_dl(texto):
+    # Convierte texto a numeros y predice con la red neuronal
     seq = tokenizer.texts_to_sequences([limpiar(texto)])
     pad = pad_sequences(seq, maxlen=20, padding="post")
-    proba = float(model.predict(pad, verbose=0)[0][0])
-    return ("POSITIVO" if proba>=0.5 else "NEGATIVO", proba)
+    proba_pos = float(model.predict(pad, verbose=0)[0][0])  # 0 a 1, 1=POSITIVO
+    if proba_pos >= 0.5:
+        return ("POSITIVO", proba_pos*100)  # confianza en POSITIVO
+    else:
+        return ("NEGATIVO", (1-proba_pos)*100)  # confianza en NEGATIVO
 
 def predecir_tradicional(texto):
+    # Convierte texto a TF-IDF y predice con regresion logistica
     vec_t = vec.transform([limpiar(texto)])
-    proba = float(trad.predict_proba(vec_t)[0][1])
-    return ("POSITIVO" if proba>=0.5 else "NEGATIVO", proba)
+    proba_pos = float(trad.predict_proba(vec_t)[0][1])
+    if proba_pos >= 0.5:
+        return ("POSITIVO", proba_pos*100)
+    else:
+        return ("NEGATIVO", (1-proba_pos)*100)
 
-# Prueba con ejemplos
+# Prueba con ejemplos fijos
 print("\n--- Prueba con opiniones nuevas ---")
 for op in ["El pedido llegó rápido y el repartidor fue amable", "había productos vencidos en el estante", "Demoraron demasiado y la atención fue pésima"]:
-    pred_dl, prob_dl = predecir_dl(op)
-    pred_tr, prob_tr = predecir_tradicional(op)
-    print(f"'{op}' -> DL: {pred_dl} ({prob_dl*100:.1f}%) | Trad: {pred_tr} ({prob_tr*100:.1f}%)")
+    pred_dl, conf_dl = predecir_dl(op)
+    pred_tr, conf_tr = predecir_tradicional(op)
+    print(f"'{op}' -> DL: {pred_dl} ({conf_dl:.1f}%) | Trad: {pred_tr} ({conf_tr:.1f}%)")
 
 # 8. Modo interactivo para ingreso manual
 import sys
@@ -195,9 +207,9 @@ print("\n=== MODO INTERACTIVO ===")
 demo = ["Me encantó la variedad y la rapidez", "No me gustó, llegó tarde y vencido", "todo bien", "mucha cola para pagar"]
 print("Demo:")
 for op in demo:
-    pred_dl, prob_dl = predecir_dl(op)
-    pred_tr, prob_tr = predecir_tradicional(op)
-    print(f"  '{op}' -> DL:{pred_dl} ({prob_dl*100:.0f}%) | Trad:{pred_tr} ({prob_tr*100:.0f}%)")
+    pred_dl, conf_dl = predecir_dl(op)
+    pred_tr, conf_tr = predecir_tradicional(op)
+    print(f"  '{op}' -> DL:{pred_dl} ({conf_dl:.0f}%) | Trad:{pred_tr} ({conf_tr:.0f}%)")
 
 if "--interactivo" in sys.argv or "--interactive" in sys.argv:
     print("\nIngresa opinion (escribe 'salir' para terminar):")
@@ -206,11 +218,11 @@ if "--interactivo" in sys.argv or "--interactive" in sys.argv:
             texto = input("\nIngresa opinion: ").strip()
             if texto.lower() in ["salir", "exit", "0", ""]: print("Saliendo..."); break
             if texto == "": continue
-            pred_dl, prob_dl = predecir_dl(texto)
-            pred_tr, prob_tr = predecir_tradicional(texto)
-            print(f"  Deep Learning : {pred_dl} ({prob_dl*100:.1f}%)")
-            print(f"  Tradicional   : {pred_tr} ({prob_tr*100:.1f}%)")
+            pred_dl, conf_dl = predecir_dl(texto)
+            pred_tr, conf_tr = predecir_tradicional(texto)
+            print(f"  Deep Learning : {pred_dl} ({conf_dl:.1f}%)")  # confianza del acierto
+            print(f"  Tradicional   : {pred_tr} ({conf_tr:.1f}%)")
         except (EOFError, KeyboardInterrupt): break
 else:
     print("\nPara probar tus frases: python .\\red_neuronal.py --interactivo")
-print("\nOperación finaizada")
+print("\nListo para entregar. Carpeta: modulo-5")
