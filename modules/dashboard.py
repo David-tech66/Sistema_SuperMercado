@@ -3,12 +3,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-# ==========================================
 # 1. VENTAS POR MES
-# ==========================================
-
 def mostrar_ventas_por_mes(df):
-    st.subheader("📅 Tendencia de Ventas por Mes")
+    st.subheader("Tendencia de Ventas por Mes")
 
     df = df.copy()
     df['fecha'] = pd.to_datetime(df['fecha'])
