@@ -11,24 +11,19 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
 
-# ==========================================
+
 # 1. CARGAR EL DATASET
-# ==========================================
 
-df = pd.read_csv("supermercado_final20.csv")
+df = pd.read_csv("supermercado_limpio.csv")
 
-print("========================================")
+
 print("       MÓDULO 3 - INTELIGENCIA")
 print("          SOBRE OPINIONES")
-print("========================================")
+
 
 print("Registros originales:", len(df))
 
-
-# ==========================================
 # 2. ELIMINAR DUPLICADOS
-# ==========================================
-
 df = df.drop_duplicates()
 
 print(
@@ -36,10 +31,7 @@ print(
     len(df)
 )
 
-
-# ==========================================
 # 3. PREPARAR LAS OPINIONES
-# ==========================================
 
 df["opinion_usuario"] = df[
     "opinion_usuario"
@@ -49,10 +41,7 @@ df["opinion_usuario"] = df[
     "opinion_usuario"
 ].str.lower()
 
-
-# ==========================================
 # 4. ELIMINAR OPINIONES INVÁLIDAS
-# ==========================================
 
 invalidas = [
     "desconocido",
@@ -70,10 +59,7 @@ print(
     len(df)
 )
 
-
-# ==========================================
 # 5. NLTK
-# ==========================================
 
 nltk.download("punkt")
 nltk.download("punkt_tab")
@@ -87,10 +73,7 @@ stop_words = stopwords.words("spanish")
 if "no" in stop_words:
     stop_words.remove("no")
 
-
-# ==========================================
 # 6. LIMPIAR EL TEXTO
-# ==========================================
 
 def limpiar_texto(texto):
 
@@ -123,9 +106,7 @@ df["opinion_limpia"] = df[
 ].apply(limpiar_texto)
 
 
-# ==========================================
 # 7. CLASIFICACIÓN DE OPINIONES ORIGINALES
-# ==========================================
 
 positivos = [
     "buenos precios y productos frescos",
@@ -174,10 +155,7 @@ df = df.dropna(
     subset=["sentimiento"]
 )
 
-
-print("\n========================================")
 print("       CLASIFICACIÓN DE OPINIONES")
-print("========================================")
 
 print(
     "Opiniones clasificadas:",
@@ -190,10 +168,7 @@ print(
     df["sentimiento"].value_counts()
 )
 
-
-# ==========================================
 # 8. EJEMPLOS ADICIONALES
-# ==========================================
 
 positivas_extra = [
 
@@ -277,9 +252,7 @@ negativas_extra = [
 ]
 
 
-# ==========================================
 # 9. CREAR DATOS ADICIONALES
-# ==========================================
 
 opiniones_extra = (
 
@@ -310,20 +283,14 @@ df_extra["opinion_limpia"] = df_extra[
     "opinion_usuario"
 ].apply(limpiar_texto)
 
-
-# ==========================================
 # 10. UNIR LOS DATOS
-# ==========================================
 
 df = pd.concat(
     [df, df_extra],
     ignore_index=True
 )
 
-
-print("\n========================================")
-print("          DATOS PARA EL MODELO")
-print("========================================")
+print("DATOS PARA EL MODELO")
 
 print(
     "Opiniones originales:",
@@ -346,10 +313,7 @@ print(
     df["sentimiento"].value_counts()
 )
 
-
-# ==========================================
 # 11. SEPARAR DATOS
-# ==========================================
 
 X = df["opinion_limpia"]
 
@@ -368,10 +332,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=y
 )
 
-
-print("\n========================================")
 print("          DIVISIÓN DE DATOS")
-print("========================================")
 
 print(
     "Datos para entrenamiento:",
@@ -383,10 +344,7 @@ print(
     len(X_test)
 )
 
-
-# ==========================================
 # 12. TF-IDF
-# ==========================================
 
 vectorizador = TfidfVectorizer(
     ngram_range=(1, 2)
@@ -402,9 +360,7 @@ X_test = vectorizador.transform(
 )
 
 
-# ==========================================
 # 13. REGRESIÓN LOGÍSTICA
-# ==========================================
 
 modelo = LogisticRegression(
     max_iter=1000
@@ -421,25 +377,18 @@ print(
     "\nModelo entrenado correctamente."
 )
 
-
-# ==========================================
 # 14. EVALUAR EL MODELO
-# ==========================================
 
 predicciones = modelo.predict(
     X_test
 )
-
 
 precision = accuracy_score(
     y_test,
     predicciones
 )
 
-
-print("\n========================================")
 print("        RESULTADO DEL MODELO")
-print("========================================")
 
 print(
     "Precisión:",
@@ -450,10 +399,7 @@ print(
     "%"
 )
 
-
-# ==========================================
 # 15. NUEVA OPINIÓN
-# ==========================================
 
 opinion = input(
     "\nEscribe una opinión: "
@@ -473,19 +419,13 @@ opinion_numerica = vectorizador.transform(
     [opinion_limpia]
 )
 
-
-# ==========================================
 # 16. PREDICCIÓN
-# ==========================================
 
 resultado = modelo.predict(
     opinion_numerica
 )[0]
 
-
-# ==========================================
 # 17. PROBABILIDAD
-# ==========================================
 
 probabilidades = modelo.predict_proba(
     opinion_numerica
@@ -502,14 +442,9 @@ probabilidad = (
     * 100
 )
 
-
-# ==========================================
 # 18. MOSTRAR RESULTADO
-# ==========================================
 
-print("\n========================================")
-print("             RESULTADO")
-print("========================================")
+print("RESULTADO")
 
 print(
     "Opinión:",
@@ -528,4 +463,4 @@ print(
         2
     ),
     "%"
-)
+) 
