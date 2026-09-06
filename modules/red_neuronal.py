@@ -1,7 +1,3 @@
-"""
-SMARTBUSINESS IA - Modulo 5 - Jianela
-Red Neuronal para clasificar opiniones POSITIVO / NEGATIVO
-"""
 import re, pickle, time
 import pandas as pd
 import matplotlib.pyplot as plt
