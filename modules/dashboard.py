@@ -3,12 +3,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-# ==========================================
 # 1. VENTAS POR MES
-# ==========================================
-
 def mostrar_ventas_por_mes(df):
-    st.subheader("📅 Tendencia de Ventas por Mes")
+    st.subheader("Tendencia de Ventas por Mes")
 
     df = df.copy()
     df['fecha'] = pd.to_datetime(df['fecha'])
@@ -37,12 +34,9 @@ def mostrar_ventas_por_mes(df):
     plt.close(fig)
 
 
-# ==========================================
 # 2. PRODUCTOS MÁS VENDIDOS
-# ==========================================
-
 def mostrar_productos_top(df):
-    st.subheader("🏆 Top Productos Más Vendidos")
+    st.subheader("Top Productos Más Vendidos")
 
     top_productos = (
         df.groupby('producto')['cantidad']
@@ -74,12 +68,9 @@ def mostrar_productos_top(df):
     plt.close(fig)
 
 
-# ==========================================
 # 3. VENTAS POR CATEGORÍA
-# ==========================================
-
 def mostrar_ventas_por_categoria(df):
-    st.subheader("🗂️ Ventas por Categoría")
+    st.subheader("Ventas por Categoría")
 
     ventas_cat = (
         df[df['categoria'] != 'desconocido']
@@ -128,10 +119,7 @@ def mostrar_ventas_por_categoria(df):
         plt.close(fig)
 
 
-# ==========================================
 # 4. DISTRIBUCIÓN DE PRECIOS
-# ==========================================
-
 def mostrar_distribucion_precios(df):
     st.subheader("💰 Distribución de Precios Unitarios")
 
@@ -170,10 +158,7 @@ def mostrar_distribucion_precios(df):
     plt.close(fig)
 
 
-# ==========================================
 # 5. CORRELACIÓN ENTRE VARIABLES
-# ==========================================
-
 def mostrar_correlacion(df):
     st.subheader("🔗 Correlación entre Variables Numéricas")
 
@@ -212,12 +197,9 @@ def mostrar_correlacion(df):
     )
 
 
-# ==========================================
 # 6. HISTOGRAMA DE VENTAS TOTALES
-# ==========================================
-
 def mostrar_histograma_ventas(df):
-    st.subheader("📊 Histograma de Ventas Totales")
+    st.subheader("Histograma de Ventas Totales")
 
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -256,20 +238,17 @@ def mostrar_histograma_ventas(df):
     plt.close(fig)
 
 
-# ==========================================
 # ZONA DE PRUEBA (Solo ejecución directa)
-# ==========================================
-
 if __name__ == "__main__":
     import os
 
     st.set_page_config(
         page_title="Dashboard Supermercado",
-        page_icon="🛒",
+        page_icon="#",
         layout="wide"
     )
 
-    st.title("🛒 Dashboard Estadístico — Vista de Prueba")
+    st.title("Dashboard Estadístico — Vista de Prueba")
     st.write("Esta vista es solo para prueba local del módulo.")
 
     # Rutas candidatas al CSV limpio
