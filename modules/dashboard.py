@@ -121,7 +121,7 @@ def mostrar_ventas_por_categoria(df):
 
 # 4. DISTRIBUCIÓN DE PRECIOS
 def mostrar_distribucion_precios(df):
-    st.subheader("💰 Distribución de Precios Unitarios")
+    st.subheader("Distribución de Precios Unitarios")
 
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
