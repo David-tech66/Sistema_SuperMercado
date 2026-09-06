@@ -1,7 +1,3 @@
-"""
-SMARTBUSINESS IA - Modulo 5 - Jianela
-Red Neuronal para clasificar opiniones POSITIVO / NEGATIVO
-"""
 import re, pickle, time
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -59,6 +55,7 @@ frases_extra = [
     ("me gusto mucho el producto", "POSITIVO"), ("me gusto mucho", "POSITIVO"),
     ("me gustó mucho el producto", "POSITIVO"), ("me gustó la atención", "POSITIVO"),
     ("me gusto la entrega", "POSITIVO"),
+    ("la entrega fue muy rápida y buena", "POSITIVO"), ("no me atendieron bien", "NEGATIVO"),
 ]
 df_extra = pd.DataFrame(frases_extra, columns=["opinion_usuario", "sentimiento"])
 df_extra["label"] = df_extra["sentimiento"].map({"NEGATIVO":0, "POSITIVO":1})
@@ -224,5 +221,4 @@ if "--interactivo" in sys.argv or "--interactive" in sys.argv:
             print(f"  Tradicional   : {pred_tr} ({conf_tr:.1f}%)")
         except (EOFError, KeyboardInterrupt): break
 else:
-    print("\nPara probar tus frases: python .\\red_neuronal.py --interactivo")
-print("\nListo para entregar. Carpeta: modulo-5")
+print("\nOperación finalizada")
