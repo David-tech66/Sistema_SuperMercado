@@ -260,7 +260,7 @@ def mostrar_histograma_ventas(df):
 
 # ZONA DE PRUEBA (Solo ejecución directa)
 if __name__ == "__main__":
-    import os
+    import os   # importar os para verificar la existencia del archivo CSV
 
     # Configuración de la página de Streamlit
     st.set_page_config(
