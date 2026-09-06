@@ -1,17 +1,19 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import streamlit as st
+import pandas as pd             # importar pandas para manipulación de datos
+import matplotlib.pyplot as plt # importar matplotlib para visualización para los gráficos
+import seaborn as sns           # importar seaborn para visualización de datos estadísticos
+import streamlit as st          # importar streamlit para crear la interfaz web del dashboard
 
 # 1. VENTAS POR MES
 def mostrar_ventas_por_mes(df):
     st.subheader("Tendencia de Ventas por Mes")
 
+    # Preparar los datos para el gráfico de línea
     df = df.copy()
     df['fecha'] = pd.to_datetime(df['fecha'])
     df['mes_anio'] = df['fecha'].dt.to_period('M').astype(str)
     ventas_mes = df.groupby('mes_anio')['total'].sum().reset_index()
 
+    # Crear gráfico de línea con Seaborn
     fig, ax = plt.subplots(figsize=(12, 5))
     sns.lineplot(
         data=ventas_mes,
@@ -23,6 +25,7 @@ def mostrar_ventas_por_mes(df):
         linewidth=2.5
     )
 
+    # Configuración del gráfico
     ax.set_title("Ingresos Totales por Mes", fontsize=14, fontweight='bold')
     ax.set_xlabel("Mes y Año")
     ax.set_ylabel("Ingresos (S/)")
@@ -30,6 +33,7 @@ def mostrar_ventas_por_mes(df):
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.tight_layout()
 
+    # Mostrar el gráfico en Streamlit
     st.pyplot(fig)
     plt.close(fig)
 
@@ -38,6 +42,7 @@ def mostrar_ventas_por_mes(df):
 def mostrar_productos_top(df):
     st.subheader("Top Productos Más Vendidos")
 
+    # Preparar los datos para el gráfico de barras
     top_productos = (
         df.groupby('producto')['cantidad']
         .sum()
@@ -46,6 +51,7 @@ def mostrar_productos_top(df):
         .head(10)
     )
 
+    # Crear gráfico de barras con Seaborn
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.barplot(
         data=top_productos,
@@ -55,6 +61,7 @@ def mostrar_productos_top(df):
         ax=ax
     )
 
+    # Configuración del gráfico
     ax.set_title("Top 10 Productos con Mayor Demanda", fontsize=14, fontweight='bold')
     ax.set_xlabel("Unidades Vendidas")
     ax.set_ylabel("Producto")
@@ -63,15 +70,16 @@ def mostrar_productos_top(df):
     for container in ax.containers:
         ax.bar_label(container, fmt='%.0f', padding=4, fontsize=9)
 
+    # Configuración de diseño y mostrar el gráfico en Streamlit
     plt.tight_layout()
     st.pyplot(fig)
     plt.close(fig)
-
 
 # 3. VENTAS POR CATEGORÍA
 def mostrar_ventas_por_categoria(df):
     st.subheader("Ventas por Categoría")
 
+    # Preparar los datos para el gráfico de barras y gráfico circular
     ventas_cat = (
         df[df['categoria'] != 'desconocido']
         .groupby('categoria')['total']
@@ -80,6 +88,7 @@ def mostrar_ventas_por_categoria(df):
         .sort_values(by='total', ascending=False)
     )
 
+    # Crear dos columnas para mostrar los gráficos lado a lado
     col1, col2 = st.columns(2)
 
     # Gráfico de barras
@@ -96,9 +105,11 @@ def mostrar_ventas_por_categoria(df):
         ax.set_xlabel("Ingresos Totales (S/)")
         ax.set_ylabel("Categoría")
 
+        # Agregar etiquetas de valor en cada barra
         for container in ax.containers:
             ax.bar_label(container, fmt='%.0f', padding=4, fontsize=9)
 
+        # Configuración de diseño y mostrar el gráfico en Streamlit
         plt.tight_layout()
         st.pyplot(fig)
         plt.close(fig)
@@ -123,6 +134,7 @@ def mostrar_ventas_por_categoria(df):
 def mostrar_distribucion_precios(df):
     st.subheader("Distribución de Precios Unitarios")
 
+    # Crear subplots para histograma y boxplot
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
     # Histograma de precio_unitario
@@ -153,6 +165,7 @@ def mostrar_distribucion_precios(df):
     axes[1].set_ylabel("Categoría")
     axes[1].grid(True, linestyle='--', alpha=0.5)
 
+    # Configuración de diseño y mostrar el gráfico en Streamlit
     plt.tight_layout()
     st.pyplot(fig)
     plt.close(fig)
@@ -162,6 +175,7 @@ def mostrar_distribucion_precios(df):
 def mostrar_correlacion(df):
     st.subheader("🔗 Correlación entre Variables Numéricas")
 
+    # Preparar la matriz de correlación
     columnas_numericas = [
         'cantidad',
         'precio_unitario',
@@ -170,9 +184,11 @@ def mostrar_correlacion(df):
         'total'
     ]
 
+    # Filtrar el DataFrame para las columnas numéricas y eliminar filas con valores nulos
     df_num = df[columnas_numericas].dropna()
     matriz_corr = df_num.corr()
 
+    # Crear un mapa de calor para visualizar la matriz de correlación
     fig, ax = plt.subplots(figsize=(8, 6))
     sns.heatmap(
         matriz_corr,
@@ -187,9 +203,11 @@ def mostrar_correlacion(df):
     ax.set_title("Mapa de Correlación", fontsize=14, fontweight='bold')
     plt.tight_layout()
 
+    # Mostrar el gráfico en Streamlit
     st.pyplot(fig)
     plt.close(fig)
 
+    # Agregar explicación sobre la interpretación de la correlación
     st.caption(
         "Valores cercanos a 1 indican correlación positiva, "
         "cercanos a -1 indican correlación negativa, "
@@ -201,6 +219,7 @@ def mostrar_correlacion(df):
 def mostrar_histograma_ventas(df):
     st.subheader("Histograma de Ventas Totales")
 
+    # Crear subplots para histograma de total y satisfacción
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
     # Histograma del total por transacción
@@ -233,6 +252,7 @@ def mostrar_histograma_ventas(df):
     axes[1].set_xticks([1, 2, 3, 4, 5])
     axes[1].grid(True, linestyle='--', alpha=0.5)
 
+    # Configuración de diseño y mostrar el gráfico en Streamlit
     plt.tight_layout()
     st.pyplot(fig)
     plt.close(fig)
@@ -242,12 +262,14 @@ def mostrar_histograma_ventas(df):
 if __name__ == "__main__":
     import os
 
+    # Configuración de la página de Streamlit
     st.set_page_config(
         page_title="Dashboard Supermercado",
         page_icon="#",
         layout="wide"
     )
 
+    # Título y descripción de la vista de prueba
     st.title("Dashboard Estadístico — Vista de Prueba")
     st.write("Esta vista es solo para prueba local del módulo.")
 
@@ -258,12 +280,14 @@ if __name__ == "__main__":
         'Sistema_SuperMercado/supermercado_limpio.csv',
     ]
 
+    # Intentar cargar el archivo CSV desde las rutas candidatas
     df_prueba = None
     for ruta in rutas_candidatas:
         if os.path.exists(ruta):
             df_prueba = pd.read_csv(ruta)
             break
 
+    # Si se encontró el DataFrame, mostrar las visualizaciones; de lo contrario, mostrar un mensaje de error
     if df_prueba is not None:
         mostrar_ventas_por_mes(df_prueba)
         mostrar_productos_top(df_prueba)
