@@ -1,6 +1,6 @@
-import os                           # Importarmos os para manejar rutas de archivos 
-import warnings                     # Importamos warnings para suprimir advertencias innecesarias
-import matplotlib.pyplot as plt     # Importamos matplotlib.pyplot para crear gráficos
+import os                           # Importarmos os para manejar rutas de archivos como os.path.join y os.path.exists
+import warnings                     # Importamos warnings para suprimir advertencias como las de matplotlib y seaborn
+import matplotlib.pyplot as plt     # Importamos matplotlib.pyplot para crear gráficos como líneas, barras, histogramas, etc.
 import matplotlib.ticker as mticker # Importamos matplotlib.ticker para formatear los ejes de los gráficos
 import seaborn as sns               # Importamos seaborn para crear gráficos estadísticos más atractivos
 import pandas as pd                 # Importamos pandas para manejar y analizar datos en forma de DataFrame
@@ -8,7 +8,7 @@ import numpy as np                  # Importamos numpy para operaciones numéric
 
 warnings.filterwarnings("ignore")   # Suprimimos advertencias de matplotlib y seaborn para mantener la salida limpia
 
-# CONFIGURACIÓN VISUAL GLOBAL
+# CONFIGURACIÓN VISUAL GLOBAL DE LOS GRÁFICOS
 sns.set_theme(style="whitegrid", palette="muted", font_scale=1.1)
 plt.rcParams.update({
     "figure.facecolor": "#f9f9f9",
