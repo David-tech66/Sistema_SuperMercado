@@ -225,4 +225,5 @@ if "--interactivo" in sys.argv or "--interactive" in sys.argv:
             print(f"  Tradicional   : {pred_tr} ({conf_tr:.1f}%)")
         except (EOFError, KeyboardInterrupt): break
 else:
+    
 print("\nOperación finalizada")
