@@ -52,14 +52,9 @@ def cargar_datos() -> pd.DataFrame:
     return df
 
 
-# ==========================================
 # 2. GRÁFICAS
-# ==========================================
-
 # ------------------------------------------
 # 2.1 Ventas por mes (línea de tendencia)
-# ------------------------------------------
-
 def grafico_ventas_por_mes(df: pd.DataFrame, ax: plt.Axes) -> None:
     """
     Suma del total de ventas agrupado por año_mes.
@@ -104,11 +99,7 @@ def grafico_ventas_por_mes(df: pd.DataFrame, ax: plt.Axes) -> None:
     ax.set_xlabel("Período")
     ax.set_ylabel("Total de Ventas (S/)")
 
-
-# ------------------------------------------
 # 2.2 Productos más vendidos (barras)
-# ------------------------------------------
-
 def grafico_productos_mas_vendidos(df: pd.DataFrame, ax: plt.Axes) -> None:
     """
     Top 10 productos por unidades vendidas (suma de cantidad).
@@ -140,17 +131,12 @@ def grafico_productos_mas_vendidos(df: pd.DataFrame, ax: plt.Axes) -> None:
             va="center",
             fontsize=9,
         )
-
     ax.set_title("Productos más Vendidos")
     ax.set_xlabel("Unidades Vendidas")
     ax.set_ylabel("Producto")
     ax.set_xlim(0, datos["cantidad"].max() * 1.12)
 
-
-# ------------------------------------------
 # 2.3 Ventas por categoría (barras)
-# ------------------------------------------
-
 def grafico_ventas_por_categoria(df: pd.DataFrame, ax: plt.Axes) -> None:
     """
     Total de ingresos (suma de 'total') por categoría,
@@ -183,7 +169,6 @@ def grafico_ventas_por_categoria(df: pd.DataFrame, ax: plt.Axes) -> None:
             va="bottom",
             fontsize=8.5,
         )
-
     ax.yaxis.set_major_formatter(
         mticker.FuncFormatter(lambda x, _: f"S/ {x:,.0f}")
     )
@@ -192,11 +177,7 @@ def grafico_ventas_por_categoria(df: pd.DataFrame, ax: plt.Axes) -> None:
     ax.set_ylabel("Ingresos Totales (S/)")
     ax.tick_params(axis="x", rotation=20)
 
-
-# ------------------------------------------
 # 2.4 Distribución de precios (KDE + hist)
-# ------------------------------------------
-
 def grafico_distribucion_precios(df: pd.DataFrame, ax: plt.Axes) -> None:
     """
     Distribución de 'precio_unitario' mediante histograma
@@ -225,11 +206,7 @@ def grafico_distribucion_precios(df: pd.DataFrame, ax: plt.Axes) -> None:
     ax.set_xlabel("Precio Unitario (S/)")
     ax.set_ylabel("Frecuencia")
 
-
-# ------------------------------------------
 # 2.5 Correlación entre variables (heatmap)
-# ------------------------------------------
-
 def grafico_correlacion(df: pd.DataFrame, ax: plt.Axes) -> None:
     """
     Mapa de calor de la matriz de correlación de Pearson
@@ -257,16 +234,11 @@ def grafico_correlacion(df: pd.DataFrame, ax: plt.Axes) -> None:
         cbar_kws={"shrink": 0.8},
         ax=ax,
     )
-
     ax.set_title("Correlación entre Variables Numéricas")
     ax.tick_params(axis="x", rotation=30)
     ax.tick_params(axis="y", rotation=0)
 
-
-# ------------------------------------------
 # 2.6 Histograma — Satisfacción del cliente
-# ------------------------------------------
-
 def grafico_histograma_satisfaccion(df: pd.DataFrame, ax: plt.Axes) -> None:
     """
     Distribución de las puntuaciones de satisfacción (1–5).
@@ -298,7 +270,6 @@ def grafico_histograma_satisfaccion(df: pd.DataFrame, ax: plt.Axes) -> None:
             va="bottom",
             fontsize=9,
         )
-
     ax.set_xticks(conteos.index)
     ax.set_xticklabels(
         [f"{'★' * int(v)}" for v in conteos.index],
@@ -310,10 +281,7 @@ def grafico_histograma_satisfaccion(df: pd.DataFrame, ax: plt.Axes) -> None:
     ax.set_xlim(0.3, 5.7)
 
 
-# ==========================================
 # 3. ARMAR Y MOSTRAR EL DASHBOARD
-# ==========================================
-
 def mostrar_dashboard() -> None:
     """
     Genera el dashboard completo con los 6 gráficos
@@ -359,9 +327,6 @@ def mostrar_dashboard() -> None:
     print("  Dashboard mostrado correctamente.")
 
 
-# ==========================================
 # PUNTO DE ENTRADA
-# ==========================================
-
 if __name__ == "__main__":
     mostrar_dashboard()
