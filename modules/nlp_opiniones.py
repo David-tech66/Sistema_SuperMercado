@@ -10,8 +10,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
-
-
 # 1. CARGAR EL DATASET
 
 df = pd.read_csv("supermercado_limpio.csv")
