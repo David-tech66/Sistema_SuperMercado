@@ -461,6 +461,5 @@ print(
     round(
         probabilidad,
         2
-    ),
-    "%"
+    ),"%"
 ) 
