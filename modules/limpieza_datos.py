@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
-import csv
-from io import StringIO
+import csv                  # Es una librería estándar de Python diseñada específicamente para trabajar con archivos CSV, es una herramienta ligera para facilitar el uso de archivos CSV
+from io import StringIO     # Es un simulador de archivos, hace que python pueda leer texto en memoria
 
 # 1. CARGAR DATASET ORIGINAL
-with open("supermercado.csv", "r", encoding="utf-8-sig") as archivo:
+with open("supermercado.csv", "r", encoding="utf-8-sig") as archivo:    # "r" = Trabajar en modo lectura
     lineas = archivo.readlines()
 
 filas = []
