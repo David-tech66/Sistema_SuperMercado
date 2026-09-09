@@ -53,7 +53,7 @@ STOPWORDS_ES = {
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODULES_DIR = os.path.join(BASE_DIR, "modules")
-CSV_LIMPIO = os.path.join(BASE_DIR, "supermercado_limpio.csv")
+CSV_LIMPIO = os.path.join(BASE_DIR, "limpieza_datos.csv")
 
 # Agregar modules/ al path para importar dashboard y ml_ventas
 if MODULES_DIR not in sys.path:
@@ -136,11 +136,11 @@ h2 { color: #1a3a5c !important; border-bottom: 2px solid #4a90d9; padding-bottom
 
 @st.cache_data(show_spinner="Cargando datos…")
 def cargar_df() -> pd.DataFrame:
-    """Carga supermercado_limpio.csv con rutas absolutas."""
+    """Carga limpieza_datos.csv con rutas absolutas."""
     if not os.path.exists(CSV_LIMPIO):
         st.error(
-            "No se encontró **supermercado_limpio.csv**. "
-            "Ejecuta primero `supermercado2.py` para generarlo."
+            "No se encontró **limpieza_datos.csv**. "
+            "Verifica que el archivo esté en la raíz del proyecto."
         )
         st.stop()
     df = pd.read_csv(CSV_LIMPIO, encoding="utf-8-sig")
@@ -182,7 +182,6 @@ def entrenar_nlp():
     de nlp_opiniones.py más los ejemplos adicionales.
     Devuelve (vectorizador, modelo, precisión).
     """
-    # Frases base (idénticas a nlp_opiniones.py)
     positivos_base = [
         "buenos precios y productos frescos",
         "la compra fue rápida y ordenada",
@@ -200,7 +199,6 @@ def entrenar_nlp():
         "mucha cola para pagar",
     ]
 
-    # Ejemplos adicionales (idénticos a nlp_opiniones.py)
     positivas_extra = [
         "recomiendo este supermercado", "los recomiendo",
         "recomiendo comprar aquí", "muy buena experiencia",
@@ -246,7 +244,6 @@ def entrenar_nlp():
         "no recomiendo este lugar", "no compraría nuevamente aquí",
     ]
 
-    # Limpiar todas las frases
     datos = (
         [(f, "POSITIVO") for f in positivos_base]
         + [(f, "NEGATIVO") for f in negativos_base]
@@ -257,17 +254,16 @@ def entrenar_nlp():
     textos = [_limpiar_texto_nlp(t) for t, _ in datos]
     etiquetas = [e for _, e in datos]
 
-    # Intentar obtener también las opiniones del dataset
     try:
         df = cargar_df()
         invalidas = {"desconocido", "sin comentario", "???", "0"}
-        opiniones_df = df["opinion_usuario"].dropna().astype(str).str.lower()
-        opiniones_df = opiniones_df[~opiniones_df.isin(invalidas)]
+        opinions_df = df["opinion_usuario"].dropna().astype(str).str.lower()
+        opinions_df = opinions_df[~opinions_df.isin(invalidas)]
 
         positivos_lower = {p.lower() for p in positivos_base}
         negativos_lower = {n.lower() for n in negativos_base}
 
-        for op in opiniones_df:
+        for op in opinions_df:
             if op in positivos_lower:
                 textos.append(_limpiar_texto_nlp(op))
                 etiquetas.append("POSITIVO")
@@ -277,7 +273,6 @@ def entrenar_nlp():
     except Exception:
         pass
 
-    # Entrenar TF-IDF + Regresión Logística
     X_train, X_test, y_train, y_test = train_test_split(
         textos, etiquetas, test_size=0.20, random_state=42, stratify=etiquetas
     )
@@ -295,7 +290,6 @@ def entrenar_nlp():
 
 
 def predecir_opinion(texto: str, vectorizador, modelo) -> dict:
-    """Predice el sentimiento de una opinión y devuelve resultado + probabilidad."""
     limpio = _limpiar_texto_nlp(texto)
     vec = vectorizador.transform([limpio])
     resultado = modelo.predict(vec)[0]
@@ -328,16 +322,7 @@ def calcular_indicadores(df: pd.DataFrame) -> dict:
 # ──────────────────────────────────────────────────────────────────────────────
 
 def generar_recomendaciones(df: pd.DataFrame, nlp_vec, nlp_mod) -> list[str]:
-    """
-    Genera recomendaciones automáticas basadas en:
-      - Tendencias de ventas semanales por producto
-      - Predicción ML del mejor modelo
-      - Análisis de sentimiento de las opiniones del dataset
-      - Palabras clave en opiniones negativas
-    """
     recos = []
-
-    # ── 1. Producto con mayor crecimiento en fines de semana ──────────────────
     try:
         df_wk = df.copy()
         df_wk["dia_semana"] = df_wk["fecha"].dt.dayofweek
@@ -355,7 +340,6 @@ def generar_recomendaciones(df: pd.DataFrame, nlp_vec, nlp_mod) -> list[str]:
     except Exception:
         pass
 
-    # ── 2. Predicción ML ──────────────────────────────────────────────────────
     try:
         tabla_ml, df_ref = entrenar_ml()
         mejor_r2 = tabla_ml.loc[tabla_ml["R²"].idxmax()]
@@ -386,7 +370,6 @@ def generar_recomendaciones(df: pd.DataFrame, nlp_vec, nlp_mod) -> list[str]:
     except Exception:
         pass
 
-    # ── 3. % Opiniones positivas del dataset ─────────────────────────────────
     try:
         opiniones_validas = df["opinion_usuario"].dropna().astype(str).str.lower()
         invalidas = {"desconocido", "sin comentario", "???", "0"}
@@ -405,7 +388,6 @@ def generar_recomendaciones(df: pd.DataFrame, nlp_vec, nlp_mod) -> list[str]:
     except Exception:
         pass
 
-    # ── 4. Detección de palabras negativas frecuentes ─────────────────────────
     try:
         palabras_negativas = [
             "retraso", "demora", "tarde", "vencido", "cola",
@@ -423,7 +405,6 @@ def generar_recomendaciones(df: pd.DataFrame, nlp_vec, nlp_mod) -> list[str]:
     except Exception:
         pass
 
-    # ── 5. Producto con mayor descuento vs. ventas ────────────────────────────
     try:
         desc_ventas = df.groupby("producto").agg(
             descuento_prom=("descuento_pct", "mean"),
@@ -438,7 +419,6 @@ def generar_recomendaciones(df: pd.DataFrame, nlp_vec, nlp_mod) -> list[str]:
     except Exception:
         pass
 
-    # ── 6. Satisfacción baja por categoría ───────────────────────────────────
     try:
         sat_cat = df.groupby("categoria")["satisfaccion"].mean().sort_values()
         if not sat_cat.empty:
@@ -494,7 +474,6 @@ if pagina == "📊 Dashboard":
     df = cargar_df()
     ind = calcular_indicadores(df)
 
-    # KPIs
     c1, c2, c3, c4, c5 = st.columns(5)
     c1.metric("💰 Ventas Totales", f"S/ {ind['ventas_totales']:,.2f}")
     c2.metric("🧾 Ticket Promedio",  f"S/ {ind['venta_promedio']:,.2f}")
@@ -513,9 +492,7 @@ if pagina == "📊 Dashboard":
     st.markdown("---")
     st.subheader("Gráficos Estadísticos")
 
-    # Fila 1
     col1, col2 = st.columns(2)
-
     with col1:
         fig1, ax1 = plt.subplots(figsize=(7, 4))
         grafico_ventas_por_mes(df, ax1)
@@ -530,9 +507,7 @@ if pagina == "📊 Dashboard":
         st.pyplot(fig2)
         plt.close(fig2)
 
-    # Fila 2
     col3, col4 = st.columns(2)
-
     with col3:
         fig3, ax3 = plt.subplots(figsize=(7, 4))
         grafico_ventas_por_categoria(df, ax3)
@@ -547,9 +522,7 @@ if pagina == "📊 Dashboard":
         st.pyplot(fig4)
         plt.close(fig4)
 
-    # Fila 3
     col5, col6 = st.columns(2)
-
     with col5:
         fig5, ax5 = plt.subplots(figsize=(7, 4))
         grafico_correlacion(df, ax5)
@@ -564,7 +537,6 @@ if pagina == "📊 Dashboard":
         st.pyplot(fig6)
         plt.close(fig6)
 
-    # Tabla resumen
     st.markdown("---")
     st.subheader("Ventas por Producto")
     tabla_prod = (
@@ -595,11 +567,9 @@ elif pagina == "🤖 Predicción de Ventas":
         "las unidades que se venderán usando el mejor modelo de ML."
     )
 
-    # Entrenamiento (cacheado)
     with st.spinner("Preparando modelos…"):
         tabla_modelos, df_ref = entrenar_ml()
 
-    # Métricas de modelos
     st.subheader("Comparativa de Modelos")
     col_m1, col_m2, col_m3 = st.columns(3)
     for i, (_, row) in enumerate(tabla_modelos.iterrows()):
@@ -703,7 +673,6 @@ elif pagina == "🤖 Predicción de Ventas":
             else:
                 r3.metric("📊 Histórico prod.", "Sin datos previos")
 
-            # Detalles expandibles
             with st.expander("Ver detalles completos"):
                 det = resultado["detalles"]
                 st.markdown(f"""
@@ -723,7 +692,6 @@ elif pagina == "🤖 Predicción de Ventas":
         except Exception as e:
             st.error(f"Error en la predicción: {e}")
 
-    # Gráfico de histórico del producto seleccionado
     st.markdown("---")
     st.subheader(f"Histórico de Ventas — {producto}")
     hist_prod = (
@@ -772,7 +740,7 @@ elif pagina == "💬 Análisis de Opiniones":
     st.title("💬 Análisis de Opiniones")
     st.markdown(
         "Clasifica opiniones de clientes como **POSITIVO** o **NEGATIVO** "
-        "usando un modelo TF-IDF + Regresión Logística (mismo algoritmo que `nlp_opiniones.py`)."
+        "usando un modelo TF-IDF + Regresión Logística."
     )
 
     with st.spinner("Cargando modelo NLP…"):
@@ -780,9 +748,7 @@ elif pagina == "💬 Análisis de Opiniones":
 
     st.success(f"Modelo listo — Precisión en prueba: **{nlp_precision}%**")
 
-    # ── Análisis de una opinión nueva ────────────────────────────────────────
     st.subheader("Clasificar una nueva opinión")
-
     opinion_input = st.text_area(
         "Escribe una opinión del cliente:",
         placeholder="Ej: Muy buena atención, encontré todo lo que necesitaba…",
@@ -802,7 +768,6 @@ elif pagina == "💬 Análisis de Opiniones":
         else:
             st.warning("Por favor ingresá una opinión.")
 
-    # ── Análisis masivo del dataset ───────────────────────────────────────────
     st.markdown("---")
     st.subheader("Análisis masivo del dataset")
 
@@ -834,7 +799,6 @@ elif pagina == "💬 Análisis de Opiniones":
         m2.metric("🟢 Positivas", f"{positivos_n} ({pct_pos}%)")
         m3.metric("🔴 Negativas", f"{negativos_n} ({pct_neg}%)")
 
-        # Gráfico de torta
         fig_pie, ax_pie = plt.subplots(figsize=(5, 4))
         ax_pie.pie(
             [positivos_n, negativos_n],
@@ -851,7 +815,6 @@ elif pagina == "💬 Análisis de Opiniones":
             st.pyplot(fig_pie)
             plt.close(fig_pie)
 
-        # Gráfico de barras por producto
         with col_bar:
             df_temp = df.copy()
             df_temp = df_temp[~df_temp["opinion_usuario"].fillna("").str.lower().isin(invalidas)]
@@ -887,7 +850,6 @@ elif pagina == "💬 Análisis de Opiniones":
             st.pyplot(fig_sp)
             plt.close(fig_sp)
 
-        # Tabla de opiniones clasificadas
         st.markdown("---")
         st.subheader("Detalle de Opiniones Clasificadas")
         df_tabla_op = pd.DataFrame({
@@ -900,7 +862,6 @@ elif pagina == "💬 Análisis de Opiniones":
     else:
         st.info("No hay opiniones válidas en el dataset para analizar.")
 
-    # ── Prueba por lotes ──────────────────────────────────────────────────────
     st.markdown("---")
     st.subheader("Probar múltiples opiniones")
     st.markdown("Ingresá una opinión por línea:")
@@ -941,7 +902,6 @@ elif pagina == "🧠 Asistente de Decisiones":
         nlp_vec, nlp_mod, _ = entrenar_nlp()
         recos = generar_recomendaciones(df, nlp_vec, nlp_mod)
 
-    # ── Cuadro de recomendaciones ─────────────────────────────────────────────
     st.markdown("""
 <div class="reco-box">
   <div class="reco-title">📋 RECOMENDACIONES</div>
@@ -953,8 +913,6 @@ elif pagina == "🧠 Asistente de Decisiones":
 """, unsafe_allow_html=True)
 
     st.markdown("---")
-
-    # ── Panel de análisis rápido ──────────────────────────────────────────────
     st.subheader("Análisis Rápido por Dimensión")
 
     tab1, tab2, tab3 = st.tabs(["📦 Ventas", "⭐ Satisfacción", "📅 Temporalidad"])
@@ -1025,7 +983,6 @@ elif pagina == "🧠 Asistente de Decisiones":
             unsafe_allow_html=False,
         )
 
-    # ── Consulta personalizada ────────────────────────────────────────────────
     st.markdown("---")
     st.subheader("🔎 Consulta de Producto")
     st.markdown("Seleccioná un producto para ver un resumen ejecutivo.")
@@ -1042,9 +999,8 @@ elif pagina == "🧠 Asistente de Decisiones":
         p1.metric("Unidades vendidas", f"{df_prod['cantidad'].sum():,.0f}")
         p2.metric("Ingresos totales", f"S/ {df_prod['total'].sum():,.2f}")
         p3.metric("Precio promedio", f"S/ {df_prod['precio_unitario'].mean():,.2f}")
-        p4.metric("Satisfacción", f"{df_prod['satisfaccion'].mean():.2f}/5")
+        p4.metric("Satisfacción", f"{df_prod['satisfaccion'].mean():,.2f}/5")
 
-        # Tendencia mensual del producto
         tend_prod = (
             df_prod.groupby("año_mes")["cantidad"]
             .sum()

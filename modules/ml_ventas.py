@@ -42,7 +42,7 @@ def preparar_datos(ruta="limpieza_datos.csv"):
     return X, y
 
 # 3. ENTRENAMIENTO Y COMPARACIÓN
-def entrenar():
+def entrenar_y_comparar():
     X, y = preparar_datos()
     Xt, Xv, yt, yv = train_test_split(X, y, test_size=0.2, random_state=42)
     res = []
@@ -83,7 +83,7 @@ def predecir(prod, mes, año, precio, desc, dia, frec, sat):
 
 # 5. EJECUCIÓN DIRECTA
 if __name__ == "__main__":
-    entrenar()
+    entrenar_y_comparar()
     print("-" * 50)
     # Caso 1: Exactamente el que pide tu rúbrica (Agua, sábado=5, agosto=8, S/. 3)
     predecir("Agua", 8, 2024, 3.00, 10.0, 5, "si", 4.0)
